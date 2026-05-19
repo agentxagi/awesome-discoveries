@@ -65,6 +65,10 @@ Snapshot agent behavior, diff tool calls between runs, catch regressions in CI. 
 ### [agent-belt](https://github.com/jfrog/agent-belt) - Eval framework for coding agents (JFrog)
 CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consensus. Works against Claude Code, Codex, Copilot, or any agent you plug in. From JFrog engineering.
 
+
+### [Context7](https://github.com/upstash/context7) - Fresh documentation for LLMs and coding agents
+55k stars, MIT. Solves the stale-doc problem: every coding agent guesses APIs from training data that's months old. Context7 injects up-to-date documentation at query time via MCP server. Works with Claude Code, Cursor, Windsurf, Codex. Built by Upstash. The "documentation as context" pattern fills a real infra gap — agent reliability depends on accurate API knowledge, not memorized guesses.
+
 ---
 
 ## LLM & RAG
@@ -94,4 +98,7 @@ From [@Distroux](https://x.com/Distroux): split shared state into (1) append-onl
 
 ### [Raindrop Workshop](https://github.com/raindrop-ai/workshop) - Local debugger for AI agents
 Live-streamed traces of every token, tool call, and decision your agent makes. Claude Code reads the traces, writes evals, and fixes bugs in a self-healing loop. MIT license, 665 stars in 18 days. Works with Vercel AI SDK, OpenAI Agents SDK, Anthropic SDK, LangChain, CrewAI, Mastra, and more. Run `/instrument-agent` and traces start flowing.
+
+### [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) - Browser debugging for coding agents
+40k stars, Apache 2.0, official Google project. Exposes Chrome DevTools as an MCP server — agents can inspect DOM, read console errors, profile performance, set breakpoints through structured tool calls. No more screenshot-guessing for frontend debugging. The first serious bridge between browser devtools and agent workflows.
 
