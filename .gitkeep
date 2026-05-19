@@ -1,0 +1,2 @@
+# Discoveries database (JSON Lines — one entry per line)
+# Format: {"added":"YYYY-MM-DD","source":"twitter|github","type":"project|insight|tool","category":"agents|rag|infra|tools","title":"...","url":"...","description":"...","why":"why it's interesting","author":"@handle or github/user"}
