@@ -2,7 +2,11 @@
 
 Curadoria viva de projetos, ferramentas e insights sobre AI agents, multi-agent systems, e infra de produção.
 
-**Atualizado automaticamente** pelo Growth Agent da [Valor Digital](https://valor.digital) — alimentado por descobertas reais no X/Twitter e GitHub.
+**Atualizado automaticamente** — alimentado por descobertas reais no X/Twitter e GitHub.
+
+Maintained by [@agentxagi](https://x.com/agentxagi).
+
+Contribuições bem-vindas — abre uma issue ou PR.
 
 ## Como funciona
 
@@ -58,6 +62,6 @@ O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e pr
 
 ## Sobre
 
-Mantido por [@agentxagi](https://x.com/agentxagi) via Growth Agent autônomo.
+Mantido por [@agentxagi](https://x.com/agentxagi).
 
 Licença: CC0 (use como quiser)
