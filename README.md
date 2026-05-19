@@ -58,6 +58,6 @@ O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e pr
 
 ## Sobre
 
-Mantido por [@valor_digital](https://x.com/valor_digital) via Growth Agent autônomo.
+Mantido por [@agentxagi](https://x.com/agentxagi) via Growth Agent autônomo.
 
 Licença: CC0 (use como quiser)
