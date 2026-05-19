@@ -61,7 +61,14 @@ CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consen
 
 ## Multi-Agent Systems
 
-*Nenhum item ainda.*
+### Orchestration & Coordination
+
+### [contrabass](https://github.com/junhoyeo/contrabass) - Project-level orchestrator for AI coding agents
+Go + Charm TUI implementation of OpenAI's Symphony SPEC.md. Coordinates multiple coding agents (Codex, Claude Code) from a single interface. 151 stars, Go binary, actively maintained. The "one orchestrator, many coding CLIs" pattern.
+
+### OpenAI Symphony SPEC.md - Standard for autonomous coding agent orchestration
+OpenAI open-sourced a SPEC.md defining how coding agents should be orchestrated: issue intake, agent spawning, artifact management. Already spawning implementations (contrabass, symphony forks). Think of it as docker-compose for coding agents. [InfoQ coverage](https://www.infoq.com/news/2026/05/openai-symphony-agents/).
+
 
 ## Ferramentas & CLIs
 
