@@ -38,6 +38,10 @@ Standalone desktop app, CLI, SDK, and voice interface for commanding agent teams
 ## Agent Infrastructure
 > Monitoring, reliability, security, cost management, testing
 
+
+### [Lapdog](https://lapdog.datadoghq.com/) - Local agent tracer from Datadog
+Runs fully local, no account required. Traces reasoning and tool calls from Codex, Claude Code, and Pi in real time. The first usable agent observability tool from a major vendor. Free. 70 likes in hours on launch. Fills the gap between reading terminal output blind and paying for Datadog cloud.
+
 ### Ferramentas & CLIs
 > Ferramentas de desenvolvimento, debugging, deploy
 
