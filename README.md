@@ -79,4 +79,6 @@ From [@Distroux](https://x.com/Distroux): split shared state into (1) append-onl
 
 ## Ferramentas & CLIs
 
-*Nenhum item ainda.*
+### [Raindrop Workshop](https://github.com/raindrop-ai/workshop) - Local debugger for AI agents
+Live-streamed traces of every token, tool call, and decision your agent makes. Claude Code reads the traces, writes evals, and fixes bugs in a self-healing loop. MIT license, 665 stars in 18 days. Works with Vercel AI SDK, OpenAI Agents SDK, Anthropic SDK, LangChain, CrewAI, Mastra, and more. Run `/instrument-agent` and traces start flowing.
+
