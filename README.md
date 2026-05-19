@@ -29,7 +29,13 @@ O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e pr
 ### Multi-Agent Systems
 > Orquestracao, handoffs, memoria compartilhada, circuit breakers
 
-### Agent Infrastructure
+#### [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) - Production playbook for LLM-powered software
+21k stars. The core thesis: effective agents are software with LLM steps placed strategically, not prompt + tools + loop until done. Own your prompts, typed tool structures, human-in-the-loop as first-class, small focused agents over monoliths, stateless reducer pattern. The fastest path is incorporating modular agent concepts into existing products, not greenfield framework rewrites.
+
+### Google Antigravity 2.0 - Multi-agent orchestration platform (Google I/O 2026)
+Standalone desktop app, CLI, SDK, and voice interface for commanding agent teams. Gemini 3.5 Flash runs 12x faster within the framework. Already has ecosystem growing around it (opencode-antigravity-auth at 10k stars, VS Code quota extensions, skill collections). Early research preview, globally available.
+
+## Agent Infrastructure
 > Monitoring, reliability, security, cost management, testing
 
 ### Ferramentas & CLIs
@@ -45,6 +51,12 @@ Run assertions against agent skill outputs the same way you would test code. Fro
 ### [agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval) - Test runner for agentskills.io skills
 YAML-based scenarios with LLM judges. 500+ stars in two weeks. TypeScript, works with any OpenAI-compatible API.
 
+### [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) - Production playbook for LLM-powered software
+21k stars. The core thesis: effective agents are software with LLM steps placed strategically, not prompt + tools + loop until done. Own your prompts, typed tool structures, human-in-the-loop as first-class, small focused agents over monoliths, stateless reducer pattern. The fastest path is incorporating modular agent concepts into existing products, not greenfield framework rewrites.
+
+### Google Antigravity 2.0 - Multi-agent orchestration platform (Google I/O 2026)
+Standalone desktop app, CLI, SDK, and voice interface for commanding agent teams. Gemini 3.5 Flash runs 12x faster within the framework. Already has ecosystem growing around it (opencode-antigravity-auth at 10k stars, VS Code quota extensions, skill collections). Early research preview, globally available.
+
 ## Agent Infrastructure
 
 ### [eval-view](https://github.com/hidai25/eval-view) - Regression testing for AI agents
@@ -57,7 +69,8 @@ CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consen
 
 ## LLM & RAG
 
-*Nenhum item ainda.*
+### [claude-mem](https://github.com/thedotmack/claude-mem) - Persistent context across sessions for coding agents
+Captures everything your agent does during a session, compresses it with AI, and injects relevant context into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot. SQLite + ChromaDB + embeddings. 76k stars, v13.2, actively maintained. The agent that remembers what it did yesterday problem, solved.
 
 ## Multi-Agent Systems
 
