@@ -42,6 +42,10 @@ Standalone desktop app, CLI, SDK, and voice interface for commanding agent teams
 ### [Lapdog](https://lapdog.datadoghq.com/) - Local agent tracer from Datadog
 Runs fully local, no account required. Traces reasoning and tool calls from Codex, Claude Code, and Pi in real time. The first usable agent observability tool from a major vendor. Free. 70 likes in hours on launch. Fills the gap between reading terminal output blind and paying for Datadog cloud.
 
+### Cloudflare + Claude Managed Agents - Isolated sandboxed execution for autonomous code delivery
+Cloudflare integrates with Anthropic's Claude Managed Agents for edge-scale isolated execution. Bounded blast radius, controlled access to private backends, custom runtimes per agent. 363 likes, 35k views. The pattern is consolidating: Cloudflare, Vercel, and Google all shipped sandbox integrations in the same week. Cloud providers own the sandbox, model providers own the agent runtime.
+
+
 ### Ferramentas & CLIs
 > Ferramentas de desenvolvimento, debugging, deploy
 
@@ -93,6 +97,10 @@ OpenAI open-sourced a SPEC.md defining how coding agents should be orchestrated:
 
 ### [TraceFix](https://ortiz.rutgers.edu/projects/tracefix/) - TLA+-based protocol repair for multi-agent coordination
 Uses TLA+ counterexamples to find and repair coordination protocol violations before deployment. Formal methods meet agent orchestration. CAISconf 2026 paper from Rutgers (Jorge Ortiz et al.). Instead of discovering protocol failures in production, catch them at design time.
+
+### [Ruflo](https://github.com/ruvnet/ruflo) - Agent orchestration platform for Claude
+53k stars. Deploy multi-agent workflows with a visual builder and structured output routing. TypeScript, built specifically for the Claude ecosystem (Claude Code, OpenClaw native support). The shift from generic orchestration to framework-specific orchestration layers is a signal worth watching.
+
 
 ### Memory architecture pattern: 3-layer isolation for multi-agent workspaces
 From [@Distroux](https://x.com/Distroux): split shared state into (1) append-only run log, (2) human-owned frozen spec, (3) disposable scratchpad per agent. Agents file PRs to change the spec, never edit directly. Prevents state corruption when multiple agents share a workspace. Practical rule: if Claude Code and Codex rewrite the same context file, you have state corruption, not coordination.
