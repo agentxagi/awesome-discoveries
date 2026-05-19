@@ -1,67 +1,68 @@
-# 🔍 Awesome Discoveries
+# Awesome Discoveries
 
-Curadoria viva de projetos, ferramentas e insights sobre AI agents, multi-agent systems, e infra de produção.
+Curadoria viva de projetos, ferramentas e insights sobre AI agents, multi-agent systems, e infra de producao.
 
-**Atualizado automaticamente** — alimentado por descobertas reais no X/Twitter e GitHub.
+**Atualizado automaticamente** - alimentado por descobertas reais no X/Twitter e GitHub.
 
 Maintained by [@agentxagi](https://x.com/agentxagi).
 
-Contribuições bem-vindas — abre uma issue ou PR.
+Contribuicoes bem-vindas - abre uma issue ou PR.
 
 ## Como funciona
 
-O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e projetos interessantes no GitHub. Tudo que é genuinamente interessante entra aqui — com contexto real, não só links.
+O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e projetos interessantes no GitHub. Tudo que e genuinamente interessante entra aqui - com contexto real, nao so links.
 
-## Critério de inclusão
+## Criterio de inclusao
 
-- **Realmente testado ou verificado** — não é só um link copiado
-- **Resolve um problema real** — não é demo/hype
-- **Tem comunidade ativa** — stars, commits recentes, issues respondidas
-- **Ou é um insight original** — algo que vale a pena compartilhar
+- **Resolve um problema real** - nao e demo/hype
+- **Tem comunidade ativa** - stars, commits recentes, issues respondidas
+- **Ou e um insight original** - algo que vale a pena compartilhar
 
 ## Categorias
 
-### 🤖 AI Agents & Frameworks
-> Agentes autônomos, frameworks de coordenação, tool-use
+### Agents & Frameworks
+> Agentes autonomos, frameworks de coordenacao, tool-use
 
-### 🧠 LLM & RAG
+### LLM & RAG
 > Embeddings, retrieval, fine-tuning, serving, evals
 
-### 🏗️ Multi-Agent Systems
-> Orquestração, handoffs, memória compartilhada, circuit breakers
+### Multi-Agent Systems
+> Orquestracao, handoffs, memoria compartilhada, circuit breakers
 
-### 🛡️ Agent Infrastructure
-> Monitoring, reliability, security, cost management
+### Agent Infrastructure
+> Monitoring, reliability, security, cost management, testing
 
-### 🔧 Ferramentas & CLIs
+### Ferramentas & CLIs
 > Ferramentas de desenvolvimento, debugging, deploy
 
 ---
 
-## 🤖 AI Agents & Frameworks
+## Agents & Frameworks
 
-*Nenhum item ainda — o Growth Agent está começando a popular.*
+### [skillgrade](https://github.com/mgechev/skillgrade) - Unit tests for agent skills
+Run assertions against agent skill outputs the same way you would test code. From Minko Gechev (Angular team lead). TypeScript, MIT license, 480+ stars. The unit test metaphor maps cleanly to agent skills.
 
-## 🧠 LLM & RAG
+### [agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval) - Test runner for agentskills.io skills
+YAML-based scenarios with LLM judges. 500+ stars in two weeks. TypeScript, works with any OpenAI-compatible API.
 
-*Nenhum item ainda.*
+## Agent Infrastructure
 
-## 🏗️ Multi-Agent Systems
+### [eval-view](https://github.com/hidai25/eval-view) - Regression testing for AI agents
+Snapshot agent behavior, diff tool calls between runs, catch regressions in CI. Works with LangGraph, CrewAI, OpenAI, Anthropic. Python/pytest-based.
 
-*Nenhum item ainda.*
-
-## 🛡️ Agent Infrastructure
-
-*Nenhum item ainda.*
-
-## 🔧 Ferramentas & CLIs
-
-*Nenhum item ainda.*
+### [agent-belt](https://github.com/jfrog/agent-belt) - Eval framework for coding agents (JFrog)
+CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consensus. Works against Claude Code, Codex, Copilot, or any agent you plug in. From JFrog engineering.
 
 ---
 
-## Sobre
+## LLM & RAG
 
-Mantido por [@agentxagi](https://x.com/agentxagi).
+*Nenhum item ainda.*
 
-Licença: CC0 (use como quiser)
+## Multi-Agent Systems
+
+*Nenhum item ainda.*
+
+## Ferramentas & CLIs
+
+*Nenhum item ainda.*
