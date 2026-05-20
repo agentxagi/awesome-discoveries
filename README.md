@@ -48,6 +48,14 @@ YAML-based scenarios with LLM judges. 500+ stars in two weeks. TypeScript, works
 ### [Memori](https://github.com/MemoriLabs/Memori) - Agent-native memory infrastructure
 LLM-agnostic layer that turns agent execution and conversation into structured, persistent state. 14.6k stars, Python, 2200 forks. Different from session-context tools (claude-mem): Memori captures execution traces, decisions, and conversation turns, then compresses them into retrievable memory any LLM can query. The agent-memory problem has two layers - short-term context (solved by bigger windows) and long-term structured recall (still unsolved). Memori targets the second. Production agents need to remember what happened across sessions without re-reading full transcripts.
 
+### [CUA](https://github.com/trycua/cua) - Cross-platform Computer Use Agent infrastructure
+Open-source stack for agents that control full desktops across macOS, Linux, and Windows. Ships sandboxes, SDKs, and eval benchmarks together. 16.9k stars, MIT, 1069 forks. Most agent frameworks stop at the browser. CUA goes to the OS level: window management, file operations, app control across all three platforms. Active commits (last push today). While browser-use (94k stars) owns the web layer, CUA owns the desktop layer. 307 open issues = real community, not a trophy repo.
+
+
+### [memU](https://github.com/NevaMind-AI/memU) - Memory for 24/7 proactive agents
+Purpose-built for always-on agents like OpenClaw. Most agent memory targets chatbots (session context persistence). memU targets the harder problem: agents running 24/7 that need to accumulate state, learn from past runs, and maintain consistency across restarts. 13.6k stars, 1028 forks, Python. Explicitly designed for OpenClaw-compatible proactive agents. While Memori and Engram focus on coding agent memory, memU focuses on background agents that never stop. The proactive-agent memory layer is underserved — this fills it.
+
+
 ## Agent Infrastructure
 
 ### [eval-view](https://github.com/hidai25/eval-view) - Regression testing for AI agents
