@@ -70,6 +70,10 @@ Opinionated agent harness built on LangGraph with planning, sub-agents, filesyst
 ### [memU](https://github.com/NevaMind-AI/memU) - Memory for 24/7 proactive agents
 Purpose-built for always-on agents like OpenClaw. Most agent memory targets chatbots (session context persistence). memU targets the harder problem: agents running 24/7 that need to accumulate state, learn from past runs, and maintain consistency across restarts. 13.6k stars, 1028 forks, Python. Explicitly designed for OpenClaw-compatible proactive agents. While Memori and Engram focus on coding agent memory, memU focuses on background agents that never stop. The proactive-agent memory layer is underserved — this fills it.
 
+### [TencentDB Agent Memory](https://github.com/Tencent/TencentDB-Agent-Memory) - 4-tier memory pipeline with real benchmarks
+From Tencent. Symbolic short-term memory (Mermaid symbol offloading) + 4-layer long-term memory (L0 raw → L1 facts → L2 summaries → L3 personas). Fully local, zero external dependencies. Benchmarks: 61% token reduction, +51% pass rate on WideSearch, PersonaMem accuracy 48%→76%. OpenClaw plugin, Hermes compatible. 3618 stars, MIT, TypeScript. The progressive compression pipeline is the differentiator — instead of dumping raw context into a vector DB, it distills through 4 layers. Each layer serves a different recall need: L1 for facts, L2 for summaries, L3 for accumulated user understanding.
+
+
 ### [agentmemory](https://github.com/rohitg00/agentmemory) - Persistent memory for coding agents with confidence scoring
 Extends Karpathy LLM Wiki pattern with confidence scoring, lifecycle management, knowledge graphs, and hybrid search. MCP-native, works with Claude Code, Cursor, Gemini CLI, Codex CLI, OpenClaw out of the box. 14.3k stars, TypeScript, Apache 2.0. The design doc got 1200 stars on its own. Uses iii engine under the hood. Confidence scoring on memories means agents weigh how much to trust recalled context, not just store-and-retrieve. No vector DB required. The memory layer coding agents actually need: persistent across sessions, queryable via MCP.
 
