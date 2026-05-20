@@ -59,6 +59,10 @@ Rust proxy built on Envoy that handles LLM routing, safety guardrails, rate limi
 ### [Cozeloop](https://github.com/coze-dev/coze-loop) - Full-lifecycle agent optimization
 Dev, debug, eval, and monitor agents from a single Go platform. 5.4k stars from ByteDance's Coze team. Most tools do eval or observability. Cozeloop does both plus prompt management and a playground for rapid iteration. Closes the feedback loop between monitoring and improvement.
 
+### [CubeSandbox](https://github.com/TencentCloud/CubeSandbox) - Hardware-isolated sandbox for AI agents
+From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-level isolation. Boots in <60ms, uses <5MB per instance, 2000+ concurrent sandboxes on a single node. E2B SDK compatible. Rust, Apache 2.0, 5.8k stars in 6 weeks. Most agent sandboxes use Docker + seccomp. CubeSandbox uses virtualization, which is fundamentally harder to escape. The security layer production agents need.
+
+
 ---
 
 ## LLM & RAG
@@ -81,6 +85,10 @@ Uses TLA+ counterexamples to find and repair coordination protocol violations be
 
 ### [Warp Oz](https://x.com/warpdotdev/status/2056772856835453395) - Multi-agent orchestration across coding agents
 Delegate complex tasks across Claude Code, Codex, and Warp Agent from a single terminal. Each subagent gets its own worktree (local) or Docker container (cloud). The /orchestrate command generates a delegation plan and agents coordinate via structured message passing. 177 likes, 81k views on launch. First terminal orchestrator that crosses framework boundaries.
+
+
+### [Open Multi-Agent](https://github.com/open-multi-agent/open-multi-agent) - Goal-to-DAG orchestration with 3 runtime dependencies
+TypeScript-native. You describe a goal, it generates a task DAG automatically. Three runtime dependencies total in a space where most frameworks pull in hundreds. Model-agnostic (Claude, Gemini, OpenAI, DeepSeek, Ollama). Built-in MCP support and live tracing. 6.2k stars, MIT, created March 2026. The minimal-dependency approach matters: less surface area, faster audits, fewer supply chain risks.
 
 ### Memory architecture pattern: 3-layer isolation for multi-agent workspaces
 From [@Distroux](https://x.com/Distroux): split shared state into (1) append-only run log, (2) human-owned frozen spec, (3) disposable scratchpad per agent. Agents file PRs to change the spec, never edit directly. Prevents state corruption when multiple agents share a workspace. Practical rule: if Claude Code and Codex rewrite the same context file, you have state corruption, not coordination.
