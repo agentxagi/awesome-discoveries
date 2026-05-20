@@ -57,6 +57,10 @@ Open-source stack for agents that control full desktops across macOS, Linux, and
 
 
 
+
+### [ClawGUI](https://github.com/ZJU-REAL/ClawGUI) - RL training + eval + deploy for GUI agents
+Full-stack framework from Zhejiang University. Online RL training for GUI agents, standardized benchmarks, and real-device deployment in one package. ArXiv paper (2604.11784), HuggingFace Daily Paper. Ships a trained 2B model (ClawGUI-2B). Controls real phones via natural language. Most GUI agent work is eval-only. ClawGUI is the only one doing RL training — training a small model through reinforcement learning to get good at GUI interaction, instead of just prompting a frontier model. 1257 stars, Apache 2.0, Python. Complements CUA (desktop agents) and ClawBench (browser agent eval).
+
 ### [NanoClaw](https://github.com/nanocoai/nanoclaw) - Container-first OpenClaw alternative
 Lightweight alternative that runs agents in isolated containers by default. Connects to WhatsApp, Telegram, Slack, Discord, Gmail. Built on Anthropic Agents SDK directly. 29K stars, MIT, TypeScript, 12.8K forks. Container isolation is not optional - every agent gets its own sandbox without config.
 
@@ -110,6 +114,10 @@ From Sierra. The tau-bench series tests the full tool-agent-user interaction loo
 Evaluates agents across real MCP servers (Notion, GitHub, Filesystem, Postgres, Playwright) with isolated sandboxes and unified metrics. 419 stars, Apache 2.0, Python. Has arXiv paper (2509.24002) and HuggingFace trajectory dataset. DeepSeek v3.2 used MCPMark in their evaluation. Pinned MCP server versions for reproducibility. Leaderboard: gpt-5-high 51.6%, gemini-3-pro 50.6%, deepseek-v3.2-thinking 36.8%. Most agents fail on half the tasks — which means the benchmark measures real capability. Auto-compaction support for long evaluations. 50 easy tasks for smaller open-source models plus harder tasks for frontier. Complements MCP-Universe (RL training) in the evaluation stack.
 
 
+
+
+### [PinchBench](https://github.com/pinchbench/skill) - Real-world OpenClaw coding agent benchmark
+53 tasks measuring whether agents actually get things done — scheduling meetings, writing code, triaging email, researching topics, managing files. From Kilo.ai. Public leaderboard at pinchbench.com. 1186 stars, MIT, 132 forks. Most evals measure process quality (did the model use the right tool?). PinchBench measures outcomes (did the meeting actually get scheduled?). OpenRouter model routing for easy comparison. Complements Claw-Eval (human-verified Pass^3) and MCPMark (MCP tool-use stress test) by testing the end-to-end angle that matters in production.
 
 ### [ClawBench](https://github.com/reacher-z/ClawBench) - Browser agent benchmark on 153 real-world tasks
 Open-source benchmark for browser AI agents across 144 live websites. Top score is 33.3% — the best agents fail on 2 out of 3 everyday web tasks. 5-layer recording (screenshot, DOM, network, console, a11y tree), DOM-match + LLM judge for scoring. Published as arXiv paper, HuggingFace Daily Paper. Dataset on HuggingFace. Most agent benchmarks test code generation; ClawBench tests the thing users actually want: navigate real websites and complete multi-step tasks. 310 stars, Apache 2.0, Python.
