@@ -165,6 +165,10 @@ CNCF Sandbox project originally from Robusta.Dev, with major contributions from 
 
 ### [OpenViking](https://github.com/volcengine/OpenViking) - Context database for AI agents
 From ByteDance/Volcengine. Unifies memory, resources, and skills under a filesystem paradigm instead of fragmented vector storage. Three-tier loading (L0 raw → L1 structured → L2 summaries) loads context on demand instead of dumping everything. Directory recursive retrieval combines directory positioning with semantic search. Retrieval trajectories are visible and debuggable — you can see why the agent fetched what it fetched. Auto session management compresses conversations and extracts long-term memory. Rust CLI + Python package. 24.2K stars, AGPL, 1815 forks, active since Jan 2026. The filesystem metaphor is genuinely different from TencentDB (progressive compression) and Memori (structured state): OpenViking treats all agent context as files in a hierarchy, making it queryable, observable, and tiered by default.
+
+### [CozeLoop](https://github.com/coze-dev/coze-loop) - Full-lifecycle agent optimization platform
+From ByteDance/Coze. Three pillars in one platform: prompt development (visual playground with multi-LLM comparison and version management), evaluation (automated multi-dimensional testing for accuracy, conciseness, compliance), and observability (full trace recording from user input to AI output including prompt parsing, model calls, tool execution, and exception capture). The shared data model across all three matters: your eval datasets reference the same prompt versions your playground tested, and your traces feed back into eval sets. Most teams cobble together separate tools for each piece. CozeLoop packages them with a unified data layer. Docker Compose or Kubernetes Helm Chart deployment. Supports OpenAI and Volcengine Ark. 5464 stars, Apache 2.0, Go, 761 forks. Created June 2025, pushed today with active daily development. Not well-known outside the Chinese developer community, but the engineering is real — the eval features (eval cron, agent eval, batch evaluation) are maturing fast.
+
 ---
 
 ## LLM & RAG
