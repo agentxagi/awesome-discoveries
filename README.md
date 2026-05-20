@@ -268,3 +268,6 @@ Analyzes full execution traces, not just final output. Catches safety risks that
 ### [Memvid](https://github.com/memvid/memvid) - Single-file agent memory via video encoding
 
 Replaces RAG pipelines with a serverless memory layer. Stores embeddings in MP4 video frames with FAISS indexing. One file, zero server, instant retrieval. 15.5K stars, Rust+Python, Apache 2.0. A legitimate alternative to Pinecone/Weaviate for agent memory where you don't want infrastructure.
+
+### [Emdash](https://github.com/generalaction/emdash) - Multi-agent dev environment with worktree isolation
+Agentic Development Environment (ADE) that runs multiple coding agents in parallel, each in its own git worktree. 27 CLI providers: Claude Code, Codex, Gemini, Hermes, Cursor, Devin, Droid, Jules, Junie, Kiro, Amp, and more. Pass Linear/GitHub/Jira tickets directly. Review diffs, run tests, create PRs, see CI/CD, merge — all from one desktop app. YC W26. Apache 2.0.
