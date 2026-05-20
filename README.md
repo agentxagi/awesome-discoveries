@@ -264,3 +264,7 @@ Intercepts dangerous shell commands before execution. Challenge-response confirm
 
 ### [AgentDoG](https://github.com/AI45Lab/AgentDoG) - Trajectory-level risk diagnosis for autonomous agents
 Analyzes full execution traces, not just final output. Catches safety risks that emerge across multiple steps in combination. Three-axis taxonomy: Risk Source, Failure Mode, Real-World Harm. Ships trained models (4B/7B/8B based on Qwen3, Qwen2.5, Llama3.1). ATBench dataset with 500 trajectories, 1575 unique tools. Outperforms R-Judge, ASSE-Safety baselines. 470 stars, Python, arXiv paper (2601.18491). From AI45Lab (Shanghai AI Laboratory). Most agent safety tools classify the output. AgentDoG classifies the journey.
+
+### [Memvid](https://github.com/memvid/memvid) - Single-file agent memory via video encoding
+
+Replaces RAG pipelines with a serverless memory layer. Stores embeddings in MP4 video frames with FAISS indexing. One file, zero server, instant retrieval. 15.5K stars, Rust+Python, Apache 2.0. A legitimate alternative to Pinecone/Weaviate for agent memory where you don't want infrastructure.
