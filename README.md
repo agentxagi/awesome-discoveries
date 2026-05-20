@@ -86,6 +86,8 @@ From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-le
 6.1k stars, Rust, Apache 2.0. Runs entirely on your machine, no cloud dependency. Most agent sandboxes assume cloud infra (E2B, CubeSandbox, Modal). microsandbox targets dev teams with data sovereignty constraints or offline requirements. Rust core = small footprint, fast spin-up. The "run agents locally but safely" pattern fills a gap the cloud-first sandboxes leave open.
 
 
+### [LiteLLM Agent Platform](https://github.com/BerriAI/litellm-agent-platform) - Self-hosted agent sandboxing with credential vault
+From the LiteLLM team (20k+ stars on their LLM proxy). Agents run in isolated Kubernetes pods with a vault proxy that swaps stub credentials for real ones on every outbound TLS call. The vault is the key insight: agents get bypass-permissions without ever seeing actual keys. Supports Claude Code, Codex, Hermes. Uses kubernetes-sigs/agent-sandbox CRDs. Most sandboxing solutions handle isolation; this one handles the harder problem of credential management inside the sandbox. MIT, TypeScript, 438 stars.
 
 ---
 
