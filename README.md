@@ -89,6 +89,10 @@ From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-le
 ### [LiteLLM Agent Platform](https://github.com/BerriAI/litellm-agent-platform) - Self-hosted agent sandboxing with credential vault
 From the LiteLLM team (20k+ stars on their LLM proxy). Agents run in isolated Kubernetes pods with a vault proxy that swaps stub credentials for real ones on every outbound TLS call. The vault is the key insight: agents get bypass-permissions without ever seeing actual keys. Supports Claude Code, Codex, Hermes. Uses kubernetes-sigs/agent-sandbox CRDs. Most sandboxing solutions handle isolation; this one handles the harder problem of credential management inside the sandbox. MIT, TypeScript, 438 stars.
 
+### [OneCLI](https://github.com/onecli/onecli) - Open-source credential vault for AI agents
+Agents access services without ever seeing real keys. CLI vault model that vends short-lived session tokens instead of raw secrets. MCP-compatible, works with OpenClaw and Hermes. TypeScript + Rust, Apache 2.0, 2.2k stars. The credential management problem is agent infra's biggest unsolved gap — most teams put API keys in env vars and hope. OneCLI intercepts at the tool layer. Complements LiteLLM's vault proxy (TLS interception) with a CLI-level token vending model. Together they represent a new infra layer: credential management purpose-built for agents.
+
+
 ---
 
 ## LLM & RAG
