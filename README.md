@@ -130,3 +130,9 @@ Intercepts and compresses tool output before it hits the model. Claims 98% reduc
 
 ### [Engram](https://github.com/Gentleman-Programming/engram) - Persistent memory for coding agents via MCP
 Agent-agnostic Go binary with SQLite + FTS5. Exposes persistent memory through MCP - coding agents get recall of past decisions without a vector DB or Redis. 3.6k stars, MIT, single binary deploy. The MCP-native approach means adding memory is one config line, not infrastructure. SQLite is the right tradeoff for coding agents: you need exact recall of past decisions, not semantic similarity. Includes HTTP API, CLI, and TUI for manual inspection.
+
+### [ZeroLang](https://github.com/vercel-labs/zerolang) - Agent-first programming language
+From Vercel Labs. What if the primary consumer of a programming language isn't a human but an AI agent? Zero explores this: structured JSON diagnostics that agents can parse, error repair codes, sub-16KB static binaries, explicit capabilities, and a syntax designed to be learned on the fly from examples and compiler feedback. Written in C, Apache 2.0. 3.4k stars in 5 days. Pre-1.0 and intentionally unstable — but the concept shifts how we think about the agent-tooling interface. If agents write code, shouldn't the language be designed for them?
+
+### [audit](https://github.com/evilsocket/audit) - 8-stage vulnerability discovery agent
+From evilsocket (bettercap creator). Reimplements Cloudflare's Project Glasswing pipeline: 8 narrow stages (recon, hunt, validate, gapfill, dedupe, trace, feedback, report) instead of one big "find bugs" prompt. The key insight: a second agent on a different model tries to disprove every finding, and a reachability trace gates whether attacker input can actually reach the sink. Built on Claude Code Agent SDK, uses subscription billing (not metered API). 308 stars, MIT, 2 days old. Real security tooling from a known security researcher.
