@@ -45,6 +45,9 @@ Run assertions against agent skill outputs the same way you would test code. Fro
 ### [agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval) - Test runner for agentskills.io skills
 YAML-based scenarios with LLM judges. 500+ stars in two weeks. TypeScript, works with any OpenAI-compatible API.
 
+### [Memori](https://github.com/MemoriLabs/Memori) - Agent-native memory infrastructure
+LLM-agnostic layer that turns agent execution and conversation into structured, persistent state. 14.6k stars, Python, 2200 forks. Different from session-context tools (claude-mem): Memori captures execution traces, decisions, and conversation turns, then compresses them into retrievable memory any LLM can query. The agent-memory problem has two layers - short-term context (solved by bigger windows) and long-term structured recall (still unsolved). Memori targets the second. Production agents need to remember what happened across sessions without re-reading full transcripts.
+
 ## Agent Infrastructure
 
 ### [eval-view](https://github.com/hidai25/eval-view) - Regression testing for AI agents
@@ -117,4 +120,5 @@ Live-streamed traces of every token, tool call, and decision your agent makes. C
 ### [Context Mode](https://github.com/mksglu/context-mode) - Context window optimization for coding agents
 Intercepts and compresses tool output before it hits the model. Claims 98% reduction in context usage across 15 platforms (Claude Code, Cursor, Windsurf, Codex, etc). 15k stars. #1 on Hacker News with 570+ points. Used at Microsoft, Google, Meta. The context budget problem is one of the main costs in production agents — every wasted token on npm install logs and test output is money. TypeScript, ELv2 license.
 
-
+### [Engram](https://github.com/Gentleman-Programming/engram) - Persistent memory for coding agents via MCP
+Agent-agnostic Go binary with SQLite + FTS5. Exposes persistent memory through MCP - coding agents get recall of past decisions without a vector DB or Redis. 3.6k stars, MIT, single binary deploy. The MCP-native approach means adding memory is one config line, not infrastructure. SQLite is the right tradeoff for coding agents: you need exact recall of past decisions, not semantic similarity. Includes HTTP API, CLI, and TUI for manual inspection.
