@@ -97,6 +97,10 @@ From [@Distroux](https://x.com/Distroux): split shared state into (1) append-onl
 From Matt Pocock. `sandcastle.run()` spins up an isolated agent in Docker, Podman, or Vercel Firecracker microVMs. Provider-agnostic, handles branch isolation and merge-back automatically. 4.6k stars, MIT, 483 forks. Agent orchestration needs sandboxing as a first-class concern. You invoke the agent, Sandcastle handles the blast radius.
 
 
+### [DeerFlow](https://github.com/bytedance/deer-flow) - Long-horizon SuperAgent by ByteDance
+Researches, codes, and creates across tasks that take minutes to hours. Architecture: sandboxes, persistent memories, tools, skills, subagents, and a message gateway. 68K+ stars, Python, actively maintained by ByteDance. Most agent frameworks handle single-turn or short chains. DeerFlow is built for multi-hour autonomous workflows with checkpoint/resume. The SuperAgent pattern — one orchestrator delegating to specialized subagents with shared memory and sandboxed execution.
+
+
 
 ## Ferramentas & CLIs
 
