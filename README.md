@@ -131,7 +131,7 @@ Researches, codes, and creates across tasks that take minutes to hours. Architec
 ## Ferramentas & CLIs
 
 ### [Raindrop Workshop](https://github.com/raindrop-ai/workshop) - Local debugger for AI agents
-Live-streamed traces of every token, tool call, and decision your agent makes. Claude Code reads the traces, writes evals, and fixes bugs in a self-healing loop. MIT license, 665 stars in 18 days. Works with Vercel AI SDK, OpenAI Agents SDK, Anthropic SDK, LangChain, CrewAI, Mastra, and more. Run `/instrument-agent` and traces start flowing.
+Live-streamed traces of every token, tool call, and decision your agent makes. Claude Code reads the traces, writes evals, and fixes bugs in a self-healing loop. MIT license, 674 stars in 19 days. Works with Vercel AI SDK, OpenAI Agents SDK, Anthropic SDK, LangChain, CrewAI, Mastra, and more. Run `/instrument-agent` and traces start flowing.
 
 ### [Context Mode](https://github.com/mksglu/context-mode) - Context window optimization for coding agents
 Intercepts and compresses tool output before it hits the model. Claims 98% reduction in context usage across 15 platforms (Claude Code, Cursor, Windsurf, Codex, etc). 15k stars. #1 on Hacker News with 570+ points. Used at Microsoft, Google, Meta. The context budget problem is one of the main costs in production agents — every wasted token on npm install logs and test output is money. TypeScript, ELv2 license.
