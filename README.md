@@ -52,6 +52,16 @@ LLM-agnostic layer that turns agent execution and conversation into structured, 
 Open-source stack for agents that control full desktops across macOS, Linux, and Windows. Ships sandboxes, SDKs, and eval benchmarks together. 16.9k stars, MIT, 1069 forks. Most agent frameworks stop at the browser. CUA goes to the OS level: window management, file operations, app control across all three platforms. Active commits (last push today). While browser-use (94k stars) owns the web layer, CUA owns the desktop layer. 307 open issues = real community, not a trophy repo.
 
 
+
+### [NanoClaw](https://github.com/nanocoai/nanoclaw) - Container-first OpenClaw alternative
+Lightweight alternative that runs agents in isolated containers by default. Connects to WhatsApp, Telegram, Slack, Discord, Gmail. Built on Anthropic Agents SDK directly. 29K stars, MIT, TypeScript, 12.8K forks. Container isolation is not optional - every agent gets its own sandbox without config.
+
+
+
+### [IronClaw](https://github.com/nearai/ironclaw) - Privacy-first Agent OS in Rust
+Agents run in WASM sandboxes with explicit permission boundaries. Memory-safe runtime handling credentials and tool execution. CodeAct + RLM patterns built in. 12.3K stars, Apache 2.0, Rust. The WASM plugin model means third-party extensions cannot escape their sandbox.
+
+
 ### [memU](https://github.com/NevaMind-AI/memU) - Memory for 24/7 proactive agents
 Purpose-built for always-on agents like OpenClaw. Most agent memory targets chatbots (session context persistence). memU targets the harder problem: agents running 24/7 that need to accumulate state, learn from past runs, and maintain consistency across restarts. 13.6k stars, 1028 forks, Python. Explicitly designed for OpenClaw-compatible proactive agents. While Memori and Engram focus on coding agent memory, memU focuses on background agents that never stop. The proactive-agent memory layer is underserved — this fills it.
 
@@ -63,6 +73,10 @@ Extends Karpathy LLM Wiki pattern with confidence scoring, lifecycle management,
 
 ### [eval-view](https://github.com/hidai25/eval-view) - Regression testing for AI agents
 Snapshot agent behavior, diff tool calls between runs, catch regressions in CI. Works with LangGraph, CrewAI, OpenAI, Anthropic. Python/pytest-based.
+
+
+### [MCP-Universe](https://github.com/SalesforceAIResearch/MCP-Universe) - RL training and benchmarking for MCP tool-use
+From Salesforce AI Research. Treats tool-use as a reinforcement learning problem - agents learn which tools to call, when, and with what parameters through reward signals. Includes standardized benchmarking environments. Apache 2.0, Python, 587 stars. 82 forks, actively maintained.
 
 ### [tau3-bench](https://github.com/sierra-research/tau2-bench) - Multimodal agent benchmark (text, voice, knowledge)
 From Sierra. The tau-bench series tests the full tool-agent-user interaction loop, not just code generation. tau3 adds full-duplex voice evaluation (OpenAI, Gemini, xAI providers) and a knowledge domain with configurable RAG pipelines. Live leaderboard at taubench.com. 1206 stars, MIT. 75+ task quality fixes based on SABER analysis (Cuadron et al., 2025). Most agent benchmarks test code. tau-bench tests airline, retail, and banking domains, the interaction patterns agents actually face in production. The voice evaluation layer is new, nobody else benchmarks full-duplex voice agents systematically.
@@ -85,6 +99,10 @@ From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-le
 ### [microsandbox](https://github.com/superradcompany/microsandbox) - Local-first programmable sandboxes for AI agents
 6.1k stars, Rust, Apache 2.0. Runs entirely on your machine, no cloud dependency. Most agent sandboxes assume cloud infra (E2B, CubeSandbox, Modal). microsandbox targets dev teams with data sovereignty constraints or offline requirements. Rust core = small footprint, fast spin-up. The "run agents locally but safely" pattern fills a gap the cloud-first sandboxes leave open.
 
+
+
+### [Varlock](https://github.com/dmno-dev/varlock) - AI-safe .env files
+Splits config into schema definitions (agents can read) and secret values (humans only). Agents understand the configuration surface without ever touching credentials. 3.4K stars, MIT, TypeScript.
 
 ### [LiteLLM Agent Platform](https://github.com/BerriAI/litellm-agent-platform) - Self-hosted agent sandboxing with credential vault
 From the LiteLLM team (20k+ stars on their LLM proxy). Agents run in isolated Kubernetes pods with a vault proxy that swaps stub credentials for real ones on every outbound TLS call. The vault is the key insight: agents get bypass-permissions without ever seeing actual keys. Supports Claude Code, Codex, Hermes. Uses kubernetes-sigs/agent-sandbox CRDs. Most sandboxing solutions handle isolation; this one handles the harder problem of credential management inside the sandbox. MIT, TypeScript, 438 stars.
