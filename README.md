@@ -62,6 +62,11 @@ Lightweight alternative that runs agents in isolated containers by default. Conn
 Agents run in WASM sandboxes with explicit permission boundaries. Memory-safe runtime handling credentials and tool execution. CodeAct + RLM patterns built in. 12.3K stars, Apache 2.0, Rust. The WASM plugin model means third-party extensions cannot escape their sandbox.
 
 
+
+
+### [DeepAgents](https://github.com/langchain-ai/deepagents) - Batteries-included agent harness from LangChain
+Opinionated agent harness built on LangGraph with planning, sub-agents, filesystem operations, context management, persistent memory, skills, shell access, and MCP tool support out of the box. Model-agnostic, works with any LLM that supports tool calling. 23K stars, MIT, Python + TypeScript. The key difference from raw LangGraph: everything a production agent needs is bundled and tunable. Sub-agents get isolated context windows. Filesystem backend is pluggable (local, sandboxed, remote). The Deep Agents Code CLI is their terminal coding agent, powered by any model. 160 open issues, active community. The layers compose: LangGraph for custom graphs, LangChain create_agent for lightweight harness, DeepAgents for the full package.
+
 ### [memU](https://github.com/NevaMind-AI/memU) - Memory for 24/7 proactive agents
 Purpose-built for always-on agents like OpenClaw. Most agent memory targets chatbots (session context persistence). memU targets the harder problem: agents running 24/7 that need to accumulate state, learn from past runs, and maintain consistency across restarts. 13.6k stars, 1028 forks, Python. Explicitly designed for OpenClaw-compatible proactive agents. While Memori and Engram focus on coding agent memory, memU focuses on background agents that never stop. The proactive-agent memory layer is underserved — this fills it.
 
@@ -83,6 +88,11 @@ From Sierra. The tau-bench series tests the full tool-agent-user interaction loo
 
 ### [agent-belt](https://github.com/jfrog/agent-belt) - Eval framework for coding agents (JFrog)
 CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consensus. Works against Claude Code, Codex, Copilot, or any agent you plug in. From JFrog engineering.
+
+
+
+### [Eval Engineer](https://github.com/Galileo-Agent-Labs/eval-engineer) - Eval skill bundle for Claude Code and Codex
+Open-source skill bundle from Galileo that turns coding agents into eval engineers. Install into a project and Claude Code gets /eval-diagnose, /eval-cost, /eval-audit as slash commands. Codex gets the same as dollar-mentions. The flow: fetch Galileo traces, build a debug packet, run RCA on spans and metrics, make one bounded change, verify the next run improved. MIT, Python. Not a dashboard - an agent skill that knows which artifact to inspect, which metric matters, and whether the fix belongs in the prompt, tool schema, retriever, or config.
 
 ### [Plano](https://github.com/katanemo/plano) - AI-native proxy for agentic apps
 Rust proxy built on Envoy that handles LLM routing, safety guardrails, rate limiting, and cost tracking between your agents and model providers. 6.4k stars. Most teams build this ad-hoc as middleware; Plano gives you a drop-in data plane. The "Envoy for agents" pattern.
