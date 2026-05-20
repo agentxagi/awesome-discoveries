@@ -62,6 +62,13 @@ Dev, debug, eval, and monitor agents from a single Go platform. 5.4k stars from 
 ### [CubeSandbox](https://github.com/TencentCloud/CubeSandbox) - Hardware-isolated sandbox for AI agents
 From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-level isolation. Boots in <60ms, uses <5MB per instance, 2000+ concurrent sandboxes on a single node. E2B SDK compatible. Rust, Apache 2.0, 5.8k stars in 6 weeks. Most agent sandboxes use Docker + seccomp. CubeSandbox uses virtualization, which is fundamentally harder to escape. The security layer production agents need.
 
+### [OpenSandbox](https://github.com/alibaba/OpenSandbox) - Extensible sandbox runtime for AI agents (Alibaba)
+10.7k stars, Apache 2.0, Python. Plugin-based isolation architecture — custom policies for resource limits, network restrictions, and execution boundaries. The agent sandbox space is consolidating: CubeSandbox (Tencent, KVM micro-VMs), OpenSandbox (Alibaba, plugins), microsandbox (Rust, local-first), Sandcastle (TypeScript, multi-provider). OpenSandbox's angle is extensibility over raw isolation. Active commits.
+
+### [microsandbox](https://github.com/superradcompany/microsandbox) - Local-first programmable sandboxes for AI agents
+6.1k stars, Rust, Apache 2.0. Runs entirely on your machine, no cloud dependency. Most agent sandboxes assume cloud infra (E2B, CubeSandbox, Modal). microsandbox targets dev teams with data sovereignty constraints or offline requirements. Rust core = small footprint, fast spin-up. The "run agents locally but safely" pattern fills a gap the cloud-first sandboxes leave open.
+
+
 
 ---
 
