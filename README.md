@@ -82,9 +82,16 @@ From Tencent. Symbolic short-term memory (Mermaid symbol offloading) + 4-layer l
 
 
 
+### [ECC](https://github.com/affaan-m/ECC) - Harness-native operator system for coding agents
+Anthropic hackathon winner. Skills, instincts, memory optimization, security scanning, and research-first development across Claude Code, Codex, Cursor, Gemini, Zed, and GitHub Copilot. 187K stars, MIT, 170+ contributors, 12+ language ecosystems. Not configs — a portable skill/memory layer that works across all major coding agent harnesses. v2.0 adds pub/sub for inter-agent communication. The key insight: treat the agent harness as a platform, build skills that travel across tools.
+
+
 ### [Beads](https://github.com/gastownhall/beads) - Graph issue tracker for coding agents
 From Steve Yegge. Replaces markdown TODO lists with a Dolt-backed SQL database. Every issue is a queryable row, dependencies are graph edges, and old tasks get semantically compacted to save context window. Hash-based IDs prevent merge collisions when multiple agents work the same codebase. Integrations for Claude Code, Codex, Cursor, Windsurf, Factory. Stealth mode for personal use on shared repos. 23.9K stars, MIT, Go, 1582 forks. The compaction feature is essentially memory decay for the issue tracker - old closed tasks get summarized instead of deleted. bd prime gives agents workflow context and persistent memories without re-reading everything.
 ### [agentmemory](https://github.com/rohitg00/agentmemory) - Persistent memory for coding agents with confidence scoring
+
+### [Acontext](https://github.com/memodb-io/Acontext) - Agent skills as a memory layer
+Captures learnings from agent runs as plain markdown skill files. No embeddings, no vector DBs, no API lock-in. "Skill is Memory, Memory is Skill" — skills are files you can read, edit, version with git, share across agents and frameworks. 3.3K stars, Apache 2.0, JavaScript. Self-evolving skills that grow from agent mistakes and successes. Works with LangGraph, Claude, AI SDK, anything that reads files. The polar opposite of opaque vector memory: everything is inspectable.
 Extends Karpathy LLM Wiki pattern with confidence scoring, lifecycle management, knowledge graphs, and hybrid search. MCP-native, works with Claude Code, Cursor, Gemini CLI, Codex CLI, OpenClaw out of the box. 14.3k stars, TypeScript, Apache 2.0. The design doc got 1200 stars on its own. Uses iii engine under the hood. Confidence scoring on memories means agents weigh how much to trust recalled context, not just store-and-retrieve. No vector DB required. The memory layer coding agents actually need: persistent across sessions, queryable via MCP.
 
 
