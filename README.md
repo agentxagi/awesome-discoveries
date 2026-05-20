@@ -139,6 +139,9 @@ Agents access services without ever seeing real keys. CLI vault model that vends
 From Infisical (established secrets management platform). Go-based HTTP proxy that intercepts outbound requests and injects credentials so agents never touch raw secrets. 1232 stars, works with Claude Code, OpenClaw, Hermes, and custom agents. The proxy pattern complements OneCLI (CLI token vending) and LiteLLM (TLS proxy) — three approaches to the same problem. Agent Vault sits at the HTTP layer: any agent making outbound API calls gets creds injected transparently. 11 open issues, active development. If you run agents that call external APIs, you need one of these three tools.
 
 
+
+### [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) - Runtime policy enforcement for AI agents
+From Microsoft. Every tool call, resource access, and inter-agent message evaluated against policy before execution — deterministic, sub-millisecond, auditable. Covers 10/10 OWASP Agentic Top 10. Multi-language SDKs (Python, TypeScript, .NET, Rust, Go). The benchmark says it all: prompt-based safety has 26.67% policy violation rate in red-team testing; application-layer enforcement: 0.00%. Policy as code — define rules declaratively, evaluate before every action. Works with LangChain, CrewAI, AutoGen, OpenAI Agents, Google ADK, Semantic Kernel, AWS Bedrock, 20+ more. 1596 stars, 308 forks, MIT, pushed today. OpenSSF certified. The governance layer production agents need before they touch real systems.
 ---
 
 ## LLM & RAG
