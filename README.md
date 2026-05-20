@@ -86,6 +86,10 @@ From Salesforce AI Research. Treats tool-use as a reinforcement learning problem
 ### [tau3-bench](https://github.com/sierra-research/tau2-bench) - Multimodal agent benchmark (text, voice, knowledge)
 From Sierra. The tau-bench series tests the full tool-agent-user interaction loop, not just code generation. tau3 adds full-duplex voice evaluation (OpenAI, Gemini, xAI providers) and a knowledge domain with configurable RAG pipelines. Live leaderboard at taubench.com. 1206 stars, MIT. 75+ task quality fixes based on SABER analysis (Cuadron et al., 2025). Most agent benchmarks test code. tau-bench tests airline, retail, and banking domains, the interaction patterns agents actually face in production. The voice evaluation layer is new, nobody else benchmarks full-duplex voice agents systematically.
 
+
+### [ClawBench](https://github.com/reacher-z/ClawBench) - Browser agent benchmark on 153 real-world tasks
+Open-source benchmark for browser AI agents across 144 live websites. Top score is 33.3% — the best agents fail on 2 out of 3 everyday web tasks. 5-layer recording (screenshot, DOM, network, console, a11y tree), DOM-match + LLM judge for scoring. Published as arXiv paper, HuggingFace Daily Paper. Dataset on HuggingFace. Most agent benchmarks test code generation; ClawBench tests the thing users actually want: navigate real websites and complete multi-step tasks. 310 stars, Apache 2.0, Python.
+
 ### [agent-belt](https://github.com/jfrog/agent-belt) - Eval framework for coding agents (JFrog)
 CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consensus. Works against Claude Code, Codex, Copilot, or any agent you plug in. From JFrog engineering.
 
@@ -99,6 +103,10 @@ Rust proxy built on Envoy that handles LLM routing, safety guardrails, rate limi
 
 ### [Cozeloop](https://github.com/coze-dev/coze-loop) - Full-lifecycle agent optimization
 Dev, debug, eval, and monitor agents from a single Go platform. 5.4k stars from ByteDance's Coze team. Most tools do eval or observability. Cozeloop does both plus prompt management and a playground for rapid iteration. Closes the feedback loop between monitoring and improvement.
+
+
+### [Laminar](https://github.com/lmnr-ai/lmnr) - Open-source agent observability (YC S24)
+OpenTelemetry-native observability platform built in Rust. 1 line of code to trace Vercel AI SDK, LangChain, OpenAI, Anthropic, Gemini, Browser Use. Traces + evals + monitoring + SQL access to all data. Self-hostable via Docker compose. The Rust core handles high-throughput agent traces. The monitoring layer uses natural language event definitions — not metric thresholds. 2917 stars, Apache 2.0. Compared to Langfuse (Python-based), Laminar is Rust-native and OpenTelemetry-first. If you're running agents in production and need to know what they're doing, this is the stack.
 
 ### [CubeSandbox](https://github.com/TencentCloud/CubeSandbox) - Hardware-isolated sandbox for AI agents
 From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-level isolation. Boots in <60ms, uses <5MB per instance, 2000+ concurrent sandboxes on a single node. E2B SDK compatible. Rust, Apache 2.0, 5.8k stars in 6 weeks. Most agent sandboxes use Docker + seccomp. CubeSandbox uses virtualization, which is fundamentally harder to escape. The security layer production agents need.
