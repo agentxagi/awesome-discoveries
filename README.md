@@ -120,6 +120,9 @@ From the LiteLLM team (20k+ stars on their LLM proxy). Agents run in isolated Ku
 ### [OneCLI](https://github.com/onecli/onecli) - Open-source credential vault for AI agents
 Agents access services without ever seeing real keys. CLI vault model that vends short-lived session tokens instead of raw secrets. MCP-compatible, works with OpenClaw and Hermes. TypeScript + Rust, Apache 2.0, 2.2k stars. The credential management problem is agent infra's biggest unsolved gap — most teams put API keys in env vars and hope. OneCLI intercepts at the tool layer. Complements LiteLLM's vault proxy (TLS interception) with a CLI-level token vending model. Together they represent a new infra layer: credential management purpose-built for agents.
 
+### [Infisical Agent Vault](https://github.com/Infisical/agent-vault) - HTTP credential proxy for AI agents
+From Infisical (established secrets management platform). Go-based HTTP proxy that intercepts outbound requests and injects credentials so agents never touch raw secrets. 1232 stars, works with Claude Code, OpenClaw, Hermes, and custom agents. The proxy pattern complements OneCLI (CLI token vending) and LiteLLM (TLS proxy) — three approaches to the same problem. Agent Vault sits at the HTTP layer: any agent making outbound API calls gets creds injected transparently. 11 open issues, active development. If you run agents that call external APIs, you need one of these three tools.
+
 
 ---
 
@@ -179,3 +182,7 @@ From evilsocket (bettercap creator). Reimplements Cloudflare's Project Glasswing
 
 ### [SmallCode](https://github.com/Doorman11991/smallcode) - Coding agent for small local models (7B-20B)
 Terminal-native agent that compensates for small model limitations instead of assuming frontier hardware. Budget-managed context, forgiving multi-format tool-call parser, TODO-file decomposed planning, search-and-replace patches instead of full file rewrites. 87% benchmark with 4B-active model. RTK (Rust Token Killer) rewrites bash commands for 60-90% token savings. Works with Ollama, LM Studio, any OpenAI-compatible endpoint. 746 stars in 2 days, MIT, JavaScript. Most coding agents target Claude/GPT-5. SmallCode targets the other end: a Mac Mini running a 7B model that can still ship real code.
+
+### [Obsidian Mind](https://github.com/breferrari/obsidian-mind) - Obsidian vault as persistent agent memory
+Uses Obsidian's graph view, backlinks, and search as the memory interface for coding agents. Agents write structured markdown notes; humans browse and curate in the same vault. The bidirectional flow matters: agents accumulate knowledge during sessions, humans correct it in Obsidian, agents read back the corrections on next run. Works with Claude Code, Codex CLI, Gemini CLI. 2592 stars, MIT, TypeScript, 327 forks. Part of the memory-as-filesystem pattern but with a polished UI layer. If you already use Obsidian, this turns your existing workflow into agent memory.
+
