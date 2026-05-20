@@ -29,7 +29,11 @@ O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e pr
 ### Multi-Agent Systems
 > Orquestracao, handoffs, memoria compartilhada, circuit breakers
 
-### Agent Infrastructure
+#
+### [Forge](https://github.com/antoinezambelli/forge) - Reliability guardrails for local model agents
+Lifts 8B local models to 86.5% on multi-step agentic evals. Rescue parsing catches bad tool calls, step enforcement prevents skipped steps, VRAM-aware budgets compact context before OOM. Three modes: full WorkflowRunner, guardrails middleware for your own loop, or drop-in proxy server. 952 stars, MIT, Python. Works with Ollama, llama-server, Llamafile, Anthropic. The ablation study (N=50) shows each guardrail contributes measurably. Most agent tooling assumes frontier models. Forge assumes you're running local and handles everything that breaks.
+
+## Agent Infrastructure
 > Monitoring, reliability, security, cost management, testing
 
 ### Ferramentas & CLIs
