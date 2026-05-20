@@ -149,6 +149,9 @@ From Infisical (established secrets management platform). Go-based HTTP proxy th
 
 ### [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) - Runtime policy enforcement for AI agents
 From Microsoft. Every tool call, resource access, and inter-agent message evaluated against policy before execution — deterministic, sub-millisecond, auditable. Covers 10/10 OWASP Agentic Top 10. Multi-language SDKs (Python, TypeScript, .NET, Rust, Go). The benchmark says it all: prompt-based safety has 26.67% policy violation rate in red-team testing; application-layer enforcement: 0.00%. Policy as code — define rules declaratively, evaluate before every action. Works with LangChain, CrewAI, AutoGen, OpenAI Agents, Google ADK, Semantic Kernel, AWS Bedrock, 20+ more. 1596 stars, 308 forks, MIT, pushed today. OpenSSF certified. The governance layer production agents need before they touch real systems.
+
+### [OpenViking](https://github.com/volcengine/OpenViking) - Context database for AI agents
+From ByteDance/Volcengine. Unifies memory, resources, and skills under a filesystem paradigm instead of fragmented vector storage. Three-tier loading (L0 raw → L1 structured → L2 summaries) loads context on demand instead of dumping everything. Directory recursive retrieval combines directory positioning with semantic search. Retrieval trajectories are visible and debuggable — you can see why the agent fetched what it fetched. Auto session management compresses conversations and extracts long-term memory. Rust CLI + Python package. 24.2K stars, AGPL, 1815 forks, active since Jan 2026. The filesystem metaphor is genuinely different from TencentDB (progressive compression) and Memori (structured state): OpenViking treats all agent context as files in a hierarchy, making it queryable, observable, and tiered by default.
 ---
 
 ## LLM & RAG
