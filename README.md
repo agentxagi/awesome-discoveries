@@ -96,6 +96,9 @@ From Salesforce AI Research. Treats tool-use as a reinforcement learning problem
 
 ### [tau3-bench](https://github.com/sierra-research/tau2-bench) - Multimodal agent benchmark (text, voice, knowledge)
 From Sierra. The tau-bench series tests the full tool-agent-user interaction loop, not just code generation. tau3 adds full-duplex voice evaluation (OpenAI, Gemini, xAI providers) and a knowledge domain with configurable RAG pipelines. Live leaderboard at taubench.com. 1206 stars, MIT. 75+ task quality fixes based on SABER analysis (Cuadron et al., 2025). Most agent benchmarks test code. tau-bench tests airline, retail, and banking domains, the interaction patterns agents actually face in production. The voice evaluation layer is new, nobody else benchmarks full-duplex voice agents systematically.
+### [MCPMark](https://github.com/eval-sys/mcpmark) - Stress-testing benchmark for MCP tool-use
+Evaluates agents across real MCP servers (Notion, GitHub, Filesystem, Postgres, Playwright) with isolated sandboxes and unified metrics. 419 stars, Apache 2.0, Python. Has arXiv paper (2509.24002) and HuggingFace trajectory dataset. DeepSeek v3.2 used MCPMark in their evaluation. Pinned MCP server versions for reproducibility. Leaderboard: gpt-5-high 51.6%, gemini-3-pro 50.6%, deepseek-v3.2-thinking 36.8%. Most agents fail on half the tasks — which means the benchmark measures real capability. Auto-compaction support for long evaluations. 50 easy tasks for smaller open-source models plus harder tasks for frontier. Complements MCP-Universe (RL training) in the evaluation stack.
+
 
 
 ### [ClawBench](https://github.com/reacher-z/ClawBench) - Browser agent benchmark on 153 real-world tasks
