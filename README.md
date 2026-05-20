@@ -53,6 +53,12 @@ Snapshot agent behavior, diff tool calls between runs, catch regressions in CI. 
 ### [agent-belt](https://github.com/jfrog/agent-belt) - Eval framework for coding agents (JFrog)
 CLI-based, runs multi-turn scenarios with rich assertions and multi-judge consensus. Works against Claude Code, Codex, Copilot, or any agent you plug in. From JFrog engineering.
 
+### [Plano](https://github.com/katanemo/plano) - AI-native proxy for agentic apps
+Rust proxy built on Envoy that handles LLM routing, safety guardrails, rate limiting, and cost tracking between your agents and model providers. 6.4k stars. Most teams build this ad-hoc as middleware; Plano gives you a drop-in data plane. The "Envoy for agents" pattern.
+
+### [Cozeloop](https://github.com/coze-dev/coze-loop) - Full-lifecycle agent optimization
+Dev, debug, eval, and monitor agents from a single Go platform. 5.4k stars from ByteDance's Coze team. Most tools do eval or observability. Cozeloop does both plus prompt management and a playground for rapid iteration. Closes the feedback loop between monitoring and improvement.
+
 ---
 
 ## LLM & RAG
