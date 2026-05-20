@@ -258,3 +258,9 @@ Uses Obsidian's graph view, backlinks, and search as the memory interface for co
 ### [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) - Browser debugging for AI agents via MCP
 From Google. Lets coding agents (Claude, Cursor, Codex, Gemini) control and inspect a live Chrome browser through MCP. Performance traces, network requests, screenshots, source-mapped console errors. Uses Puppeteer for reliable automation. 40K stars, npm package, MIT. The missing link between coding agents and real browser debugging. Your agent records a trace, reads the network waterfall, checks console errors with source-mapped stack traces. Also ships a CLI for non-MCP use.
 
+
+### [shellfirm](https://github.com/kaplanelad/shellfirm) - Safety guardrails for AI coding agents and terminal commands
+Intercepts dangerous shell commands before execution. Challenge-response confirmation, blast radius detection (shows what `rm -rf ./src` would actually delete), safe alternative suggestions. MCP server integration for Claude Code and Cursor. Context-aware: harder challenges when SSH'd in, running as root, on protected branches, or in production K8s clusters. 100+ patterns across 9 ecosystems. Project policies via `.shellfirm.yaml`. 910 stars, Apache 2.0, Rust. The gap filler between AI coding agents and `rm -rf`.
+
+### [AgentDoG](https://github.com/AI45Lab/AgentDoG) - Trajectory-level risk diagnosis for autonomous agents
+Analyzes full execution traces, not just final output. Catches safety risks that emerge across multiple steps in combination. Three-axis taxonomy: Risk Source, Failure Mode, Real-World Harm. Ships trained models (4B/7B/8B based on Qwen3, Qwen2.5, Llama3.1). ATBench dataset with 500 trajectories, 1575 unique tools. Outperforms R-Judge, ASSE-Safety baselines. 470 stars, Python, arXiv paper (2601.18491). From AI45Lab (Shanghai AI Laboratory). Most agent safety tools classify the output. AgentDoG classifies the journey.
