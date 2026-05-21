@@ -323,3 +323,9 @@ Container-free deny-by-default sandbox using Linux kernel primitives (landlock, 
 
 ### [OpenLit](https://github.com/openlit/openlit) - OpenTelemetry-native LLM observability
 Full AI engineering observability: traces, GPU monitoring, guardrails, evaluations, prompt management, vault. 50+ integrations with LLM providers, vector DBs, agent frameworks. 2459 stars, Apache 2.0, TypeScript. The OTel-native approach means teams already running OpenTelemetry add agent observability as a config change, not a new tool.
+
+### [RAPTOR](https://github.com/gadievron/raptor) - Autonomous security research framework built on Claude Code
+Chains Semgrep, CodeQL, AFL++, rr debugger, and LLM vulnerability validation into a single autonomous workflow. Authors: Gadi Evron (Israeli CERT founder), Daniel Cuthbert (BSides London), Halvar Flake (reverse engineering legend), Michael Bargury (OWASP). 2694 stars, MIT, Python. The /agentic command runs full scan → validate → exploit → patch autonomously. 6-stage validation pipeline (Stages 0-F). The LLM connects findings across separate scanner outputs — that's the actual value-add in agent-assisted security.
+
+### [Nexent](https://github.com/ModelEngine-Group/nexent) - Zero-code agent generation platform
+Describe your agent in natural language, get a production-grade agent with tools, skills, memory, constraints, and feedback loops auto-generated. Harness Engineering principles baked in. 4600 stars, 602 forks, MIT, Python. Docker + K8s deployment. The control plane gives every generated agent guardrails, cost tracking, and feedback loops by default. Competes with LangFlow by skipping drag-and-drop entirely.
