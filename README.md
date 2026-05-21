@@ -40,6 +40,10 @@ Mono-repo architecture: unified multi-provider LLM API (OpenAI/Anthropic/Google)
 ### [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Official lightweight multi-agent framework from OpenAI
 Provider-agnostic SDK supporting 100+ LLMs. Sandbox Agents run work in containers over long horizons. Guardrails for input/output validation. Built-in tracing UI, human-in-the-loop, session management, and realtime voice agents with gpt-realtime-2. 26K stars, 4072 forks, MIT, Python. OpenAI SDK-level answer to CrewAI and LangGraph. Notably provider-agnostic, not locked to OpenAI models. The sandbox agent pattern pairs well with CubeSandbox and microsandbox.
 
+
+### [CCCC](https://github.com/ChesterRa/cccc) - Local-first multi-agent collaboration kernel
+Single pip install, zero infrastructure. Append-only ledger for durable state, read receipts, delivery tracking, and remote ops via Telegram/Slack bridges. Foreman + peer role model with permission boundaries. Multi-runtime: Claude Code, Codex CLI, ChatGPT Web, Gemini CLI, and 5 more. Web UI, CLI, MCP tools, IM bridges all operate on the same daemon-owned state. 852 stars, Apache 2.0, Python. The distributed systems approach to multi-agent coding: durable ledger, delivery semantics, auditable history. Different from Agent of Empires (session management) and HiClaw (Matrix rooms) — CCCC treats coordination as a messaging problem with guarantees.
+
 ## Agent Infrastructure
 > Monitoring, reliability, security, cost management, testing
 
@@ -111,6 +115,10 @@ From Steve Yegge. Replaces markdown TODO lists with a Dolt-backed SQL database. 
 Captures learnings from agent runs as plain markdown skill files. No embeddings, no vector DBs, no API lock-in. "Skill is Memory, Memory is Skill" — skills are files you can read, edit, version with git, share across agents and frameworks. 3.3K stars, Apache 2.0, JavaScript. Self-evolving skills that grow from agent mistakes and successes. Works with LangGraph, Claude, AI SDK, anything that reads files. The polar opposite of opaque vector memory: everything is inspectable.
 Extends Karpathy LLM Wiki pattern with confidence scoring, lifecycle management, knowledge graphs, and hybrid search. MCP-native, works with Claude Code, Cursor, Gemini CLI, Codex CLI, OpenClaw out of the box. 14.3k stars, TypeScript, Apache 2.0. The design doc got 1200 stars on its own. Uses iii engine under the hood. Confidence scoring on memories means agents weigh how much to trust recalled context, not just store-and-retrieve. No vector DB required. The memory layer coding agents actually need: persistent across sessions, queryable via MCP.
 
+
+
+### [Create Context Graph](https://github.com/neo4j-labs/create-context-graph) - Graph-based reasoning memory for agents
+From Neo4j Labs. CLI scaffolds full-stack agent apps with graph-based memory in under 5 minutes. Pick your domain (healthcare, finance, etc.), pick your framework (Strands, PydanticAI, etc.), get FastAPI backend + Next.js frontend + interactive graph visualization. SaaS data import from GitHub, Slack, Gmail, Jira, Notion, Salesforce, Linear. MCP server for Claude Desktop. Custom domains via LLM-generated ontologies. 599 stars, Apache 2.0, Python. The graph approach means relationships between entities are first-class — agents traverse connections, not just retrieve similar vectors. Different from flat-file memory (Acontext), correction logs (Pro Workflow), or video memory (Memvid). Complements CodeGraph (code structure) by handling general domain knowledge.
 
 ## Agent Infrastructure
 
