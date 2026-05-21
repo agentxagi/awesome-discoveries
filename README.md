@@ -269,5 +269,8 @@ Analyzes full execution traces, not just final output. Catches safety risks that
 
 Replaces RAG pipelines with a serverless memory layer. Stores embeddings in MP4 video frames with FAISS indexing. One file, zero server, instant retrieval. 15.5K stars, Rust+Python, Apache 2.0. A legitimate alternative to Pinecone/Weaviate for agent memory where you don't want infrastructure.
 
+### [Pipelock](https://github.com/luckyPipewrench/pipelock) - AI agent firewall with mediator-signed action receipts
+Sits inline between coding agents and the network as an egress proxy. Scans MCP traffic bidirectionally (48 credential patterns, 29 injection patterns with 6-pass normalization). Generates cryptographic receipts signed outside the agent trust boundary — evidence does not depend on the agent attesting to itself. CNCF Landscape listed, OpenSSF Silver, SLSA provenance. Process containment support. Works with Claude Code, Codex, Cursor, Cline, and agent SDKs (OpenAI, Google ADK, LangGraph). 618 stars, Apache 2.0, Go. The security model most agent stacks are missing: not what the model says, but what the agent does on the network.
+
 ### [Emdash](https://github.com/generalaction/emdash) - Multi-agent dev environment with worktree isolation
 Agentic Development Environment (ADE) that runs multiple coding agents in parallel, each in its own git worktree. 27 CLI providers: Claude Code, Codex, Gemini, Hermes, Cursor, Devin, Droid, Jules, Junie, Kiro, Amp, and more. Pass Linear/GitHub/Jira tickets directly. Review diffs, run tests, create PRs, see CI/CD, merge — all from one desktop app. YC W26. Apache 2.0.
