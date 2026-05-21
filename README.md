@@ -92,6 +92,9 @@ Multi-agent coordination using Matrix protocol. Manager-Workers architecture wit
 ### [DeepAgents](https://github.com/langchain-ai/deepagents) - Batteries-included agent harness from LangChain
 Opinionated agent harness built on LangGraph with planning, sub-agents, filesystem operations, context management, persistent memory, skills, shell access, and MCP tool support out of the box. Model-agnostic, works with any LLM that supports tool calling. 23K stars, MIT, Python + TypeScript. The key difference from raw LangGraph: everything a production agent needs is bundled and tunable. Sub-agents get isolated context windows. Filesystem backend is pluggable (local, sandboxed, remote). The Deep Agents Code CLI is their terminal coding agent, powered by any model. 160 open issues, active community. The layers compose: LangGraph for custom graphs, LangChain create_agent for lightweight harness, DeepAgents for the full package.
 
+
+### [cc-sdd](https://github.com/gotalab/cc-sdd) - Spec-Driven Development harness for coding agents
+Turns approved specs into long-running autonomous implementation. Minimal, adaptable SDD harness with agent skills for Claude Code, Codex, Cursor, Copilot, Gemini CLI. 3.3K stars, MIT, TypeScript. The spec-as-contract pattern constrains agents before they start coding. You write what you want, approve it, then the agent implements autonomously. Different from prompt-and-hope approaches.
 ### [Ruflo](https://github.com/ruvnet/ruflo) - Multi-agent swarm orchestration for Claude
 Agent orchestration platform for deploying coordinated Claude Code and Codex instances. Self-learning swarm intelligence with memory persistence, RAG integration, and neural coordination. 53K stars, 22M+ npm downloads, TypeScript. Formerly claude-flow. Ships plugins for Claude Code and Codex. The swarm pattern: specialized agents coordinate through shared memory and message passing. Each agent gets isolated context but can access swarm state. Active development (commits daily). The key difference from single-agent tools: Ruflo manages the coordination layer between agents, not just individual agent execution.
 
@@ -257,6 +260,9 @@ From Matt Pocock. `sandcastle.run()` spins up an isolated agent in Docker, Podma
 
 
 ### [DeerFlow](https://github.com/bytedance/deer-flow) - Long-horizon SuperAgent by ByteDance
+
+### [Agent Orchestrator](https://github.com/ComposioHQ/agent-orchestrator) - Parallel coding agent fleet manager
+Plans tasks, spawns coding agents via tmux + git worktrees, and handles CI fixes, merge conflicts, and code reviews autonomously. Built for Claude Code and Codex. 7K stars, MIT, TypeScript. The worktree isolation pattern prevents agents from stomping on each other's files. Each agent gets its own branch and terminal. Orchestrator merges back when ready. Complements contrabass (TUI-based) and Sandcastle (sandbox-based) — Agent Orchestrator focuses on the fleet management layer: task planning, conflict resolution, and CI loop.
 Researches, codes, and creates across tasks that take minutes to hours. Architecture: sandboxes, persistent memories, tools, skills, subagents, and a message gateway. 68K+ stars, Python, actively maintained by ByteDance. Most agent frameworks handle single-turn or short chains. DeerFlow is built for multi-hour autonomous workflows with checkpoint/resume. The SuperAgent pattern — one orchestrator delegating to specialized subagents with shared memory and sandboxed execution.
 
 
@@ -272,6 +278,9 @@ Intercepts and compresses tool output before it hits the model. Claims 98% reduc
 ### [Engram](https://github.com/Gentleman-Programming/engram) - Persistent memory for coding agents via MCP
 Agent-agnostic Go binary with SQLite + FTS5. Exposes persistent memory through MCP - coding agents get recall of past decisions without a vector DB or Redis. 3.6k stars, MIT, single binary deploy. The MCP-native approach means adding memory is one config line, not infrastructure. SQLite is the right tradeoff for coding agents: you need exact recall of past decisions, not semantic similarity. Includes HTTP API, CLI, and TUI for manual inspection.
 
+
+### [ByteRover CLI](https://github.com/campfirein/byterover-cli) - Portable memory layer for coding agents
+MCP server providing persistent context across sessions. Formerly Cipher. Works with Claude Code, Codex, and any agent that supports MCP. 4.7K stars, TypeScript. The "portable" part matters: your agent memory moves with you across tools instead of being locked into one ecosystem. Sits between session-context tools (claude-mem) and full memory infrastructure (Memori).
 ### [ZeroLang](https://github.com/vercel-labs/zerolang) - Agent-first programming language
 From Vercel Labs. What if the primary consumer of a programming language isn't a human but an AI agent? Zero explores this: structured JSON diagnostics that agents can parse, error repair codes, sub-16KB static binaries, explicit capabilities, and a syntax designed to be learned on the fly from examples and compiler feedback. Written in C, Apache 2.0. 3.4k stars in 5 days. Pre-1.0 and intentionally unstable — but the concept shifts how we think about the agent-tooling interface. If agents write code, shouldn't the language be designed for them?
 
