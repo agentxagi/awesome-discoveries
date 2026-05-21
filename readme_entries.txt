@@ -41,3 +41,15 @@
 - [OpenSandbox (Alibaba)](https://github.com/alibaba/OpenSandbox) ⭐N/A — Secure sandbox runtime for AI agents from Alibaba — extensible plugin architecture for isolation, resource limits, and policy enforcement
 - [microsandbox](https://github.com/superradcompany/microsandbox) ⭐N/A — Secure, local, programmable sandboxes for AI agents — runs entirely on your machine, no cloud dependency, Rust API
 - [Memori](https://github.com/MemoriLabs/Memori) ⭐N/A — Agent-native memory infrastructure — LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems
+
+### [Zerolang](https://github.com/vercel-labs/zerolang) ⭐4.1K
+Agent-first programming language by Vercel Labs. Small regular syntax designed for agents to learn on the fly. Structured diagnostics, deterministic tooling, deep stdlib. C, Apache-2.0. `agent-infrastructure`
+
+### [Photo-agents](https://github.com/jmerelnyc/Photo-agents) ⭐1K
+Autonomous self-evolving agents with vision-grounded layered memory. Agents write own skills from real success. Perceive/reason/act loop. Python, MIT. `agents-frameworks`
+
+### [OpenSquilla](https://github.com/opensquilla/opensquilla) ⭐1.3K
+Token-efficient microkernel AI agent. Local model router sends each turn to cheapest capable model. Persistent memory, layered sandbox, web search, on-device embeddings. Python, Apache-2.0. `agents-frameworks`
+
+### [OctoTools](https://github.com/octotools/octotools) ⭐1.5K
+Agentic framework with extensible tool cards for complex reasoning. Planner+executor loop, standardized tool metadata. Python, MIT. `agents-frameworks`
