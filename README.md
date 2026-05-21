@@ -160,10 +160,15 @@ From Tencent Cloud. Not containers — KVM micro-VMs via RustVMM for hardware-le
 10.7k stars, Apache 2.0, Python. Plugin-based isolation architecture — custom policies for resource limits, network restrictions, and execution boundaries. The agent sandbox space is consolidating: CubeSandbox (Tencent, KVM micro-VMs), OpenSandbox (Alibaba, plugins), microsandbox (Rust, local-first), Sandcastle (TypeScript, multi-provider). OpenSandbox's angle is extensibility over raw isolation. Active commits.
 
 ### [microsandbox](https://github.com/superradcompany/microsandbox) - Local-first programmable sandboxes for AI agents
+
+### [nono](https://github.com/always-further/nono) - Capability-based sandbox for AI agents (Rust)
+From the creator of Sigstore (used by PyPI, npm, brew, Maven Central). Capability-level access brokering inside the agent context — no containers, no VMs. Agent multiplexing, snapshots, credential injection, supply chain security. 2440 stars, Apache 2.0, Rust, 152 open issues. Different from microsandbox (VM-based isolation) and Greywall (kernel-enforced): nono brokers fine-grained capabilities, not isolation boundaries. Zero setup, zero latency. Dev alongside nono, deploy anywhere including CI.
 6.1k stars, Rust, Apache 2.0. Runs entirely on your machine, no cloud dependency. Most agent sandboxes assume cloud infra (E2B, CubeSandbox, Modal). microsandbox targets dev teams with data sovereignty constraints or offline requirements. Rust core = small footprint, fast spin-up. The "run agents locally but safely" pattern fills a gap the cloud-first sandboxes leave open.
 
 
 
+### [nono](https://github.com/always-further/nono) - Capability-based sandbox for AI agents (Rust, zero setup)
+From the creator of Sigstore. Capability-level access brokering inside the agent context — no containers, no VMs. Agent multiplexing, snapshots, credential injection, supply chain security. 2440 stars, Apache 2.0, Rust. Different from microsandbox (VM-based isolation) and Greywall (kernel-enforced): nono brokers fine-grained capabilities, not isolation boundaries. Dev alongside nono, deploy anywhere.
 ### [Varlock](https://github.com/dmno-dev/varlock) - AI-safe .env files
 Splits config into schema definitions (agents can read) and secret values (humans only). Agents understand the configuration surface without ever touching credentials. 3.4K stars, MIT, TypeScript.
 
@@ -322,9 +327,15 @@ Intercepts LLM API calls and compresses token usage by 60-90% on common dev comm
 Open-source desktop app for Windows & macOS that installs Claude Code, MCP tools, and Skills in one click. Sandboxed agent execution, multi-model support, Feishu/Slack integration. 1386 stars, MIT, TypeScript. Targets non-terminal users who want agent power without CLI setup friction. Built-in sandbox isolation.
 
 ### [Greywall](https://github.com/GreyhavenHQ/greywall) - Kernel-enforced sandbox for AI coding agents
+
+### [code-on-incus](https://github.com/mensfeld/code-on-incus) - Isolated machines for AI agents via Incus/LXD
+Each agent gets a full system container with root, systemd, Docker-in-Docker. Credentials stay on host, never exposed. Active defense auto-detects reverse shells, credential scanning, data exfiltration. 519 stars, MIT, Go. By Karafka maintainer. Lighter than VMs, more complete than Docker (systemd, proper filesystem permissions). Persistent across restarts. Practical middle ground for teams running multiple agents on bare metal.
 Container-free deny-by-default sandbox using Linux kernel primitives (landlock, seccomp) for filesystem, network, and syscall isolation. No Docker overhead. 189 stars, Apache 2.0, Go. Lighter than container-based sandboxes, more restrictive than command interceptors. Pairs with Pipelock for kernel + network two-layer security.
 
 ### [OpenLit](https://github.com/openlit/openlit) - OpenTelemetry-native LLM observability
+
+### [Opik](https://github.com/comet-ml/opik) - AI observability, evaluation, and optimization
+Full lifecycle: tracing (1 LOC to instrument any framework), automated evaluations (LLM-as-judge, heuristics, comparison), prompt optimization, and production dashboards. Covers RAG chatbots, code assistants, and multi-agent systems. 19.3K stars, Apache 2.0, Python, 1481 forks. By Comet. Self-hostable. Complements Laminar (OTel-native, Rust core) with broader eval and prompt optimization coverage.
 Full AI engineering observability: traces, GPU monitoring, guardrails, evaluations, prompt management, vault. 50+ integrations with LLM providers, vector DBs, agent frameworks. 2459 stars, Apache 2.0, TypeScript. The OTel-native approach means teams already running OpenTelemetry add agent observability as a config change, not a new tool.
 
 ### [RAPTOR](https://github.com/gadievron/raptor) - Autonomous security research framework built on Claude Code
