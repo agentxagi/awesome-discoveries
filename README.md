@@ -28,6 +28,7 @@
 - **[MemOS](https://github.com/MemTensor/MemOS)** (★0) — Self-evolving memory OS for LLM and AI agents. Hybrid retrieval (keyword + vector + graph), cross-task skill reuse, 35.24% token savings.
 
 ## Agent Security
+- **[audit (evilsocket)](https://github.com/evilsocket/audit)** (★397) — An 8-stage vulnerability-discovery agent. Reimplements Cloudflare's Project Glasswing pipeline with many narrow agents, adversarial validation, and reachability tracing. By the bettercap creator. MIT, Python.
 
 - **[AiSOC](https://github.com/beenuar/AiSOC)** (★0) — Open-source AI-powered Security Operations Center. Alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable. Python + Next.js.
 - **[agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit)** (★0) — Microsoft AI Agent Governance Toolkit. Policy enforcement, zero-trust identity, execution sandboxing, reliability engineering for autonomous agents. Covers 10/10 OWASP Agentic Top 10. Python, MIT.
