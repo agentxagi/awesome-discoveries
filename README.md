@@ -354,3 +354,5 @@ Describe your agent in natural language, get a production-grade agent with tools
 
 ### [Agent Device](https://github.com/callstackincubator/agent-device) - Device automation CLI for AI agents
 Gives coding agents CLI control over iOS, Android, TV, and desktop apps. Token-efficient accessibility snapshots instead of screenshots. Agents read compact UI trees, locate elements by ref, perform actions. Works with Claude Code, Codex, Cursor, Windsurf. MCP router built in. Turns exploratory testing into reproducible .ad e2e tests. 2189 stars, MIT, TypeScript. By Callstack. The mobile/device counterpart to Vercel's agent-browser.
+### [Slopless](https://github.com/agent-quality-controls/slopless) - Deterministic AI slop linter for Markdown
+50+ textlint rules that catch AI-generated prose patterns without calling an LLM. Installable as a Codex or Claude Code skill. CI-ready with structured JSON output.
