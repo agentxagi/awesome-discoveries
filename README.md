@@ -304,3 +304,9 @@ Run Claude Code, Codex, Gemini, Cursor, and 10+ more coding agents in parallel. 
 
 ### [Pro Workflow](https://github.com/rohitg00/pro-workflow) - Self-correcting memory for Claude Code
 Every correction becomes a permanent rule in SQLite with FTS5 search. After 50 sessions, correction rate drops near zero. Auto-research loop grows knowledge wikis overnight. 34 skills, 37 hook scripts. Works with Claude Code, Cursor, and 32+ agents via SkillKit. MIT, JavaScript, 2189 stars. Different from Acontext (skills-as-markdown) and Memori (structured state): Pro Workflow focuses on what the agent got wrong, not what it learned.
+### [CodeGraph](https://github.com/colbymchenry/codegraph) - Pre-indexed code knowledge graph for coding agents
+Pre-indexes symbol relationships, call graphs, and code structure so coding agents query the graph instead of scanning files with grep/glob/read. Benchmarked across 7 real codebases in 7 languages: ~35% token cost reduction, ~70% fewer tool calls. Works with Claude Code, Cursor, Codex CLI, OpenCode. 100% local, zero cloud dependency. 10.2K stars, MIT, TypeScript, 631 forks, 76 open issues. The context compression layer coding agents need — same problem Acontext and Codebase Chat tackle from different angles, but CodeGraph uses a proper graph model instead of markdown files or conversation history.
+
+### [RTK](https://github.com/rtk-ai/rtk) - CLI proxy for LLM token compression
+Intercepts LLM API calls and compresses token usage by 60-90% on common dev commands. Single Rust binary, zero dependencies, works as a transparent proxy between agents and model providers. Works with Claude Code, Codex, Cursor, and any CLI agent. 51.9K stars, Apache 2.0, 3158 forks, 976 open issues. The mechanism: intercept at the transport layer, compress what can be compressed, pass through what cannot. Pairs with CodeGraph (smarter context) — together they attack token cost from both sides: less context needed, and less tokens per context.
+
