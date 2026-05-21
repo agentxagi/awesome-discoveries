@@ -71,3 +71,9 @@ Google's open-source MCP server for databases. 20+ backends (PostgreSQL, MySQL, 
 - [Greywall](https://github.com/GreyhavenHQ/greywall) — Container-free, deny-by-default sandbox for AI coding agents. Kernel-enforced isolation. ★189
 - [Hazmat](https://github.com/dredozubov/hazmat) — macOS containment for AI agents with TLA+ formal verification. Kernel sandbox + pf firewall. ★114
 - [Sandboxed.sh](https://github.com/Th0rgal/sandboxed.sh) — Runtime for autonomous on-chain AI agents. Isolated sandboxes + encrypted secrets. ★432
+
+- [GBrain — Garry Tan's OpenClaw Agent Brain](https://github.com/garrytan/gbrain) — 18K★. Fat Skills, Fat Code, Thin Harness architecture. 100K pages structured knowledge. TypeScript, MIT.
+- [Google Stitch Skills](https://github.com/google-labs-code/stitch-skills) — 5.6K★. Agent Skills standard library by Google Labs. Standard format for cross-framework agent behaviors. TypeScript.
+- [bb-browser](https://github.com/epiral/bb-browser) — 5.4K★. Browser as MCP API for AI agents. CLI + MCP server. 36 platforms, 103 commands. TypeScript.
+- [Casdoor](https://github.com/casdoor/casdoor) — 13.6K★. Agent-first IAM with MCP gateway. OAuth, OIDC, SAML, WebAuthn, MFA for agent identity. Go.
+- [Agent Sandbox Taxonomy](https://github.com/kajogo777/the-agent-sandbox-taxonomy) — 74★. Scoring framework for evaluating agent sandboxes. 7 defense layers, 7 threat categories. Go.
