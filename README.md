@@ -73,6 +73,9 @@ Lightweight alternative that runs agents in isolated containers by default. Conn
 
 
 
+
+### [OpenHuman](https://github.com/tinyhumansai/openhuman) - Desktop-first personal AI agent with 118+ integrations
+Desktop app that connects to Gmail, Notion, GitHub, Slack, Calendar via one-click OAuth. Auto-fetch syncs fresh data every 20 minutes into a local Memory Tree (SQLite). Obsidian-compatible vault for browsing. TokenJuice compression cuts cost up to 80%. Native voice with Google Meet agent. Model routing per task. Rust/Tauri, GPL-3.0, 23.9K stars, 2152 forks. The zero-config context building is the differentiator: connect accounts once, the agent builds its own knowledge base. Explicitly competes with Hermes Agent, OpenClaw, and Claude Cowork.
 ### [IronClaw](https://github.com/nearai/ironclaw) - Privacy-first Agent OS in Rust
 Agents run in WASM sandboxes with explicit permission boundaries. Memory-safe runtime handling credentials and tool execution. CodeAct + RLM patterns built in. 12.3K stars, Apache 2.0, Rust. The WASM plugin model means third-party extensions cannot escape their sandbox.
 
