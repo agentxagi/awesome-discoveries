@@ -53,3 +53,15 @@ Token-efficient microkernel AI agent. Local model router sends each turn to chea
 
 ### [OctoTools](https://github.com/octotools/octotools) ⭐1.5K
 Agentic framework with extensible tool cards for complex reasoning. Planner+executor loop, standardized tool metadata. Python, MIT. `agents-frameworks`
+
+### TradingAgents
+Multi-agent LLM financial trading framework. Research Desk, Quant Team, Trading Floor, Risk Management — each role is a separate LLM agent. Bull/bear debate mechanism between agents. Python, MIT.
+⭐ 78,109 | [GitHub →](https://github.com/TauricResearch/TradingAgents) | `agents-frameworks`
+
+### zeroclaw
+Fast, small, fully autonomous AI personal assistant infrastructure. Rust-based. Deploy anywhere, swap anything. Real sandboxing, not theater.
+⭐ 31,500 | [GitHub →](https://github.com/zeroclaw-labs/zeroclaw) | `agent-infrastructure`
+
+### MCP Toolbox for Databases
+Google's open-source MCP server for databases. 20+ backends (PostgreSQL, MySQL, BigQuery, Spanner, MongoDB, Redis, Elasticsearch, etc.) via single server. Go, Apache 2.0.
+⭐ 15,296 | [GitHub →](https://github.com/googleapis/mcp-toolbox) | `mcp`
