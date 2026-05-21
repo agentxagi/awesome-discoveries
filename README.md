@@ -310,3 +310,13 @@ Pre-indexes symbol relationships, call graphs, and code structure so coding agen
 ### [RTK](https://github.com/rtk-ai/rtk) - CLI proxy for LLM token compression
 Intercepts LLM API calls and compresses token usage by 60-90% on common dev commands. Single Rust binary, zero dependencies, works as a transparent proxy between agents and model providers. Works with Claude Code, Codex, Cursor, and any CLI agent. 51.9K stars, Apache 2.0, 3158 forks, 976 open issues. The mechanism: intercept at the transport layer, compress what can be compressed, pass through what cannot. Pairs with CodeGraph (smarter context) — together they attack token cost from both sides: less context needed, and less tokens per context.
 
+
+
+### [OpenCowork](https://github.com/OpenCoworkAI/open-cowork) - One-click AI agent desktop app
+Open-source desktop app for Windows & macOS that installs Claude Code, MCP tools, and Skills in one click. Sandboxed agent execution, multi-model support, Feishu/Slack integration. 1386 stars, MIT, TypeScript. Targets non-terminal users who want agent power without CLI setup friction. Built-in sandbox isolation.
+
+### [Greywall](https://github.com/GreyhavenHQ/greywall) - Kernel-enforced sandbox for AI coding agents
+Container-free deny-by-default sandbox using Linux kernel primitives (landlock, seccomp) for filesystem, network, and syscall isolation. No Docker overhead. 189 stars, Apache 2.0, Go. Lighter than container-based sandboxes, more restrictive than command interceptors. Pairs with Pipelock for kernel + network two-layer security.
+
+### [OpenLit](https://github.com/openlit/openlit) - OpenTelemetry-native LLM observability
+Full AI engineering observability: traces, GPU monitoring, guardrails, evaluations, prompt management, vault. 50+ integrations with LLM providers, vector DBs, agent frameworks. 2459 stars, Apache 2.0, TypeScript. The OTel-native approach means teams already running OpenTelemetry add agent observability as a config change, not a new tool.
