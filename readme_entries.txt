@@ -65,3 +65,9 @@ Fast, small, fully autonomous AI personal assistant infrastructure. Rust-based. 
 ### MCP Toolbox for Databases
 Google's open-source MCP server for databases. 20+ backends (PostgreSQL, MySQL, BigQuery, Spanner, MongoDB, Redis, Elasticsearch, etc.) via single server. Go, Apache 2.0.
 ⭐ 15,296 | [GitHub →](https://github.com/googleapis/mcp-toolbox) | `mcp`
+- [OneCLI](https://github.com/onecli/onecli) — Open-source credential vault for AI agents. Agents access services without ever seeing keys. TypeScript + Rust. ★2228
+- [IBM MCP Context Forge](https://github.com/IBM/mcp-context-forge) — AI Gateway, registry, and proxy for MCP, A2A, and REST/gRPC. Unified endpoint with guardrails. ★3752
+- [Infisical Agent Vault](https://github.com/Infisical/agent-vault) — HTTP credential proxy and vault for AI agents. Proxies credentials without model exposure. ★1263
+- [Greywall](https://github.com/GreyhavenHQ/greywall) — Container-free, deny-by-default sandbox for AI coding agents. Kernel-enforced isolation. ★189
+- [Hazmat](https://github.com/dredozubov/hazmat) — macOS containment for AI agents with TLA+ formal verification. Kernel sandbox + pf firewall. ★114
+- [Sandboxed.sh](https://github.com/Th0rgal/sandboxed.sh) — Runtime for autonomous on-chain AI agents. Isolated sandboxes + encrypted secrets. ★432
