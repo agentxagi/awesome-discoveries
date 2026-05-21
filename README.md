@@ -75,3 +75,31 @@ Teams-first multi-agent orchestration for Claude Code. Structured team roles wit
 - [agent-lightning](https://github.com/microsoft/agent-lightning) ★17201 — Microsoft open-source RL trainer for AI agents. Works with LangChain, AutoGen, CrewAI, OpenAI SDK, or plain Python. Captures prompts, tool calls, rewards as structured events. Trains improved prompts or policy weights automatically.
 - [html-anything](https://github.com/nexu-io/html-anything) ★4443 — Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills × 9 surfaces (magazine, deck, poster, XHS/tweet, prototype, data report, Hyperframes). Sandboxed preview, 1-click publish to WeChat/X/Zhihu. Zero API key required.
 - [AiSOC](https://github.com/beenuar/AiSOC) ★1100 — Open-source AI-powered Security Operations Center. Alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable. Python + Next.js.
+
+### holaOS
+Agent OS that turns repeat work into running AI work-streams. Electron-based, MCP-compatible, persistent memory.
+★5.6K | TypeScript | [GitHub](https://github.com/holaboss-ai/holaOS)
+
+### agent-governance-toolkit (Microsoft)
+AI Agent Governance Toolkit — policy enforcement, zero-trust identity, execution sandboxing, reliability engineering. Covers 10/10 OWASP Agentic Top 10.
+★1.7K | Python | MIT | [GitHub](https://github.com/microsoft/agent-governance-toolkit)
+
+### TEN Framework
+Open-source framework for conversational voice AI agents. Multi-modal, real-time voice + video.
+★10.6K | Python | [GitHub](https://github.com/TEN-framework/ten-framework)
+
+### nexent
+Zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles.
+★4.6K | Python | MIT | [GitHub](https://github.com/ModelEngine-Group/nexent)
+
+### boxlite
+Compute substrate for AI agents: lightweight on laptop, elastic to cloud.
+★2.1K | TypeScript | Apache-2.0 | [GitHub](https://github.com/boxlite-ai/boxlite)
+
+### mcpc (Apify)
+Universal CLI client for MCP. Persistent sessions, OAuth 2.1, x402 support.
+★641 | TypeScript | [GitHub](https://github.com/apify/mcpc)
+
+### agent-safehouse
+Sandbox your local AI agents so they can read/write only what they need. Shell-based, minimal.
+★1.8K | Shell | [GitHub](https://github.com/eugene1g/agent-safehouse)
