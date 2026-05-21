@@ -34,6 +34,10 @@
 - **[agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit)** (★0) — Microsoft AI Agent Governance Toolkit. Policy enforcement, zero-trust identity, execution sandboxing, reliability engineering for autonomous agents. Covers 10/10 OWASP Agentic Top 10. Python, MIT.
 - **[agent-safehouse](https://github.com/eugene1g/agent-safehouse)** (★0) — Sandbox your local AI agents so they can read/write only what they need. Shell-based, minimal.
 
+- **[NSA MCP Security Design Considerations](https://www.nsa.gov/Portals/75/documents/Cybersecurity/CSI_MCP_SECURITY.pdf)** — NSA Cybersecurity official security guidance for AI-driven automation using MCP. Implicit trust boundaries, dynamic tool execution risks, hardening steps for MCP deployments. Trending on Twitter with 2.4K+ views.
+- **[HexStrike AI](https://github.com/0x4m4/hexstrike-ai)** (★8,867) — MCP server exposing 150+ cybersecurity tools to AI agents. Automated pentesting, vulnerability discovery, bug bounty automation. Python, MIT.
+- **[Claude Code System Prompts](https://github.com/Piebald-AI/claude-code-system-prompts)** (★10,386) — Full Claude Code system prompt transparency. 27 builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), security review process. Updated per version.
+
 ## Agent Tools
 
 - **[html-anything](https://github.com/nexu-io/html-anything)** (★0) — Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills × 9 surfaces (magazine, deck, poster, XHS/tweet, prototype, data report, Hyperframes). Sandboxed preview, 1-click publish to WeChat/X/Zhihu. Zero API key required.
