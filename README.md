@@ -28,6 +28,8 @@
 - **[MemOS](https://github.com/MemTensor/MemOS)** (★0) — Self-evolving memory OS for LLM and AI agents. Hybrid retrieval (keyword + vector + graph), cross-task skill reuse, 35.24% token savings.
 
 ## Agent Security
+- **[Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)** (★6,543) — 754 structured cybersecurity skills for AI agents. Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF. Works with Claude Code, Copilot, Codex CLI, Cursor, Gemini CLI and 20+ platforms. 26 security domains. Python, Apache 2.0.
+
 - **[audit (evilsocket)](https://github.com/evilsocket/audit)** (★397) — An 8-stage vulnerability-discovery agent. Reimplements Cloudflare's Project Glasswing pipeline with many narrow agents, adversarial validation, and reachability tracing. By the bettercap creator. MIT, Python.
 
 - **[AiSOC](https://github.com/beenuar/AiSOC)** (★0) — Open-source AI-powered Security Operations Center. Alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable. Python + Next.js.
@@ -137,6 +139,8 @@
 
 ## Mcp
 
+- **[MCP Gateway Registry](https://github.com/agentic-community/mcp-gateway-registry)** (★658) — Enterprise-ready MCP Gateway & Registry. Centralizes AI dev tools with secure OAuth authentication, dynamic tool discovery, Keycloak and Entra ID integration, fine-grained access control. TypeScript.
+
 - **[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)** (★0) — Official Chrome DevTools exposed as MCP server — lets coding agents inspect, debug, and profile web apps directly
 - **[MCP Toolbox for Databases](https://github.com/googleapis/mcp-toolbox)** (★0) — Open-source MCP server by Google for databases. Supports PostgreSQL, MySQL, BigQuery, Spanner, MongoDB, Redis, Elasticsearch, ClickHouse, CockroachDB, Oracle, TiDB, Firestore, and more. Go.
 - **[mcpc](https://github.com/apify/mcpc)** (★0) — Universal CLI client for MCP by Apify. Persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output, proxy for AI sandboxes, x402 support.
@@ -178,6 +182,8 @@
 - **[Retrieval Routing: vector + GraphRAG + PageIndex](https://x.com/NullS0S/status/2056383310830735676)** (★0) — Production pattern: route queries across vector RAG, GraphRAG, and PageIndex based on query type using a lightweight classifier before retrieval
 
 ## Security
+
+- **[claudit-sec](https://github.com/HarmonicSecurity/claudit-sec)** (★250) — Single-command security audit for Claude Desktop and Claude Code on macOS. Visibility into MCP servers, extensions, plugins, connectors, scheduled tasks, and permissions. Shell script, zero dependencies.
 
 - **[pentest-ai](https://github.com/0xSteph/pentest-ai)** (★0) — Offensive security MCP server — wraps 205 pentesting tools and 17 specialist agents behind a single MCP interface
 - **[audit (evilsocket)](https://github.com/evilsocket/audit)** (★0) — 8-stage vulnerability discovery agent — reimplements Cloudflare's Project Glasswing pipeline with narrow agents, deliberate disagreement, and reachability tracing
