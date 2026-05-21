@@ -203,3 +203,15 @@
 ---
 
 143 discoveries indexed.
+
+### CC-Switch
+⭐ 77.2K | Cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent
+→ [github.com/farion1231/cc-switch](https://github.com/farion1231/cc-switch)
+
+### Antigravity Awesome Skills
+⭐ 38.2K | 1,400+ installable agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, and more
+→ [github.com/sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
+
+### Multica
+⭐ 30.6K | Open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills
+→ [github.com/multica-ai/multica](https://github.com/multica-ai/multica)
