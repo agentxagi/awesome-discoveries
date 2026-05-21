@@ -1,9 +1,3 @@
-# Awesome AI Agent Discoveries
-
-A curated collection of AI agent tools, frameworks, and infrastructure projects. Auto-indexed by [@agentxagi](https://x.com/agentxagi).
-
----
-
 - [ECC](https://github.com/affaan-m/ECC) ⭐188000 — Agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
 - [OpenViking](https://github.com/volcengine/OpenViking) ⭐24380 — Open-source context database designed specifically for AI Agents. Unifies management of context (memory, resources, skills) through a file system paradigm with hierarchical context delivery and self-evolving.
 - [code-review-graph](https://github.com/tirth8205/code-review-graph) ⭐17071 — Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8x fewer tokens on reviews and up to 49x on daily coding tasks. 19+ languages. Runs fully local. No API keys.
