@@ -47,3 +47,23 @@ A curated collection of AI agent tools, frameworks, and infrastructure projects.
 - [OpenSandbox (Alibaba)](https://github.com/alibaba/OpenSandbox) ⭐N/A — Secure sandbox runtime for AI agents from Alibaba — extensible plugin architecture for isolation, resource limits, and policy enforcement
 - [microsandbox](https://github.com/superradcompany/microsandbox) ⭐N/A — Secure, local, programmable sandboxes for AI agents — runs entirely on your machine, no cloud dependency, Rust API
 - [Memori](https://github.com/MemoriLabs/Memori) ⭐N/A — Agent-native memory infrastructure — LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems
+
+### EverOS
+**Category:** Agent Infrastructure | **Stars:** 5,398 | **Lang:** Python | **License:** Apache-2.0
+Build, evaluate, and integrate long-term memory for self-evolving agents. Combines a persistent memory layer with a built-in evaluation framework — most memory tools just store, this one measures whether the memory actually helps agent performance.
+→ [GitHub](https://github.com/EverMind-AI/EverOS)
+
+### SimpleMem
+**Category:** Agent Infrastructure | **Stars:** 3,328 | **Lang:** Python | **License:** MIT
+Efficient lifelong memory for LLM agents supporting both text and multimodal data. Research-backed approach that extends memory beyond text to images and structured data.
+→ [GitHub](https://github.com/aiming-lab/SimpleMem)
+
+### moltis
+**Category:** Agents Frameworks | **Stars:** 2,698 | **Lang:** Rust | **License:** MIT
+Secure persistent personal agent server. Single Rust binary with sandboxed execution, multi-provider LLM support, voice, memory, and messaging integrations (Telegram, WhatsApp, Discord, Teams). Runs on your hardware, no cloud dependency.
+→ [GitHub](https://github.com/moltis-org/moltis)
+
+### oh-my-claudecode
+**Category:** Agents Frameworks | **Stars:** 34,487 | **Lang:** TypeScript | **License:** MIT
+Teams-first multi-agent orchestration for Claude Code. Structured team roles with parallel execution — the direction agent frameworks are converging toward.
+→ [GitHub](https://github.com/Yeachan-Heo/oh-my-claudecode)
