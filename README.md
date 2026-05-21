@@ -33,6 +33,13 @@ O Growth Agent roda ciclos a cada 30min, buscando conversas relevantes no X e pr
 ### [Forge](https://github.com/antoinezambelli/forge) - Reliability guardrails for local model agents
 Lifts 8B local models to 86.5% on multi-step agentic evals. Rescue parsing catches bad tool calls, step enforcement prevents skipped steps, VRAM-aware budgets compact context before OOM. Three modes: full WorkflowRunner, guardrails middleware for your own loop, or drop-in proxy server. 952 stars, MIT, Python. Works with Ollama, llama-server, Llamafile, Anthropic. The ablation study (N=50) shows each guardrail contributes measurably. Most agent tooling assumes frontier models. Forge assumes you're running local and handles everything that breaks.
 
+
+### [Pi Agent Harness](https://github.com/earendil-works/pi) - Self-extensible coding agent with supply-chain hardening
+Mono-repo architecture: unified multi-provider LLM API (OpenAI/Anthropic/Google), agent runtime with tool calling + state management, interactive coding agent CLI, terminal UI with differential rendering. 52K stars, 6235 forks, MIT, TypeScript. What sets pi apart is supply-chain hardening: direct deps pinned to exact versions, npm audit with signature verification, shrinkwrap for transitive deps, pre-commit hooks blocking accidental lockfile changes, and a 2-day minimum release age for new npm packages. OSS session sharing to HuggingFace for real-world agent benchmarking. The unified LLM API layer is provider-agnostic.
+
+### [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - Official lightweight multi-agent framework from OpenAI
+Provider-agnostic SDK supporting 100+ LLMs. Sandbox Agents run work in containers over long horizons. Guardrails for input/output validation. Built-in tracing UI, human-in-the-loop, session management, and realtime voice agents with gpt-realtime-2. 26K stars, 4072 forks, MIT, Python. OpenAI SDK-level answer to CrewAI and LangGraph. Notably provider-agnostic, not locked to OpenAI models. The sandbox agent pattern pairs well with CubeSandbox and microsandbox.
+
 ## Agent Infrastructure
 > Monitoring, reliability, security, cost management, testing
 
