@@ -287,3 +287,13 @@ Sits inline between coding agents and the network as an egress proxy. Scans MCP 
 
 ### [Emdash](https://github.com/generalaction/emdash) - Multi-agent dev environment with worktree isolation
 Agentic Development Environment (ADE) that runs multiple coding agents in parallel, each in its own git worktree. 27 CLI providers: Claude Code, Codex, Gemini, Hermes, Cursor, Devin, Droid, Jules, Junie, Kiro, Amp, and more. Pass Linear/GitHub/Jira tickets directly. Review diffs, run tests, create PRs, see CI/CD, merge — all from one desktop app. YC W26. Apache 2.0.
+
+
+### [RAMPART](https://github.com/microsoft/RAMPART) - Pytest-native safety testing for AI agents
+From Microsoft. Write adversarial attack tests, benign failure tests, and harm category assertions as regular pytest cases. Announced May 20 2026 via Microsoft Security blog. OpenSSF Scorecard, PyPI package. The pytest-native approach means safety tests live alongside functional tests in CI, not in a separate security audit phase. Complements runtime tools like Pipelock and shellfirm by catching issues before deployment. MIT, Python.
+
+### [Agent of Empires](https://github.com/njbrake/agent-of-empires) - Multi-agent session manager with TUI + web dashboard
+Run Claude Code, Codex, Gemini, Cursor, and 10+ more coding agents in parallel. Each agent gets its own tmux session and git worktree. Docker sandboxing optional. TUI for terminal, web dashboard with PWA install, mobile access via QR + Tailscale Funnel. Sessions persist across reboots. Multi-repo workspaces. Rust, MIT, 2321 stars, Homebrew installable. The practical answer to running 5+ coding agents without losing track.
+
+### [Pro Workflow](https://github.com/rohitg00/pro-workflow) - Self-correcting memory for Claude Code
+Every correction becomes a permanent rule in SQLite with FTS5 search. After 50 sessions, correction rate drops near zero. Auto-research loop grows knowledge wikis overnight. 34 skills, 37 hook scripts. Works with Claude Code, Cursor, and 32+ agents via SkillKit. MIT, JavaScript, 2189 stars. Different from Acontext (skills-as-markdown) and Memori (structured state): Pro Workflow focuses on what the agent got wrong, not what it learned.
