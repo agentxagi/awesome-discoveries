@@ -79,6 +79,9 @@ Desktop app that connects to Gmail, Notion, GitHub, Slack, Calendar via one-clic
 ### [IronClaw](https://github.com/nearai/ironclaw) - Privacy-first Agent OS in Rust
 Agents run in WASM sandboxes with explicit permission boundaries. Memory-safe runtime handling credentials and tool execution. CodeAct + RLM patterns built in. 12.3K stars, Apache 2.0, Rust. The WASM plugin model means third-party extensions cannot escape their sandbox.
 
+### [HiClaw](https://github.com/agentscope-ai/HiClaw) - Collaborative multi-agent OS via Matrix rooms
+Multi-agent coordination using Matrix protocol. Manager-Workers architecture with OpenClaw, QwenPaw, and Hermes runtimes in the same room. Human-in-the-loop by default. MinIO shared filesystem between workers reduces token waste. Higress AI Gateway keeps credentials away from workers. K8s-native control plane. One command setup. 4618 stars, Apache 2.0, Go. The Matrix room model means every agent action is visible and interruptible by humans in real time.
+
 
 
 
@@ -329,3 +332,6 @@ Chains Semgrep, CodeQL, AFL++, rr debugger, and LLM vulnerability validation int
 
 ### [Nexent](https://github.com/ModelEngine-Group/nexent) - Zero-code agent generation platform
 Describe your agent in natural language, get a production-grade agent with tools, skills, memory, constraints, and feedback loops auto-generated. Harness Engineering principles baked in. 4600 stars, 602 forks, MIT, Python. Docker + K8s deployment. The control plane gives every generated agent guardrails, cost tracking, and feedback loops by default. Competes with LangFlow by skipping drag-and-drop entirely.
+
+### [Agent Device](https://github.com/callstackincubator/agent-device) - Device automation CLI for AI agents
+Gives coding agents CLI control over iOS, Android, TV, and desktop apps. Token-efficient accessibility snapshots instead of screenshots. Agents read compact UI trees, locate elements by ref, perform actions. Works with Claude Code, Codex, Cursor, Windsurf. MCP router built in. Turns exploratory testing into reproducible .ad e2e tests. 2189 stars, MIT, TypeScript. By Callstack. The mobile/device counterpart to Vercel's agent-browser.
