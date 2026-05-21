@@ -67,3 +67,11 @@ Secure persistent personal agent server. Single Rust binary with sandboxed execu
 **Category:** Agents Frameworks | **Stars:** 34,487 | **Lang:** TypeScript | **License:** MIT
 Teams-first multi-agent orchestration for Claude Code. Structured team roles with parallel execution — the direction agent frameworks are converging toward.
 → [GitHub](https://github.com/Yeachan-Heo/oh-my-claudecode)
+
+
+## Discoveries
+
+- [omo (oh-my-openagent)](https://github.com/code-yeongyu/oh-my-openagent) ★58880 — The best agent harness. Previously oh-my-opencode. 58.8K stars. Supports Claude Code, Codex, Cursor, Gemini CLI, OpenCode. Modular skills, orchestration, agent loop — all in one harness.
+- [agent-lightning](https://github.com/microsoft/agent-lightning) ★17201 — Microsoft open-source RL trainer for AI agents. Works with LangChain, AutoGen, CrewAI, OpenAI SDK, or plain Python. Captures prompts, tool calls, rewards as structured events. Trains improved prompts or policy weights automatically.
+- [html-anything](https://github.com/nexu-io/html-anything) ★4443 — Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills × 9 surfaces (magazine, deck, poster, XHS/tweet, prototype, data report, Hyperframes). Sandboxed preview, 1-click publish to WeChat/X/Zhihu. Zero API key required.
+- [AiSOC](https://github.com/beenuar/AiSOC) ★1100 — Open-source AI-powered Security Operations Center. Alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable. Python + Next.js.
