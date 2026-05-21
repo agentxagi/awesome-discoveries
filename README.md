@@ -183,6 +183,19 @@ From ByteDance/Volcengine. Unifies memory, resources, and skills under a filesys
 ### [CozeLoop](https://github.com/coze-dev/coze-loop) - Full-lifecycle agent optimization platform
 From ByteDance/Coze. Three pillars in one platform: prompt development (visual playground with multi-LLM comparison and version management), evaluation (automated multi-dimensional testing for accuracy, conciseness, compliance), and observability (full trace recording from user input to AI output including prompt parsing, model calls, tool execution, and exception capture). The shared data model across all three matters: your eval datasets reference the same prompt versions your playground tested, and your traces feed back into eval sets. Most teams cobble together separate tools for each piece. CozeLoop packages them with a unified data layer. Docker Compose or Kubernetes Helm Chart deployment. Supports OpenAI and Volcengine Ark. 5464 stars, Apache 2.0, Go, 761 forks. Created June 2025, pushed today with active daily development. Not well-known outside the Chinese developer community, but the engineering is real — the eval features (eval cron, agent eval, batch evaluation) are maturing fast.
 
+
+### [ContextForge](https://github.com/IBM/mcp-context-forge) - IBM gateway, registry, and proxy for agent tool protocols
+Federates MCP, A2A, REST, and gRPC APIs into one unified endpoint. Centralized governance, discovery, guardrails, TOON compression. JWT auth, Kubernetes-native. 3740 stars, 669 forks, Python. Where Plano handles the data plane, ContextForge handles the control plane: registry, discovery, policy. 1067 open issues.
+
+### [Archestra](https://github.com/archestra-ai/archestra) - Enterprise AI platform with MCP registry, gateway, and orchestrator
+Opinionated enterprise platform on top of the gateway pattern. MCP registry with access policies, rate limits, audit logging, cost management, multi-model routing. Supports A2A, ACP, MCP protocols. K8s-native, TypeScript. 3716 stars, 827 forks. Where ContextForge is protocol federation, Archestra adds the opinionated platform layer.
+
+### [Statewright](https://github.com/statewright/statewright) - State machine guardrails for AI agents
+Constrains which tools agents can use in each phase. Planning gets read-only, implementation unlocks edit tools, testing only allows test commands. 342 stars in 17 days, Rust. Instead of bigger models, make the problem smaller. Below 13GB VRAM, models can call tools but lack context for accurate edits. Statewright guardrails turn those failures into completions. Works with Claude Code, Codex, Cursor, Pi. Plugin install. Restricts the action space before the model decides, not after.
+
+### [CUGA](https://github.com/cuga-project/cuga-agent) - Generalist agent harness for the enterprise
+#1 on AppWorld benchmark, top-tier on WebArena. IBM Research. Wire your APIs and MCP servers, tune reasoning modes (fast/balanced/accurate), govern behavior with policies. MCP, OpenAPI, LangChain tool support. 738 stars, 131 forks, Python. The start-with-a-generalist-customize pattern. Live demo on HuggingFace.
+
 ---
 
 ## LLM & RAG
