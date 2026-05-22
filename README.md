@@ -296,3 +296,31 @@
 - **GitHub:** [ananon/9arm-skills](https://github.com/thananon/9arm-skills) ⭐ 1,332
 - **Category:** agent_infrastructure
 - **Added:** 2026-05-22
+
+### shenli/distributed-system-testing — AI Agent Skills for Chaos Engineering
+
+> AI-agent skills for distributed-systems testing. Chaos engineering meets agentic workflows — skills that inject failures, verify recovery, and test distributed systems automatically. By shenli (VMware/Tanzu).
+
+- **GitHub:** [shenli/distributed-system-testing](https://github.com/shenli/distributed-system-testing) ⭐ 181
+- **Category:** agent_infrastructure
+- **Added:** 2026-05-22
+
+---
+
+### TartarusAI CLI — Uncensored Coding Agent for Security Research
+
+> Uncensored AI coding agent for security research, reverse engineering, and edge-case automation. 256K context, crypto-only billing, no policy filter. OpenCode fork. Built for the work mainstream models refuse.
+
+- **GitHub:** [Tartarus-AI/tartarusai-cli](https://github.com/Tartarus-AI/tartarusai-cli) ⭐ 64
+- **Category:** agent_security
+- **Added:** 2026-05-22
+
+---
+
+### pie — Rust Port of the pi Coding Agent
+
+> Rust rewrite of the pi coding agent. Terminal-based, multi-provider (Anthropic, OpenAI, OpenRouter, Groq, Mistral, Gemini), session resume, extended thinking, cost tracking. Zero dependencies beyond Rust.
+
+- **GitHub:** [c4pt0r/pie](https://github.com/c4pt0r/pie) ⭐ 46
+- **Category:** coding_agents
+- **Added:** 2026-05-22
