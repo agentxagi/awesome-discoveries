@@ -87,3 +87,23 @@ Google's open-source MCP server for databases. 20+ backends (PostgreSQL, MySQL, 
 - **URL:** https://github.com/dmno-dev/varlock
 - **Stars:** 3,466 | **Language:** TypeScript | **Category:** agent_security
 - Schema-based config where agents read .env.schema but never touch actual secrets. Git hook leak scanning + runtime log redaction. Plugins for 1Password, Vault, AWS, Azure.
+
+## OpenHuman — Personal AI Super Intelligence
+- **Stars:** 25,216 | **Lang:** Rust | **License:** GPL-3.0
+- Consumer-grade personal AI agent with desktop app. 118+ integrations. Memory graph. Privacy-first.
+- → https://github.com/tinyhumansai/openhuman
+
+## Crush — Glamourous Agentic Coding (Charm Team)
+- **Stars:** 24,523 | **Lang:** Go
+- Coding agent from the Bubble Tea team. Beautiful TUI. Single binary.
+- → https://github.com/charmbracelet/crush
+
+## Matt Pocock Skills — 99K Stars
+- **Stars:** 99,674 | **Lang:** Shell
+- AI coding skills straight from Matt Pocock's .claude directory. Most starred new repo of 2026.
+- → https://github.com/mattpocock/skills
+
+## Picoclaw — Tiny Fast OpenClaw-Compatible Agent
+- **Stars:** 29,132 | **Lang:** Go
+- Lightweight OpenClaw-compatible agent. Single binary. Deploy anywhere.
+- → https://github.com/sipeed/picoclaw
