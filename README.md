@@ -249,6 +249,16 @@
 
 ---
 
+### Modern Web Guidance — Chrome Official Agent Skills for 128 Web Platform APIs
+
+> Google Chrome team published a curated agent skill covering 128 web platform APIs with 100+ expert-verified use cases. Works with Claude Code, Gemini CLI, Copilot CLI, Goose, and Vercel. First browser-vendor agent skill pack.
+
+- **GitHub:** [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) ⭐ 612
+- **Category:** agent_infrastructure
+- **Added:** 2026-05-22
+
+---
+
 ### Hallmark — Anti-AI-Slop Design Skill for Claude Code, Cursor, and Codex
 
 > Open-source design skill that prevents AI-generated UI from looking generic. Installs via `npx skills add nutlope/hallmark`. Gives coding agents design sensibility so UI output looks intentional instead of cookie-cutter.
