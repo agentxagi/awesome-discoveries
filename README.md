@@ -40,6 +40,8 @@
 - **[HexStrike AI](https://github.com/0x4m4/hexstrike-ai)** (★8,867) — MCP server exposing 150+ cybersecurity tools to AI agents. Automated pentesting, vulnerability discovery, bug bounty automation. Python, MIT.
 - **[Claude Code System Prompts](https://github.com/Piebald-AI/claude-code-system-prompts)** (★10,386) — Full Claude Code system prompt transparency. 27 builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), security review process. Updated per version.
 
+- **[AI Kill Chain](https://github.com/gouravnagar-infosec/ai-kill-chain)** (★37) — Defender-side extension of the Lockheed Martin Cyber Kill Chain for LLM and agentic AI threats. Adds a model supply chain stage and splits actions-on-objectives into exfiltration, model extraction, and agentic pivot.
+
 ## Agent Tools
 
 - **[html-anything](https://github.com/nexu-io/html-anything)** (★0) — Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills × 9 surfaces (magazine, deck, poster, XHS/tweet, prototype, data report, Hyperframes). Sandboxed preview, 1-click publish to WeChat/X/Zhihu. Zero API key required.
@@ -210,9 +212,12 @@
 - **[Agent Device](https://github.com/callstackincubator/agent-device)** (★0) — CLI tool giving AI agents control over iOS, Android, TV, and desktop apps — token-efficient accessibility snapshots instead of screenshots, with MCP support
 - **[Slopless](https://github.com/agent-quality-controls/slopless)** (★0) — Deterministic textlint rules and CLI for catching AI-generated prose patterns in Markdown — 50+ rules, zero LLM calls, installable as a Codex or Claude Code skill
 
+- **[OpenTeam](https://github.com/afumu/openteam)** (★54) — Chrome extension for orchestrating local AI-agent team workflows across web AI services. Manage multiple agents from different providers in one browser interface. TypeScript.
+- **[Forge](https://github.com/ForgeAILab/forge)** (★39) — Rust workflow engine for structured AI coding agent task lifecycles. MCP-native, self-hosted. Manages task lifecycles instead of ad-hoc agent loops.
+
 ---
 
-143 discoveries indexed.
+146 discoveries indexed.
 
 ### CC-Switch
 ⭐ 77.2K | Cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent
