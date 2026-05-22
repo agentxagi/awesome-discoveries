@@ -77,3 +77,13 @@ Google's open-source MCP server for databases. 20+ backends (PostgreSQL, MySQL, 
 - [bb-browser](https://github.com/epiral/bb-browser) — 5.4K★. Browser as MCP API for AI agents. CLI + MCP server. 36 platforms, 103 commands. TypeScript.
 - [Casdoor](https://github.com/casdoor/casdoor) — 13.6K★. Agent-first IAM with MCP gateway. OAuth, OIDC, SAML, WebAuthn, MFA for agent identity. Go.
 - [Agent Sandbox Taxonomy](https://github.com/kajogo777/the-agent-sandbox-taxonomy) — 74★. Scoring framework for evaluating agent sandboxes. 7 defense layers, 7 threat categories. Go.
+
+### Centaur — Self-Hosted Secure Agent Platform by Paradigm
+- **URL:** https://github.com/paradigmxyz/centaur
+- **Stars:** 182 | **Language:** Python | **Category:** agent_infrastructure
+- Slack-native shared AI agents for teams. K8s sandbox per conversation. Credential boundaries. Bring-your-own-harness (Claude Code, Codex, Amp).
+
+### Varlock — AI-Safe .env Files. Agents See Schema, Never Secrets.
+- **URL:** https://github.com/dmno-dev/varlock
+- **Stars:** 3,466 | **Language:** TypeScript | **Category:** agent_security
+- Schema-based config where agents read .env.schema but never touch actual secrets. Git hook leak scanning + runtime log redaction. Plugins for 1Password, Vault, AWS, Azure.
