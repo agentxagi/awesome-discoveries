@@ -267,3 +267,32 @@
 - **Category:** agent_infrastructure
 - **Added:** 2026-05-22
 
+
+
+### Boris Prompts — Claude Code Skill Using Boris's Prompt Methodology
+
+> Agent skill that writes high-quality prompts using Boris (Claude Code creator) methodology from his Pro Tips & Tricks talk. Five principles: short beats long, examples beat descriptions, negative constraints beat positive, structure beats stream-of-consciousness, context beats cleverness. Works with 50+ agents.
+
+- **GitHub:** [LingyiChen-AI/boris-prompts](https://github.com/LingyiChen-AI/boris-prompts) ⭐ 102
+- **Category:** coding_agents
+- **Added:** 2026-05-22
+
+---
+
+### Offensive Claude — 25-Skill Security Research Config for Claude Code
+
+> Comprehensive Claude Code configuration for security researchers and red teamers. 25 specialized skills, 6 sub-agents, 46 vulnerability reference files covering recon, vuln analysis, exploit dev, reverse engineering, AD attacks, EDR bypass.
+
+- **GitHub:** [hypnguyen1209/offensive-claude](https://github.com/hypnguyen1209/offensive-claude) ⭐ 183
+- **Category:** agent_security
+- **Added:** 2026-05-22
+
+---
+
+### 9arm-skills — 1.3K Star Claude Code Skills Collection
+
+> Personal Claude Code skills collection organized into engineering, productivity, misc, and personal buckets. Includes debug-mantra (four-mantra debugging), post-mortem (engineering records), scrutinize (code review), management-talk (rewrite for leadership).
+
+- **GitHub:** [ananon/9arm-skills](https://github.com/thananon/9arm-skills) ⭐ 1,332
+- **Category:** agent_infrastructure
+- **Added:** 2026-05-22
