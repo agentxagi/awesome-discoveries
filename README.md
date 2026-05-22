@@ -21,7 +21,8 @@
 - **[holaOS](https://github.com/holaboss-ai/holaOS)** (★0) — Agent OS that turns repeat work into running AI work-streams. Electron-based, MCP-compatible, with persistent memory and proactive AI runtime. TypeScript.
 - **[boxlite](https://github.com/boxlite-ai/boxlite)** (★0) — Compute substrate for AI agents: lightweight on laptop, elastic to cloud. Rust + TypeScript, Apache 2.0. Embedded, self-hosted, serverless.
 
-- **[Firefox DevTools MCP](https://github.com/mozilla/firefox-devtools-mcp)** (★170) — Official Mozilla MCP server for Firefox DevTools. AI agents inspect and control Firefox through Remote Debugging Protocol. TypeScript, MIT.
+- **[Firefox DevTools MCP](https://github.com/mozilla/firefox-devtools-mcp)** (★170)
+- **[Semble](https://github.com/MinishLab/semble)** (★3,574) — Fast semantic code search for AI agents. ~98% fewer tokens than grep+read. CPU-only, no GPU. MCP server + CLI + Python API. Works with Claude Code, Cursor, Codex. — Official Mozilla MCP server for Firefox DevTools. AI agents inspect and control Firefox through Remote Debugging Protocol. TypeScript, MIT.
 ## Agent Memory
 
 - **[memvid](https://github.com/memvid/memvid)** (★15,542) — Memory layer for AI Agents. Replaces complex RAG pipelines with a serverless, single-file memory layer. Rust-based, offline-first.
@@ -29,6 +30,8 @@
 - **[MemOS](https://github.com/MemTensor/MemOS)** (★0) — Self-evolving memory OS for LLM and AI agents. Hybrid retrieval (keyword + vector + graph), cross-task skill reuse, 35.24% token savings.
 
 ## Agent Security
+
+- **[Wirken](https://github.com/gebruder/wirken)** (★149) — Encrypted credential vault + hash-chained audit log for AI agents. Single static Rust binary. Per-channel isolation.
 - **[Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)** (★6,543) — 754 structured cybersecurity skills for AI agents. Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF. Works with Claude Code, Copilot, Codex CLI, Cursor, Gemini CLI and 20+ platforms. 26 security domains. Python, Apache 2.0.
 - **[AI Security Arsenal](https://github.com/hardw00t/ai-security-arsenal)** (★73) — Curated security skills for AI agents. Appsec, cloud, containers, LLM attacks, and threat modeling. Compatible with Claude Code, OpenClaw, and other agent tools. Python, MIT.
 
