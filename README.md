@@ -47,6 +47,8 @@
 
 - **[AI Kill Chain](https://github.com/gouravnagar-infosec/ai-kill-chain)** (★37) — Defender-side extension of the Lockheed Martin Cyber Kill Chain for LLM and agentic AI threats. Adds a model supply chain stage and splits actions-on-objectives into exfiltration, model extraction, and agentic pivot.
 
+- **[Trust No Tool](https://arxiv.org/abs/2605.17453)** — Cognitive poisoning attack on LLM agent tool trust. Malicious tools behave normally during exploration, accumulate trust, then strike when hidden state triggers the final action. TRUST-Bench: 1,970 hidden-trigger test episodes. Prompt injection defenses miss this entirely.
+
 ## Agent Tools
 
 - **[html-anything](https://github.com/nexu-io/html-anything)** (★0) — Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills × 9 surfaces (magazine, deck, poster, XHS/tweet, prototype, data report, Hyperframes). Sandboxed preview, 1-click publish to WeChat/X/Zhihu. Zero API key required.
