@@ -248,3 +248,12 @@
 - **Context7** — Up-to-date code documentation delivered to LLMs and code editors via MCP — solves the stale-doc problem for coding agents [→ link](https://github.com/upstash/context7)
 
 ---
+
+### Hallmark — Anti-AI-Slop Design Skill for Claude Code, Cursor, and Codex
+
+> Open-source design skill that prevents AI-generated UI from looking generic. Installs via `npx skills add nutlope/hallmark`. Gives coding agents design sensibility so UI output looks intentional instead of cookie-cutter.
+
+- **GitHub:** [Nutlope/hallmark](https://github.com/Nutlope/hallmark) ⭐ 1,427
+- **Category:** agent_infrastructure
+- **Added:** 2026-05-22
+
