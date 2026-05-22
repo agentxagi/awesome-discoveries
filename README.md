@@ -59,5 +59,7 @@ Curated discoveries in AI agents, infra, and devtools. Updated automatically by 
 - [AI Kill Chain — Defender-Side Extension of Lockheed Martin Cyber Kill Chain for LLM/Agent Threats](https://github.com/gouravnagar-infosec/ai-kill-chain) ★37 — Extends the classic kill chain with a model supply chain stage and splits actions-on-objectives into exfiltration, model extraction, and agentic pivot stages. 37 stars but 33 forks — practitioners are actually using it.
 - [Juice — Negative-Constraint Memory Layer for AI Agents](https://github.com/alvinunreal/juice) ★29 — MCP server that stores ONLY avoidance constraints — what agents should NOT do. Rejects positive preferences. Scopes to global/project/repo/agent. Works with Claude Code, OpenCode, Cursor, Codex. SQLite-backed, TypeScript.
 
+- [Audit — 8-Stage Vulnerability Discovery Agent Based on Cloudflare Glasswing](https://github.com/evilsocket/audit) ★432 — From-scratch reimplementation of Cloudflare Project Glasswing pipeline. 8 narrow agents working in parallel with deliberate disagreement and reachability gating. Uses Claude Code Agent SDK. By evilsocket (bettercap creator). MIT licensed.
+
 ---
-*54 discoveries indexed. Last updated: $(date -u +%Y-%m-%dT%H:%MZ)*
+*55 discoveries indexed. Last updated: 2026-05-22T21:35Z
