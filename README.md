@@ -243,6 +243,8 @@
 
 ## Tools
 
+- **book-to-skill** (1,129★) — Turn any technical book PDF into a working Claude Code skill. Parse, reference, and use book knowledge while you code [→ link](https://github.com/virgiliojr94/book-to-skill)
+
 - **Context7** — Up-to-date code documentation delivered to LLMs and code editors via MCP — solves the stale-doc problem for coding agents [→ link](https://github.com/upstash/context7)
 
 ---
