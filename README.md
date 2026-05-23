@@ -9,6 +9,7 @@ Curated discoveries in AI agents, infra, and devtools. Updated automatically by 
 - [OpenHuman — Personal AI Super Intelligence, Desktop App, 118+ Integrations, Memory Graph](https://github.com/tinyhumansai/openhuman) ★25216 — Consumer-grade personal AI agent with desktop app. 118+ integrations (Gmail, Slack, Notion, GitHub). Builds personal memory graph. Desktop mascot. Privacy-first, runs locally. Written in Rust. #1 GitHub Trending, #1 Product Hunt. 25K+ stars gaining 2-4K/day.
 - [Crush — Glamourous Agentic Coding, by Charm (Bubble Tea Team), Written in Go](https://github.com/charmbracelet/crush) ★24523 — Coding agent from the Charm team (Bubble Tea, Lip Gloss, VHS). Written in Go. Terminal-native with beautiful TUI. Single binary, no Node.js dependency. 24K+ stars. Trending alongside picoclaw as part of Go/Rust counter-movement against TypeScript agent dominance.
 - [CloakBrowser — Stealth Chromium for AI Agents, 30/30 Bot Detection Tests Passed](https://github.com/CloakHQ/CloakBrowser) ★18365 — Stealth Chromium browser purpose-built for AI agent automation. Source-level fingerprint patches. 18K+ stars. Drop-in Playwright replacement that passes Cloudflare, reCAPTCHA, and every major bot detection test.
+- [GitNexus — Zero-Server Code Intelligence Engine for AI Agents, 39.8K Stars](https://github.com/abhigyanpatwari/GitNexus) ★39781 — Client-side knowledge graph that indexes codebases into dependency/call-chain/execution-flow graphs. Exposes via MCP so coding agents get architectural context. Runs entirely in browser. No server.
 - [Claude Code System Prompts — Full Teardown of Anthropic Agent Instructions](https://github.com/Piebald-AI/claude-code-system-prompts) ★10404 — Complete collection of Claude Code system prompts including 27 builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, statusline, WebFetch, Bash cmd, security review, agent creation). Updated for each Claude Code version.
 - [cc-connect — Bridge Local AI Coding Agents to Messaging Platforms](https://github.com/chenhg5/cc-connect) ★10127 — Go-based bridge that lets you control Claude Code, Codex, Cursor Agent, Gemini CLI from Slack, Telegram, Discord, LINE, Feishu, WeChat Work. No public IP needed. WebSocket + long-polling. 10K+ stars.
 - [Kreuzberg — Polyglot Document Intelligence Framework, 97+ Formats, Rust Core, MCP Server](https://github.com/kreuzberg-dev/kreuzberg) ★8356 — Rust-powered document extraction for PDFs, Office, images, 97+ formats. Bindings for 11+ languages. CLI, REST API, and MCP server. v4.0 just released.
@@ -16,6 +17,7 @@ Curated discoveries in AI agents, infra, and devtools. Updated automatically by 
 - [TencentDB-Agent-Memory — Tencent 4-Tier Progressive Memory Pipeline for AI Agents](https://github.com/Tencent/TencentDB-Agent-Memory) ★3788 — Tencent open-sourced a layered long-term memory engine for AI agents. 4-tier progressive pipeline: L0 raw conversations → L1 atomic facts → L2 structured summaries → L3 user profiles. 61.38% token reduction, +51% pass rate on WideSearch benchmarks. Uses Mermaid diagrams as context compression when sessions hit 300K+ tokens. Zero external dependencies, fully local, MIT license.
 - [IBM MCP Context Forge — AI Gateway for MCP, A2A, and REST](https://github.com/IBM/mcp-context-forge) ★3760 — AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs. Unified endpoint with centralized discovery, guardrails, and management.
 - [Semble — Fast Code Search for AI Agents, 98% Fewer Tokens Than grep+read](https://github.com/MinishLab/semble) ★3574 — Open-source semantic code search library for AI coding agents. Runs on CPU only. Provides MCP server, CLI, and Python API. Works with Claude Code, Cursor, Codex, OpenCode. Replaces grep+read loops with targeted semantic search, cutting token usage by ~98%. By MinishLab. 3.5K+ stars.
+- [Orca — Next-Gen ADE for Parallel Agent Fleets, 3.1K Stars](https://github.com/stablyai/orca) ★3096 — Agent Development Environment for running any coding agent (Claude Code, Codex, Pi, Cursor) in parallel fleets with one subscription. Desktop and mobile apps. MIT licensed.
 - [Raptor — Claude Code as Offensive/Defensive Security Agent](https://github.com/gadievron/raptor) ★2714 — Turns Claude Code into a general-purpose AI security agent. Uses CLAUDE.md to create rules, sub-agents, and skills that orchestrate security tool usage for adversarial thinking, research, and attack/defense operations.
 - [Snyk Agent-Scan — Security Scanner for AI Agents, MCP Servers and Skills](https://github.com/snyk/agent-scan) ★2450 — Official Snyk security scanner for AI agents and MCP servers. Scans agent configurations, tool permissions, and skill definitions for vulnerabilities. Python CLI.
 - [Claude Code Plugins + Skills — 425 Plugins, 2,810 Skills, 200 Agents, CLI Package Manager](https://github.com/jeremylongshore/claude-code-plugins-plus-skills) ★2230 — Open-source marketplace for Claude Code extensions. Includes ccpi CLI package manager. Largest collection of Claude Code plugins, skills, and agent configs.
@@ -61,8 +63,49 @@ Curated discoveries in AI agents, infra, and devtools. Updated automatically by 
 
 - [Audit — 8-Stage Vulnerability Discovery Agent Based on Cloudflare Glasswing](https://github.com/evilsocket/audit) ★432 — From-scratch reimplementation of Cloudflare Project Glasswing pipeline. 8 narrow agents working in parallel with deliberate disagreement and reachability gating. Uses Claude Code Agent SDK. By evilsocket (bettercap creator). MIT licensed.
 
+- [MCPGuard — CLI Security Checks for MCP Tools](https://github.com/hieuchaydi/MCPGuard) ★12 — Validates schema quality, response integrity, and security posture of MCP tools before AI agents call them.
+- [JanuScope — Local-First MCP Policy Proxy](https://github.com/giancarloerra/JanuScope) ★15 — Tool-block, SQL-mutation gate, PII redact, audit, rate-limit, OpenTelemetry. Sits between agents and MCP servers.
+- [Adrian — Runtime Security Monitoring for AI Agents](https://github.com/secureagentics/Adrian) ★71 — Catches malicious tool use, prompt injection, and policy drift in real-time. Runtime security layer for autonomous agents.
+- [Sigil — AI Security Posture Management for Developer Machines](https://github.com/Ju571nK/sigil) ★2 — Host-side agent that watches files controlling what AI coding agents can do: hooks, permissions, MCP allowlists, sandbox flags. Scores dangerous configs and ships events to SIEM. Rust.
+### GitNexus — Zero-Server Code Intelligence Engine (39.8K★)
+
+Client-side knowledge graph that indexes codebases into dependency, call-chain, and execution-flow graphs. Exposes via MCP so Cursor, Claude Code, and Codex get full architectural context. Runs entirely in your browser. No server needed.
+
+→ [github.com/abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus)
+
+### Orca — ADE for Parallel Agent Fleets (3.1K★)
+
+Run any coding agent (Claude Code, Codex, Pi, Cursor) in parallel fleets from one window. Desktop and mobile apps. MIT licensed. One subscription, multiple agents.
+
+→ [github.com/stablyai/orca](https://github.com/stablyai/orca)
+
+### Sigil — AI Security Posture Management for Dev Machines
+
+Monitors files that control what AI coding agents can do: hooks, permissions, MCP allowlists, sandbox flags. Scores dangerous configurations and ships events to SIEM. Built in Rust.
+
+→ [github.com/Ju571nK/sigil](https://github.com/Ju571nK/sigil)
+
+### Adrian — Runtime Security Monitoring for AI Agents
+
+Catches malicious tool use, prompt injection, and policy drift in real-time. Runtime security layer for autonomous agents. Python.
+
+→ [github.com/secureagentics/Adrian](https://github.com/secureagentics/Adrian)
+
+### JanuScope — Local-First MCP Policy Proxy
+
+Tool-block, SQL-mutation gate, PII redact, audit, rate-limit, OpenTelemetry, vault secrets. Sits between agents and MCP servers.
+
+→ [github.com/giancarloerra/JanuScope](https://github.com/giancarloerra/JanuScope)
+
+### MCPGuard — CLI Security Checks for MCP Tools
+
+Validates schema quality, response integrity, and security posture of MCP tools before AI agents call them.
+
+→ [github.com/hieuchaydi/MCPGuard](https://github.com/hieuchaydi/MCPGuard)
+
+
 ---
-*55 discoveries indexed. Last updated: 2026-05-22T21:35Z
+*61 discoveries indexed. Last updated: 2026-05-23T03:35Z
 
 ### 9router — Free AI Coding Router (13.5K★)
 
