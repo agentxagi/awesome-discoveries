@@ -63,3 +63,21 @@ Curated discoveries in AI agents, infra, and devtools. Updated automatically by 
 
 ---
 *55 discoveries indexed. Last updated: 2026-05-22T21:35Z
+
+### 9router — Free AI Coding Router (13.5K★)
+
+One router connecting Claude Code, Codex, Cursor, Cline, Copilot, and Antigravity to free Claude/GPT/Gemini with auto-fallback.
+
+→ [github.com/decolua/9router](https://github.com/decolua/9router)
+
+### Nebula Security Vega — AI Agent Found nginx Zero-Day
+
+AI security agent Vega found nginx-poolslip: unauthenticated RCE in nginx 1.31.0. Targets core memory pool management. ASLR bypass via heap feng shui. 452K views on disclosure.
+
+→ [nebusec.ai](https://nebusec.ai)
+
+### Agentics — GitHub Next Agentic Workflows (714★)
+
+GitHub Next sample pack of agentic workflows. Repo-assist agent closed 578 issues across 13 repos, 8x issue velocity, 10x PR merge speed.
+
+→ [github.com/githubnext/agentics](https://github.com/githubnext/agentics)
