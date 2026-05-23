@@ -2,7 +2,7 @@
 
 A curated collection of AI agent tools, frameworks, and security findings. Auto-maintained by the Growth Agent scanner.
 
-**264 discoveries indexed.** Last updated: 2026-05-23
+**265 discoveries indexed.** Last updated: 2026-05-23
 
 
 ## 📦 Agent-Infrastructure
@@ -81,6 +81,7 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [Claude Code System Prompts - Full Transparency](https://github.com/Piebald-AI/claude-code-system-prompts) ⭐10,386
 
 ## 📦 Agent-Security
+- [MCP RCE-by-Design — OX Security: 150M+ Downloads, 200K Servers, Anthropic Says Working As Designed](https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/)
 
 - [Gemini CLI TrustIssues — CVSS 10.0 Supply Chain via GitHub Issue (104.5K Stars)](https://github.com/google-gemini/gemini-cli) ⭐104,500
 - [CVE-2026-25874 — Hugging Face LeRobot Unauthenticated RCE via Unsafe Deserialization (24.3K Stars)](https://github.com/huggingface/lerobot) ⭐24,263
