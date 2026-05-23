@@ -2,56 +2,10 @@
 
 A curated collection of AI agent tools, frameworks, and security findings. Auto-maintained by the Growth Agent scanner.
 
-**245 discoveries indexed.** Last updated: $(date -u +%Y-%m-%d)
+**264 discoveries indexed.** Last updated: 2026-05-23
+
 
 ## 📦 Agent-Infrastructure
-
-- [ECC](https://github.com/affaan-m/ECC) ⭐188,000
-- [CC-Switch (farion1231)](https://github.com/farion1231/cc-switch) ⭐77,267
-- [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) ⭐31,500
-- [OpenViking](https://github.com/volcengine/OpenViking) ⭐24,380
-- [code-review-graph](https://github.com/tirth8205/code-review-graph) ⭐17,071
-- [Agent Orchestrator](https://github.com/ComposioHQ/agent-orchestrator) ⭐7,179
-- [holaOS](https://github.com/holaboss-ai/holaOS) ⭐5,649
-- [osaurus](https://github.com/osaurus-ai/osaurus) ⭐5,477
-- [EverOS](https://github.com/EverMind-AI/EverOS) ⭐5,398
-- [ByteRover CLI](https://github.com/campfirein/byterover-cli) ⭐4,769
-- [Zerolang](https://github.com/vercel-labs/zerolang) ⭐4,120
-- [engram](https://github.com/Gentleman-Programming/engram) ⭐3,681
-- [SimpleMem](https://github.com/aiming-lab/SimpleMem) ⭐3,328
-- [Mirage](https://github.com/strukto-ai/mirage) ⭐2,526
-- [mcp2cli](https://github.com/knowsuchagency/mcp2cli) ⭐2,147
-- [boxlite](https://github.com/boxlite-ai/boxlite) ⭐2,078
-- [Motus (lithos-ai)](https://github.com/lithos-ai/motus) ⭐455
-- [Studio (decocms)](https://github.com/decocms/studio) ⭐373
-- [Agent Executor (AX)](https://github.com/google/ax) ⭐208
-- [claude-in-box (jiangmuran)](https://github.com/jiangmuran/claude-in-box) ⭐24
-
-## 📦 Agent-Memory
-
-- [memvid](https://github.com/memvid/memvid) ⭐15,542
-- [agentmemory](https://github.com/rohitg00/agentmemory) ⭐15,516
-- [MemOS](https://github.com/MemTensor/MemOS) ⭐9,260
-
-## 📦 Agent-Security
-
-- [IronClaw (nearai)](https://github.com/nearai/ironclaw) ⭐12,307
-- [AI-Infra-Guard (Tencent)](https://github.com/Tencent/AI-Infra-Guard) ⭐3,760
-- [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) ⭐1,793
-- [agent-safehouse](https://github.com/eugene1g/agent-safehouse) ⭐1,787
-- [AiSOC](https://github.com/beenuar/AiSOC) ⭐1,100
-- [audit (evilsocket)](https://github.com/evilsocket/audit) ⭐430
-- [supply-chain-guard (pc-style)](https://github.com/pc-style/supply-chain-guard) ⭐20
-
-## 📦 Agent-Tools
-
-- [html-anything](https://github.com/nexu-io/html-anything) ⭐4,443
-
-## 📦 Agent Infra
-
-- [Claude Code System Prompts - Full Transparency](https://github.com/Piebald-AI/claude-code-system-prompts) ⭐10,386
-
-## 🏗️ Agent Infrastructure
 
 - [Matt Pocock Skills — 99K Stars, Claude Skills Straight From .claude Directory](https://github.com/mattpocock/skills) ⭐99,674
 - [DeerFlow — ByteDance SuperAgent with Sandboxes, Memory, Skills, Subagents (69K Stars)](https://github.com/bytedance/deer-flow) ⭐69,172
@@ -69,7 +23,7 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [CUA — Open-Source Computer-Use Agent Infrastructure (17K Stars)](https://github.com/trycua/cua) ⭐17,011
 - [9router — Free AI Coding Router Connecting Claude, Codex, Cursor, Copilot (13.5K Stars)](https://github.com/decolua/9router) ⭐13,544
 - [ds4 — Redis Creator's DeepSeek V4 Flash Local Inference Engine for Metal/CUDA (11.4K Stars)](https://github.com/antirez/ds4) ⭐11,467
-- [InsForge — All-in-One Backend for Agentic Coding (10.5K Stars)](https://x.com/hanghuang_/status/2057924639842607194) ⭐10,490
+- [InsForge — All-in-One Backend for Agentic Coding (10.5K Stars)](https://github.com/InsForge/InsForge) ⭐10,490
 - [Claude Code System Prompts — Full Teardown of Anthropic Agent Instructions](https://github.com/Piebald-AI/claude-code-system-prompts) ⭐10,404
 - [cc-connect — Bridge Local AI Coding Agents to Messaging Platforms](https://github.com/chenhg5/cc-connect) ⭐10,127
 - [mcp-use — Fullstack MCP Framework (10K Stars)](https://github.com/mcp-use/mcp-use) ⭐9,990
@@ -122,9 +76,14 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [Budget-Aware MCP — Model-Agnostic Code Memory MCP Server with Graph Retrieval](https://github.com/Doorman11991/budget-aware-mcp) ⭐19
 - [MCP-Man — Postman for MCP Servers](https://github.com/aaglexx/mcp-man) ⭐11
 
-## 🔒 Agent Security
+## 📦 Agent Infra
 
-- [Gemini CLI TrustIssues — CVSS 10.0 Supply Chain via GitHub Issue (104.5K Stars)](https://pillar.security/blog/my-agentic-trust-issues-from-prompt-injection-to-supply-chain-compromise-on-gemini-cli) ⭐104,500
+- [Claude Code System Prompts - Full Transparency](https://github.com/Piebald-AI/claude-code-system-prompts) ⭐10,386
+
+## 📦 Agent-Security
+
+- [Gemini CLI TrustIssues — CVSS 10.0 Supply Chain via GitHub Issue (104.5K Stars)](https://github.com/google-gemini/gemini-cli) ⭐104,500
+- [CVE-2026-25874 — Hugging Face LeRobot Unauthenticated RCE via Unsafe Deserialization (24.3K Stars)](https://github.com/huggingface/lerobot) ⭐24,263
 - [Casdoor — Agent-First Identity and Access Management with MCP Gateway](https://github.com/casdoor/casdoor) ⭐13,647
 - [HexStrike AI - 150+ Cybersecurity Tools for AI Agents via MCP](https://github.com/0x4m4/hexstrike-ai) ⭐8,867
 - [Anthropic Cybersecurity Skills — 754 Structured Security Skills for AI Agents (6.5K★)](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐6,740
@@ -132,13 +91,15 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [NVIDIA OpenShell — Safe Runtime for Autonomous AI Agents (6.1K★, Rust)](https://github.com/NVIDIA/OpenShell) ⭐6,150
 - [bb-browser — Your Browser is the API. CLI + MCP Server for Agent Browser Control](https://github.com/epiral/bb-browser) ⭐5,379
 - [AIO Sandbox — All-in-One Container for AI Agents (4.8K Stars)](https://github.com/agent-infra/sandbox) ⭐4,778
+- [CyberStrikeAI — AI-Native Security Testing Platform with 100+ Tools and MCP (3.9K Stars)](https://github.com/Ed1s0nZ/CyberStrikeAI) ⭐3,917
 - [Tracecat — Open-Source Security Automation for AI Agents (3.6K Stars)](https://github.com/TracecatHQ/tracecat) ⭐3,609
-- [Varlock — AI-Safe .env Files. Agents See Schema, Never Secrets.](https://github.com/dmno-dev/varlock) ⭐3,466
+- [Varlock — AI-Safe .env Files: Agents See Schema, Never Secrets (3.5K Stars)](https://github.com/dmno-dev/varlock) ⭐3,481
 - [DeepSec — Agent-Powered Vulnerability Scanner from Vercel Labs](https://github.com/vercel-labs/deepsec) ⭐2,874
 - [Raptor — Claude Code as Offensive/Defensive Security Agent](https://github.com/gadievron/raptor) ⭐2,735
 - [Raptor — Claude Code as Offensive/Defensive Security Agent (2.7K Stars)](https://github.com/gadievron/raptor) ⭐2,735
 - [Snyk Agent-Scan — Security Scanner for AI Agents, MCP Servers and Skills](https://github.com/snyk/agent-scan) ⭐2,459
 - [nono — Capability-Based Agent Runtime with Zero-Trust Policies](https://github.com/always-further/nono) ⭐2,452
+- [Tirith — Terminal Security for AI Agents: Intercepts Malicious Skills Before Execution (2.4K Stars)](https://github.com/sheeki03/tirith) ⭐2,363
 - [OneCLI — Open-Source Credential Vault for AI Agents (2.2K Stars)](https://github.com/onecli/onecli) ⭐2,234
 - [OneCLI — Open-Source Credential Vault for AI Agents](https://github.com/onecli/onecli) ⭐2,228
 - [ToolHive — Enterprise MCP Server Management Platform by Stacklok](https://github.com/stacklok/toolhive) ⭐1,818
@@ -146,13 +107,20 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [Infisical Agent Vault — HTTP Credential Proxy for AI Agents](https://github.com/Infisical/agent-vault) ⭐1,263
 - [ThinkWatch — Enterprise AI Bastion Host for Secure API and MCP Access](https://github.com/ThinkWatchProject/ThinkWatch) ⭐966
 - [Cisco MCP Scanner — Threat Scanner for MCP Servers](https://github.com/cisco-ai-defense/mcp-scanner) ⭐937
+- [shellfirm — Safety Guardrails for AI Coding Agents and Terminal Commands (912 Stars)](https://github.com/kaplanelad/shellfirm) ⭐912
+- [CVE-2026-65719 — Critical RCE in kubectl-mcp-server via Command Injection (891 Stars, CNCF Landscape)](https://github.com/rohitg00/kubectl-mcp-server) ⭐891
+- [ship-safe — CLI Security Scanner for the Agentic Era (710 Stars)](https://github.com/asamassekou10/ship-safe) ⭐710
+- [AWS Secrets Manager Agent — Official AWS Local HTTP Service for Agent Compute (656 Stars)](https://github.com/aws/aws-secretsmanager-agent) ⭐656
 - [PipeLock — AI Agent Firewall for MCP Security](https://github.com/luckyPipewrench/pipelock) ⭐634
 - [Forkd — Fork 100 Agent MicroVMs in 101ms with KVM Isolation (611 Stars)](https://github.com/deeplethe/forkd) ⭐611
 - [Pantheon Medusa — AI-First Security Scanner with 9,600+ Rules](https://github.com/Pantheon-Security/medusa) ⭐568
 - [Code-on-Incus — Isolated VMs per AI Agent with Active Defense](https://github.com/mensfeld/code-on-incus) ⭐521
 - [IronCurtain — Secure Runtime with Plain-English Agent Constitutions](https://github.com/provos/ironcurtain) ⭐449
+- [HASP — Local-First Broker for Managed Secrets in Agent Workflows (433 Stars)](https://github.com/gethasp/hasp) ⭐433
 - [Sandboxed.sh — Runtime for Autonomous On-Chain AI Agents](https://github.com/Th0rgal/sandboxed.sh) ⭐432
 - [Audit — 8-Stage Vulnerability Discovery Agent Based on Cloudflare Glasswing](https://github.com/evilsocket/audit) ⭐432
+- [AgentGuard — Security Guard for AI Agents with 24 Detection Rules (410 Stars)](https://github.com/GoPlusSecurity/agentguard) ⭐410
+- [Sponsio — Deterministic Safety Solutions for Probabilistic AI Agents (397 Stars)](https://github.com/SponsioLabs/Sponsio) ⭐397
 - [Hol Guard — AI Antivirus for Developer Agents](https://github.com/hashgraph-online/hol-guard) ⭐337
 - [Dark Moon — Autonomous AI Pentesting Engine](https://github.com/ASCIT31/Dark-Moon) ⭐326
 - [Xalgorix — Open-Source AI Pentesting Agent with 150+ Tool Integrations](https://github.com/xalgord/xalgorix) ⭐301
@@ -168,6 +136,7 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [Immunity Agent — Security Layer for AI Coding Agents](https://github.com/PrismorSec/immunity-agent) ⭐142
 - [Hazmat — macOS Containment for AI Agents with TLA+ Verification](https://github.com/github.com/dredozubov/hazmat) ⭐114
 - [RAMPART — pytest-native security testing for agentic AI applications](https://github.com/microsoft/RAMPART) ⭐99
+- [Cisco Foundry Security Spec — Open Standard for Agentic AI Security Evaluation (76 Stars)](https://github.com/CiscoDevNet/foundry-security-spec) ⭐76
 - [Agent Sandbox Taxonomy — Scoring Framework for Evaluating Agent Sandboxes](https://github.com/kajogo777/the-agent-sandbox-taxonomy) ⭐74
 - [AI Security Arsenal — Agent-Compatible Skills for Security Researchers](https://github.com/hardw00t/ai-security-arsenal) ⭐73
 - [Adrian — Runtime Security Monitoring for AI Agents (71 Stars)](https://github.com/secureagentics/Adrian) ⭐71
@@ -184,20 +153,20 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [Sigil — AI Security Posture Management for Developer Machines](https://github.com/Ju571nK/sigil) ⭐2
 - [Preflight — SMT Solver Agent Guardrails (No LLM in Runtime Path)](https://github.com/ICME-Lab/icme-preflight-guardrail) ⭐1
 - [NSA MCP Security Design Considerations](https://www.nsa.gov/Portals/75/documents/Cybersecurity/CSI_MCP_SECURITY.pdf)
-- [Claude Code SOCKS5 Null-Byte Sandbox Bypass — 130 Versions Vulnerable](https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/)
-- [GenAI App Security Checklist — 258 Checks + One-Command Scan](https://github.com/a-leks/genai-app-security-checklist)
-- [Comment and Control — Credential Theft via Prompt Injection in Coding Agents](https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/)
+- [Claude Code SOCKS5 Null-Byte Sandbox Bypass — 130 Versions Vulnerable](https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/) ⭐0
+- [GenAI App Security Checklist — 258 Checks + One-Command Scan](https://github.com/a-leks/genai-app-security-checklist) ⭐0
+- [Comment and Control — Credential Theft via Prompt Injection in Coding Agents](https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/) ⭐0
 - [MCP Server Security Audit — 17 Popular Servers Average 34/100](https://x.com/cdatasoftware/status/2057454865819832376)
 - [Claw Chain — 4 Chainable CVEs in OpenClaw (CVSS 9.6 Sandbox Escape, 65K-180K Deployments)](https://x.com/cyera_io/status/2056444305045123514)
 - [Nx Console Supply Chain Attack — Troj anized VS Code Extension Stole GitHub Credentials (11K+ Views)](https://x.com/patrickwardle/status/2057295568947277941)
 - [Trust No Tool — Cognitive Poisoning Attack on LLM Agent Tool Trust](https://arxiv.org/abs/2605.17453)
 - [Grok AI Wallet Drained $170K via Morse Code Prompt Injection — No Keys Stolen](https://thebittimes.com/post/grok-ai-wallet-hacked-prompt-injection-170k-drb-tbt-98237.html)
-- [PraisonAI CVE-2026-44338 — Auth Bypass Exploited Within Hours](https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html)
-- [Nebula Security Vega — AI Agent Discovered nginx-poolslip Zero-Day RCE](https://x.com/nebusecurity/status/2057071579876753643)
+- [PraisonAI CVE-2026-44338 — Auth Bypass Exploited Within Hours](https://github.com/praisonai)
+- [Nebula Security Vega — AI Agent Discovered nginx-poolslip Zero-Day RCE](https://nebusec.ai)
 - [Composio Security Incident — Attacker Escalated Through Agentic Tool for 8 Hours](https://composio.dev/blog/composio-may-2026-security-incident)
 - [McKinsey Lilli Breach — Autonomous AI Agent Hacked Internal AI in 2 Hours via SQL Injection](https://stateofsurveillance.org/news/mckinsey-lilli-ai-agent-hack-codewall-sql-injection-2026/)
 - [Owner-Harm Research — Defense Systems Catch Only 14.8% (4/27) of AI Agents Harming Their Deployer](https://x.com/heynavtoor/status/2052776817799667902)
-- [MCPTox Benchmark — 72.8% Attack Success Rate on MCP Servers (45 Live Servers Tested)](https://x.com/0xAlexKorn/status/2052146629960958431)
+- [MCPTox Benchmark — 72.8% Attack Success Rate on MCP Servers (45 Live Servers Tested)](https://github.com/zhiqiangwang4/MCPTox-Benchmark)
 - [ConnectWise Automate Agent CVE-2026-9089 — Authentication Bypass (CVSS 8.8)](https://nvd.nist.gov/vuln/detail/CVE-2026-9089)
 - [FastGPT CVE-2026-44286 — Unauthenticated SSRF in AI Agent Building Platform](https://www.cve.org/CVERecord?id=CVE-2026-44286)
 - [Mitiga: Claude Code MCP Token Theft via Supply Chain — Anthropic Refused to Fix](https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm)
@@ -213,17 +182,68 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [CVE-2026-7061 — ChatGPT-MCP Server Command Injection (CVSS 7.3)]()
 - [CVE-2026-5865 — AI Agent Found Chrome V8 Zero-Day (Nebula Security)](https://x.com/nebusecurity/status/2047153356536250770)
 - [Vidar Malware Harvesting OpenClaw Agent Identities — soul.md, Memory, and Gateway Tokens Stolen](https://x.com/killerskills_ai/status/2057409110841131125)
-- [CVE-2026-46354 — Coder Agent Token Theft via Azure Signature Bypass (CVSS 9.1)](https://nvd.nist.gov/vuln/detail/CVE-2026-46354)
+- [CVE-2026-46354 — Coder Agent Token Theft via Azure Signature Bypass (CVSS 9.1)](https://github.com/coder/coder)
+- [CVE-2026-31431 "Copy Fail" — AI-Found Linux Kernel LPE Zero-Day (Every Distro Since 2017, 732-Byte Exploit)](https://www.cve.org/CVERecord?id=CVE-2026-31431)
+- [May 2026 Linux Kernel LPE Cluster — 4 Critical Privilege Escalations in 3 Weeks (Copy Fail, Dirty Frag, Fragnesia, Pinthef)](https://securityonline.info/tag/dirty-frag/)
+- [DeepSeek V4 Pro Autonomous Hacking — 4 Expert Security Challenges Solved for $6.84 (412 Tool Calls)](https://x.com/Tur24Tur/status/2048018521649500467)
+- [Claude Code Network Sandbox Bypass — Credentials and Source Code Exposed Across 130+ Versions](https://cybersecuritynews.com/claude-codes-network-sandbox-vulnerability/)
+- [Langflow — First AI Agent Framework Added to CISA "Must Patch" List (Attacked Within 20 Hours of Disclosure)](https://cisa.gov/known-exploited-vulnerabilities)
+- [CVE-2026-26144 — XSS in Excel Hijacks Copilot Agent for Zero-Click Data Exfiltration](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26144)
+- [PocketOS — AI Agent Deleted Entire Production Database + All Backups in 9 Seconds (Cursor + Claude Opus)](https://x.com/pukerrainbrow/status/1924987623741552662)
+- [DeepSeek V4-Pro Permanent 75% Cut — Your Attackers Got the Same Discount](https://x.com/dannylivshits/status/2057966201255739561)
+
+## 📦 Agent-Infrastructure
+
+- [ECC](https://github.com/affaan-m/ECC) ⭐188,000
+- [CC-Switch (farion1231)](https://github.com/farion1231/cc-switch) ⭐77,267
+- [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) ⭐31,500
+- [OpenViking](https://github.com/volcengine/OpenViking) ⭐24,380
+- [code-review-graph](https://github.com/tirth8205/code-review-graph) ⭐17,071
+- [Agent Orchestrator](https://github.com/ComposioHQ/agent-orchestrator) ⭐7,179
+- [holaOS](https://github.com/holaboss-ai/holaOS) ⭐5,649
+- [osaurus](https://github.com/osaurus-ai/osaurus) ⭐5,477
+- [EverOS](https://github.com/EverMind-AI/EverOS) ⭐5,398
+- [ByteRover CLI](https://github.com/campfirein/byterover-cli) ⭐4,769
+- [Zerolang](https://github.com/vercel-labs/zerolang) ⭐4,120
+- [engram](https://github.com/Gentleman-Programming/engram) ⭐3,681
+- [SimpleMem](https://github.com/aiming-lab/SimpleMem) ⭐3,328
+- [Mirage](https://github.com/strukto-ai/mirage) ⭐2,526
+- [mcp2cli](https://github.com/knowsuchagency/mcp2cli) ⭐2,147
+- [boxlite](https://github.com/boxlite-ai/boxlite) ⭐2,078
+- [Motus (lithos-ai)](https://github.com/lithos-ai/motus) ⭐455
+- [Studio (decocms)](https://github.com/decocms/studio) ⭐373
+- [Agent Executor (AX)](https://github.com/google/ax) ⭐208
+- [claude-in-box (jiangmuran)](https://github.com/jiangmuran/claude-in-box) ⭐24
+
+## 📦 Agent-Memory
+
+- [memvid](https://github.com/memvid/memvid) ⭐15,542
+- [agentmemory](https://github.com/rohitg00/agentmemory) ⭐15,516
+- [MemOS](https://github.com/MemTensor/MemOS) ⭐9,260
+
+## 📦 Agent-Security
+
+- [IronClaw — Agent OS Focused on Privacy, Security and Extensibility (12.3K Stars)](https://github.com/nearai/ironclaw) ⭐12,324
+- [AI-Infra-Guard — Full-Stack AI Red Teaming Platform by Tencent (3.8K Stars)](https://github.com/Tencent/AI-Infra-Guard) ⭐3,761
+- [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) ⭐1,793
+- [agent-safehouse](https://github.com/eugene1g/agent-safehouse) ⭐1,787
+- [AiSOC](https://github.com/beenuar/AiSOC) ⭐1,100
+- [audit (evilsocket)](https://github.com/evilsocket/audit) ⭐430
+- [supply-chain-guard (pc-style)](https://github.com/pc-style/supply-chain-guard) ⭐20
+
+## 📦 Agent-Tools
+
+- [html-anything](https://github.com/nexu-io/html-anything) ⭐4,443
 
 ## 📦 Agents
 
+- [Context Mode — Context Window Optimization for AI Coding Agents (15.5K Stars, HN #1)](https://github.com/mksglu/context-mode) ⭐15,467
 - [Raindrop Workshop](https://github.com/raindrop-ai/workshop) ⭐665
 - [agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval) ⭐508
 - [skillgrade](https://github.com/mgechev/skillgrade) ⭐480
 - [eval-view](https://github.com/hidai25/eval-view)
 - [agent-belt](https://github.com/jfrog/agent-belt)
 - [12-Factor Agents](https://github.com/humanlayer/12-factor-agents)
-- [Context Mode](https://github.com/mksglu/context-mode)
 - [Memori](https://github.com/MemoriLabs/Memori)
 
 ## 📦 Agents-Frameworks
@@ -246,7 +266,7 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [ARGO](https://github.com/xark-argo/argo) ⭐662
 - [Dulus](https://github.com/KevRojo/Dulus) ⭐625
 
-## 📦 Coding Agents
+## 📦 Coding-Agents
 
 - [OpenHuman — Personal AI Super Intelligence, Desktop App, 118+ Integrations, Memory Graph](https://github.com/tinyhumansai/openhuman) ⭐25,216
 - [Crush — Glamourous Agentic Coding, by Charm (Bubble Tea Team), Written in Go](https://github.com/charmbracelet/crush) ⭐24,523
@@ -260,11 +280,11 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 
 ## 📦 Infrastructure
 
+- [OpenSandbox — Secure, Fast Sandbox Runtime for AI Agents from Alibaba (10.8K Stars)](https://github.com/alibaba/OpenSandbox) ⭐10,780
+- [Microsandbox — Unexploitable Secrets for AI Agents via Hardware-Isolated microVMs (6.2K Stars)](https://github.com/superradcompany/microsandbox) ⭐6,196
 - [Plano](https://github.com/katanemo/plano)
 - [Cozeloop](https://github.com/coze-dev/coze-loop)
 - [CubeSandbox](https://github.com/TencentCloud/CubeSandbox)
-- [OpenSandbox (Alibaba)](https://github.com/alibaba/OpenSandbox)
-- [microsandbox](https://github.com/superradcompany/microsandbox)
 
 ## 📦 Mcp
 
@@ -272,7 +292,7 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 - [mcpc](https://github.com/apify/mcpc) ⭐641
 - [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 
-## 📦 Mcp Infra
+## 📦 Mcp-Infra
 
 - [MCP Gateway Registry — Enterprise MCP Gateway with OAuth, Keycloak, Entra ID (658★)](https://github.com/agentic-community/mcp-gateway-registry) ⭐658
 
@@ -306,19 +326,5 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 
 - [Context7](https://github.com/upstash/context7)
 
-### shellfirm — Safety Guardrails for AI Coding Agents (912★)
-Rust-based command interception. Stops agents from running destructive commands (rm -rf, DROP TABLE). MCP-compatible.
-→ https://github.com/kaplanelad/shellfirm
-
-### CVE-2026-65719 — Critical RCE in kubectl-mcp-server (891★, CNCF)
-Unauthenticated command injection in K8s MCP server. Shell metacharacter injection gives full host + cluster control. Fixed in 1.2.1.
-→ https://github.com/rohitg00/kubectl-mcp-server
-
-### Sponsio — Deterministic Safety for AI Agents (397★)
-Policy engine + intent verification for agent runtime safety. Hard constraints instead of probabilistic guardrails. OpenClaw-native.
-→ https://github.com/SponsioLabs/Sponsio
-
-### Cisco Foundry Security Spec (76★)
-Cisco DevNet open specification for agentic AI security evaluation. First major vendor-backed standard for agent security testing.
-→ https://github.com/CiscoDevNet/foundry-security-spec
-
+---
+*Auto-maintained by the Growth Agent scanner.*
