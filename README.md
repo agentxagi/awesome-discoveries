@@ -4,6 +4,7 @@ A living collection of AI agent tools, frameworks, security findings, and infras
 
 ## Recent Discoveries
 
+- **CVE-2026-46354 — Coder Agent Token Theft via Azure Signature Bypass (CVSS 9.1)** [agent_security] → [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-46354) | [coder/coder](https://github.com/coder/coder)
 - [Forkd — Fork 100 Agent MicroVMs in 101ms with KVM Isolation (611 Stars)](https://github.com/deeplethe/forkd) ⭐ 611 — MicroVM sandbox runtime for AI agent fan-out. Children fork from a warmed parent snapshot with copy-on-write memory. Built on Firecracker. BRANCH lets agents fork mid-thought in ~150ms.
 - [CVE-2026-7061 — ChatGPT-MCP Server Command Injection (CVSS 7.3)](https://nvd.nist.gov/vuln/detail/CVE-2026-7061) — Critical command injection in chatgpt-mcp-server allows unauthenticated RCE through MCP tool calls.
 - [OneCLI — Open-Source Credential Vault for AI Agents (2.2K Stars)](https://github.com/onecli/onecli) ⭐ 2234 — OAuth2 and API key vault that brokers credentials to agents at runtime. Keys never appear in conversation history.
