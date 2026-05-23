@@ -107,3 +107,8 @@ Google's open-source MCP server for databases. 20+ backends (PostgreSQL, MySQL, 
 - **Stars:** 29,132 | **Lang:** Go
 - Lightweight OpenClaw-compatible agent. Single binary. Deploy anywhere.
 - → https://github.com/sipeed/picoclaw
+### [nah](https://github.com/manuelschipper/nah) ⭐ 439
+Action-aware permissions for coding agents. A deterministic safety guard that intercepts actions before execution — blocks dangerous operations while keeping you in the flow.
+
+### [Cozempic](https://github.com/Ruya-AI/cozempic) ⭐ 313
+Context cleaning for Claude Code agent teams. Prune bloated sessions, protect Agent Teams from context window exhaustion with tiered auto-pruning.
