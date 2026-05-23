@@ -4,6 +4,13 @@ A living collection of AI agent tools, frameworks, security findings, and infras
 
 ## Recent Discoveries
 
+- [Forkd — Fork 100 Agent MicroVMs in 101ms with KVM Isolation (611 Stars)](https://github.com/deeplethe/forkd) ⭐ 611 — MicroVM sandbox runtime for AI agent fan-out. Children fork from a warmed parent snapshot with copy-on-write memory. Built on Firecracker. BRANCH lets agents fork mid-thought in ~150ms.
+- [CVE-2026-7061 — ChatGPT-MCP Server Command Injection (CVSS 7.3)](https://nvd.nist.gov/vuln/detail/CVE-2026-7061) — Critical command injection in chatgpt-mcp-server allows unauthenticated RCE through MCP tool calls.
+- [OneCLI — Open-Source Credential Vault for AI Agents (2.2K Stars)](https://github.com/onecli/onecli) ⭐ 2234 — OAuth2 and API key vault that brokers credentials to agents at runtime. Keys never appear in conversation history.
+- [Infisical Agent Vault — HTTP Credential Proxy for AI Agents (1.3K Stars)](https://github.com/Infisical/agent-vault) ⭐ 1293 — HTTP credential proxy for Claude Code, OpenClaw, Hermes. Intercepts API calls and injects credentials at the proxy layer.
+- [LiteLLM Agent Platform — Self-Hosted Sandboxed Coding Agents (484 Stars)](https://github.com/BerriAI/litellm-agent-platform) ⭐ 484 — Run Claude Code, Codex, Hermes in isolated sandboxes with vault proxy. Agents never see real API keys.
+- [Groundcrew — Dispatch Linear Backlog to AI Coding Agents (31 Stars)](https://github.com/ClipboardHealth/groundcrew) ⭐ 31 — One git worktree per ticket, sandboxed by default.
+
 - **Cline CVE-2026-44211 — WebSocket Origin Bypass Enables Agent Session Hijack and RCE (CVSS 9.3)** [agent_security]
 - **Gemini CLI CVSS 10.0 — Malicious Repo Config Grants Full RCE in CI/CD** [agent_security]
 - **AWS Strands Agents SDK — Model-Driven Agent Framework (5.9K Stars)** ★5900 [agent_infrastructure] → [https://github.com/strands-agents/sdk-python](https://github.com/strands-agents/sdk-python)
