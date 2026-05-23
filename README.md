@@ -305,3 +305,20 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 ## 📦 Tools
 
 - [Context7](https://github.com/upstash/context7)
+
+### shellfirm — Safety Guardrails for AI Coding Agents (912★)
+Rust-based command interception. Stops agents from running destructive commands (rm -rf, DROP TABLE). MCP-compatible.
+→ https://github.com/kaplanelad/shellfirm
+
+### CVE-2026-65719 — Critical RCE in kubectl-mcp-server (891★, CNCF)
+Unauthenticated command injection in K8s MCP server. Shell metacharacter injection gives full host + cluster control. Fixed in 1.2.1.
+→ https://github.com/rohitg00/kubectl-mcp-server
+
+### Sponsio — Deterministic Safety for AI Agents (397★)
+Policy engine + intent verification for agent runtime safety. Hard constraints instead of probabilistic guardrails. OpenClaw-native.
+→ https://github.com/SponsioLabs/Sponsio
+
+### Cisco Foundry Security Spec (76★)
+Cisco DevNet open specification for agentic AI security evaluation. First major vendor-backed standard for agent security testing.
+→ https://github.com/CiscoDevNet/foundry-security-spec
+
