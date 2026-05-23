@@ -1,0 +1,3 @@
+id,title,category,github_url,github_stars,added_at,is_indexed
+380,Bernstein — Audit-Grade Multi-Agent Orchestration with HMAC-Signed Audit Chains (451 Stars),agent_security,https://github.com/sipyourdrink-ltd/bernstein,451,2026-05-23 23:07:17.191258+00,t
+381,"Dev Machine Guard — Scan Dev Machines for AI Agents, MCP Servers, Suspicious Packages (138 Stars)",agent_security,https://github.com/step-security/dev-machine-guard,138,2026-05-23 23:07:29.996748+00,t
