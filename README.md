@@ -321,6 +321,7 @@ A curated collection of AI agent tools, frameworks, and security findings. Auto-
 ## 📦 Security
 
 - [pentest-ai](https://github.com/0xSteph/pentest-ai) ⭐268
+- [CVE-2026-5029 — Code Runner MCP Server RCE](https://github.com/formulahendry/mcp-server-code-runner) ⭐241
 
 ## 📦 Tools
 
