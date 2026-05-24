@@ -49,3 +49,6 @@ A curated collection of AI agent tools, security findings, and infrastructure pr
 - **[CVE-2026-30635](https://www.cve.org/CVERecord?id=CVE-2026-30635)** — Command injection in automagik-genie MCP server via viewTask function.
 - **[Containarium](https://github.com/FootprintAI/Containarium)** ⭐201 — Open-source agent-native sandbox. LXC-based, supports Cursor, Claude Code, OpenCode. Go.
 - **[CVE-2026-8719](https://www.cve.org/CVERecord?id=CVE-2026-8719)** — Privilege escalation in WordPress AI Engine plugin via MCP OAuth flow.
+
+- [**Nezha Monitoring — Cross-Tenant RCE (CVE-2026-46716)**](https://github.com/nezhahq/nezha) ⭐10K — Critical RCE: authenticated RoleMember can run shell on every monitored server via POST /api/v1/cron. 4 CVEs in one batch including SSRF and cross-tenant telemetry leak.
+- [**ai-memory — Long-Term Memory for Agent CLIs**](https://github.com/akitaonrails/ai-memory) ⭐96 — Rust-based persistent memory for agent coding CLIs. Cross-vendor handoff between Codex, Claude Code, Cursor. MIT licensed.
