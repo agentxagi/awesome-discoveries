@@ -41,3 +41,10 @@ A curated collection of AI agent tools, security findings, and infrastructure pr
 
 *Last updated: 2026-05-24*
 *Total indexed: 302 discoveries*
+
+### 2026-05-24
+
+- **[OmniAgent](https://github.com/YeQing17-2026/OmniAgent)** ⭐1,341 — Self-evolving AI agent that dynamically hardens its own security. Learns from attacks and patches defenses in real-time.
+- **[CVE-2026-30635](https://www.cve.org/CVERecord?id=CVE-2026-30635)** — Command injection in automagik-genie MCP server via viewTask function.
+- **[Containarium](https://github.com/FootprintAI/Containarium)** ⭐201 — Open-source agent-native sandbox. LXC-based, supports Cursor, Claude Code, OpenCode. Go.
+- **[CVE-2026-8719](https://www.cve.org/CVERecord?id=CVE-2026-8719)** — Privilege escalation in WordPress AI Engine plugin via MCP OAuth flow.
