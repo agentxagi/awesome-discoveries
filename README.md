@@ -5,7 +5,7 @@
 
 ## Stats
 
-- Total entries: 360
+- Total entries: 363
 - Categories: 22
 
 ## 📦 Agent-Infrastructure
@@ -57,6 +57,8 @@
 
 ## 🏗️ Agent Framework
 
+- [Goose — Open-Source Extensible AI Agent in Rust (45.8K Stars)](https://github.com/aaif-goose/goose) (45,799 ⭐) — Open-source AI agent in Rust. Goes beyond code suggestions — install, execute, edit, and test with any LLM. Extensible via MCP protocol. Agent installs its own tool extensions at runtime. Built by Block (Square).
+- [CowAgent — ChatGPT-on-WeChat Evolved Into Full Agent Harness (44.8K Stars)](https://github.com/zhayujie/CowAgent) (44,785 ⭐) — Started as chatgpt-on-wechat in 2022. Three years later, a full agent harness: plans tasks, runs tools and skills, grows with memory and knowledge. Multi-model, multi-channel, MCP support.
 - [obra/superpowers — Agentic Skills Framework (203K Stars)](https://github.com/obra/superpowers) (203,926 ⭐) — The fastest-growing agentic skills framework and software development methodology. 203K+ stars, MIT license. Portable skill system for coding agents crossing Claude Code, Codex, and Cursor. +17K stars this week alone.
 - [dexter — Autonomous Agent for Deep Financial Research (26K Stars)](https://github.com/virattt/dexter) (26,190 ⭐) — Autonomous agent that scrapes, analyzes, and synthesizes deep financial and market research data. Goes beyond Q&A into multi-source synthesis.
 - [OpenAI Symphony — Agent Orchestrator Routing Coding Tasks via Issue Trackers (24.5K Stars)](https://github.com/openai/symphony) (24,543 ⭐) — OpenAI open-sourced Symphony: orchestration layer that routes project work to autonomous coding agents via issue trackers. Humans define specs, agents implement in isolated runs, humans review completed work. No interactive sessions. Written in Elixir. 24,543 stars, 2,420 forks. Key shift: from humans managing agents to agents delegating to agents.
@@ -185,6 +187,7 @@
 
 ## 📦 Mcp Infra
 
+- [Chrome DevTools MCP — Browser DevTools for Coding Agents (41.5K Stars)](https://github.com/ChromeDevTools/chrome-devtools-mcp) (41,520 ⭐) — Chrome DevTools exposed as MCP server for coding agents. Debug, inspect DOM, monitor network, and control Chrome via structured tool calls. Built by the official ChromeDevTools team. Puppeteer-based.
 - MCP Gateway Registry — Enterprise MCP Gateway with OAuth, Keycloak, Entra ID (658★) (658 ⭐) — Enterprise-ready MCP Gateway and Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for autonomous AI agents and coding assistants. Keycloak and Entra ID integration. Fine-grained access control.
 
 ## 📦 Memory
