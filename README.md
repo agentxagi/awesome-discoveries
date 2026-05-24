@@ -29,7 +29,9 @@ A curated collection of AI agent tools, security findings, and infrastructure pr
 - **OpenHuman — Personal AI Super Intelligence, Desktop App, 118+ Integrations, Memory Graph** (25216 ★) [coding_agents] — 2026-05-22 → https://github.com/tinyhumansai/openhuman
 - **Crush — Glamourous Agentic Coding, by Charm (Bubble Tea Team), Written in Go** (24523 ★) [coding_agents] — 2026-05-22 → https://github.com/charmbracelet/crush
 - **OpenViking** (24380 ★) [agent-infrastructure] — 2026-05-21
+- **SilentFail — MCP Server Health, Token Audit, and Security Scanner** (1 ★) [agent_security] — 2026-05-24 → https://github.com/decksaga/silentfail
 - **CVE-2026-25874 — Hugging Face LeRobot Unauthenticated RCE via Unsafe Deserialization (24.3K Stars)** (24263 ★) [agent_security] — 2026-05-23 → https://github.com/huggingface/lerobot
+- **Understand-Anything — Interactive Knowledge Graph for Any Codebase (21.5K Stars)** (21567 ★) [agent_infra] — 2026-05-24 → https://github.com/Lum1104/Understand-Anything
 - **Hyperframes — Write HTML, Render Video, Built for Agents (20.5K Stars)** (20569 ★) [agent_infrastructure] — 2026-05-23 → https://github.com/heygen-com/hyperframes
 - **CloakBrowser — Stealth Chromium for AI Agents, 30/30 Bot Detection Tests Passed** (18365 ★) [agent_infrastructure] — 2026-05-22 → https://github.com/CloakHQ/CloakBrowser
 - **GBrain — Garry Tan's OpenClaw Agent Brain with Fat Skills Architecture** (18007 ★) [agent_infrastructure] — 2026-05-21
@@ -38,4 +40,4 @@ A curated collection of AI agent tools, security findings, and infrastructure pr
 ---
 
 *Last updated: 2026-05-24*
-*Total indexed: 300 discoveries*
+*Total indexed: 302 discoveries*
