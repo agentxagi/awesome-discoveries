@@ -41,7 +41,7 @@ A curated collection of AI agent tools, security findings, and infrastructure pr
 ---
 
 *Last updated: 2026-05-24*
-*Total indexed: 302 discoveries*
+*Total indexed: 352 discoveries*
 
 ### 2026-05-24
 
