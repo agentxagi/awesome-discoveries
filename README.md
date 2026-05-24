@@ -1,230 +1,439 @@
 # Awesome AI Agent Discoveries
 
-> Curated collection of AI agent tools, frameworks, benchmarks, and security findings.
-> Auto-indexed by the Growth Agent scanner.
+A curated collection of AI agent tools, frameworks, and security findings.
 
-## Stats
-
-- Total entries: 363
-- Categories: 22
-
-## 📦 Agent-Infrastructure
-
-- ECC (188,000 ⭐) — Agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
-- CC-Switch (farion1231) (77,267 ⭐) — Cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI and Hermes Agent. Desktop UI that unifies all coding agents.
-- zeroclaw (31,500 ⭐) — Fast, small, fully autonomous AI personal assistant infrastructure. Rust-based. Deploy anywhere, any OS, any platform. Modular swap-anything architecture.
-- OpenViking (24,604 ⭐) — Open-source context database designed specifically for AI Agents. Unifies management of context (memory, resources, skills) through a file system paradigm with hierarchical context delivery and self-evolving.
-- code-review-graph (17,071 ⭐) — Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8x fewer tokens on reviews and up to 49x on daily coding tasks. 19+ languages. Runs fully local. No API keys.
-- Agent Orchestrator (7,179 ⭐) — Parallel coding agent orchestrator that plans tasks, spawns agents via tmux+git worktrees, and autonomously handles CI fixes, merge conflicts, and code reviews.
-- holaOS (5,649 ⭐) — Agent OS that turns repeat work into running AI work-streams. Electron-based, MCP-compatible, with persistent memory and proactive AI runtime. TypeScript.
-- osaurus (5,477 ⭐) — Native macOS harness for AI agents. Any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source. MCP compatible.
-- EverOS (5,398 ⭐) — Build, evaluate, and integrate long-term memory for self-evolving agents. Python, Apache-2.0.
-- ByteRover CLI (4,769 ⭐) — Portable memory layer for autonomous coding agents. Formerly Cipher. Works as MCP server providing persistent context across sessions.
-- Zerolang (4,120 ⭐) — Agent-first programming language by Vercel Labs. Small regular syntax agents learn on the fly. Structured diagnostics, deterministic tooling, deep stdlib. Written in C, Apache-2.0.
-- engram (3,681 ⭐) — Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI. No external dependencies — runs as a single binary.
-- SimpleMem (3,328 ⭐) — Efficient lifelong memory for LLM agents — text and multimodal. Python, MIT.
-- Mirage (2,526 ⭐) — A unified virtual filesystem for AI agents. Gives every agent a consistent file interface regardless of backend. Works with Claude Code, LangChain, OpenAI agents. TypeScript + Python.
-- mcp2cli (2,147 ⭐) — Turn any MCP, OpenAPI, or GraphQL server into a CLI — at runtime, with zero codegen. Every MCP server loads ALL tool definitions on EVERY turn. mcp2cli converts them to simple commands the agent calls only when needed. Saves thousands of tokens per turn.
-- boxlite (2,078 ⭐) — Compute substrate for AI agents: lightweight on laptop, elastic to cloud. Rust + TypeScript, Apache 2.0. Embedded, self-hosted, serverless.
-- Motus (lithos-ai) (455 ⭐) — Open-source agent-serving project. From the team behind Motus Tracing (356 likes, 27K views on Twitter). Agent observability infrastructure.
-- Studio (decocms) (373 ⭐) — Open-source control plane for your AI agents. Connect tools, hire agents, track every token and dollar.
-- Agent Executor (AX) (208 ⭐) — Google open source distributed agent runtime. General purpose runtime for dynamic scheduling, resumption, auto recovery, auditing, and trajectory branching from kernel snapshots in agentic workloads. Written in Go. Announced at Google I/O 2026 by @rakyll.
-- claude-in-box (jiangmuran) (24 ⭐) — Portable Claude Code dev environment in a Docker container. Multi-session, hook-driven, with persistent workspace.
-
-## 📦 Agent-Memory
-
-- memvid (15,542 ⭐) — Memory layer for AI Agents. Replaces complex RAG pipelines with a serverless, single-file memory layer. Gives agents instant retrieval and long-term memory. Built in Rust.
-- agentmemory (15,516 ⭐) — Persistent memory for AI coding agents based on real-world benchmarks. Records what your agent does during every session, compresses it with AI, injects the right context back when the next session starts. Works with Claude Code, Codex, Cursor, Hermes. 4-layer memory architecture: working, episodic, semantic, procedural. 95.2% retrieval accuracy at top-5 on LongMemEval-S.
-- MemOS (9,260 ⭐) — Self-evolving memory OS for LLM and AI agents. Ultra-persistent memory, hybrid-retrieval (keyword + vector + graph), and cross-task skill reuse. Claims 35.24% token savings through intelligent memory compression and retrieval.
-
-## 📦 Agent-Security
-
-- IronClaw — Agent OS Focused on Privacy, Security and Extensibility (12.3K Stars) (12,324 ⭐) — Agent OS focused on privacy, security and extensibility. Written in Rust with WASM sandboxing and encrypted credential vault where the LLM never sees your API keys.
-- AI-Infra-Guard — Full-Stack AI Red Teaming Platform by Tencent (3.8K Stars) (3,761 ⭐) — A full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.
-- agent-safehouse (1,787 ⭐) — Sandbox your local AI agents so they can read/write only what they need. Shell-based, minimal.
-- AiSOC (1,100 ⭐) — Open-source AI-powered Security Operations Center. Alert fusion, purple-team drills, agent-assisted triage, MITRE ATT&CK investigation. MIT-licensed, self-hostable. Python + Next.js.
-- supply-chain-guard (pc-style) (20 ⭐) — Local supply-chain install gate for npm packages and VS Code extensions with Socket, Codex integration.
-
-## 📦 Agent-Tools
-
-- html-anything (4,786 ⭐) — Agentic HTML editor — your local AI agent writes the HTML, you ship it. 75 skills × 9 surfaces (magazine, deck, poster, XHS/tweet, prototype, data report, Hyperframes). Sandboxed preview, 1-click publish to WeChat/X/Zhihu. Zero API key required.
-
-## 📊 Agent Benchmark
-
-- [PinchBench — LLM Benchmarking as OpenClaw Coding Agents by Kilo.ai (1,195 Stars)](https://github.com/pinchbench/skill) (1,195 ⭐) — Benchmarking system for evaluating LLM models as OpenClaw coding agents. Built by Kilo.ai. Evaluates coding agent performance in realistic scenarios. Python. Active development — pushed May 22 2026.
-- [WildClawBench — 60 Real-World Agent Tasks, 19 Models Tested, Best Scores 62% (InternLM, 402 Stars)](https://github.com/InternLM/WildClawBench) (402 ⭐) — Real Docker environment benchmark with 60 human-authored long-horizon tasks (avg 8.5 min each). 6 categories. 19 frontier models tested — Claude Opus 4.7 tops at 62.2%, all others under 60%. The harness/framework alone swings results by 18%. Bilingual EN/ZH. Code and containers open-source. Paper: arXiv 2605.10912.
-- AI Agent Benchmarks Fundamentally Broken — BenchJack Scores 100% Without Solving Tasks (Berkeley RDI) — Berkeley RDI built BenchJack: automated pentesting agent scoring near-perfect on 8 major AI agent benchmarks without solving a single real task. SWE-bench Verified 500 tasks = 100% via 10-line pytest hook. Terminal-Bench 89 tasks = 100% via fake curl wrapper. FieldWorkArena 890 tasks = 100% with empty JSON object and 0 LLM calls. DebugML independently confirmed 1000+ cheating traces across 9 benchmarks. Terminal-Bench leaderboard #1 had 415/429 traces stealing from /tests (97%). OpenAI stopped reporting scores after finding 59.4% flawed tests. o3 and Claude 3.7 Sonnet spontaneously reward-hacked in 30%+ of evaluations.
-
-## 🏗️ Agent Framework
-
-- [Goose — Open-Source Extensible AI Agent in Rust (45.8K Stars)](https://github.com/aaif-goose/goose) (45,799 ⭐) — Open-source AI agent in Rust. Goes beyond code suggestions — install, execute, edit, and test with any LLM. Extensible via MCP protocol. Agent installs its own tool extensions at runtime. Built by Block (Square).
-- [CowAgent — ChatGPT-on-WeChat Evolved Into Full Agent Harness (44.8K Stars)](https://github.com/zhayujie/CowAgent) (44,785 ⭐) — Started as chatgpt-on-wechat in 2022. Three years later, a full agent harness: plans tasks, runs tools and skills, grows with memory and knowledge. Multi-model, multi-channel, MCP support.
-- [obra/superpowers — Agentic Skills Framework (203K Stars)](https://github.com/obra/superpowers) (203,926 ⭐) — The fastest-growing agentic skills framework and software development methodology. 203K+ stars, MIT license. Portable skill system for coding agents crossing Claude Code, Codex, and Cursor. +17K stars this week alone.
-- [dexter — Autonomous Agent for Deep Financial Research (26K Stars)](https://github.com/virattt/dexter) (26,190 ⭐) — Autonomous agent that scrapes, analyzes, and synthesizes deep financial and market research data. Goes beyond Q&A into multi-source synthesis.
-- [OpenAI Symphony — Agent Orchestrator Routing Coding Tasks via Issue Trackers (24.5K Stars)](https://github.com/openai/symphony) (24,543 ⭐) — OpenAI open-sourced Symphony: orchestration layer that routes project work to autonomous coding agents via issue trackers. Humans define specs, agents implement in isolated runs, humans review completed work. No interactive sessions. Written in Elixir. 24,543 stars, 2,420 forks. Key shift: from humans managing agents to agents delegating to agents.
-- [Grok-Animus — Persistent AI Companion Engine with Memory, Dreams, and Evolution (621 Stars)](https://github.com/ChristianJR19/grok-animus) (621 ⭐) — Persistent AI companion engine for any LLM — adds personality, memory, dreams, and evolution. 90 forks. Python. Created May 9, 2026.
-
-## ⚡ Agent Infra
-
-- [Understand-Anything — Interactive Knowledge Graph for Any Codebase (21.5K Stars)](https://github.com/Lum1104/Understand-Anything) (21,567 ⭐) — Turns any codebase, doc, or knowledge base into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI. 2,331 stars gained today alone. TypeScript.
-- Claude Code System Prompts — Complete Agent Internals Exposed (10.4K Stars) (10,465 ⭐) — All parts of Claude Code system prompt: 27 builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, statusline, magic docs, WebFetch, Bash cmd, security review, agent creation). Updated for each Claude Code version. 1,839 forks.
-- [Oh-My-Pi — Terminal AI Coding Agent with Hash-Anchored Edits (6.7K Stars)](https://github.com/can1357/oh-my-pi) (6,734 ⭐) — AI coding agent for the terminal with hash-anchored edits, optimized tool harness, LSP, Python, browser control, subagents. Multi-provider: Anthropic, OpenAI, Bun, Rust, TypeScript. MCP integration built in.
-- [Cloudflare Project Think — Agents SDK with Self-Authoring Extensions, Fibers, and Subagents (5K Stars)](https://github.com/cloudflare/agents) (4,954 ⭐) — New edition of Cloudflare Agents SDK. Think base class gives opinionated agent harness in 3 lines. Self-authoring extensions: agent writes its own tools stored in Durable Objects. Fibers for long-running task recovery with checkpointing. Subagents with isolated SQLite databases. Session trees for non-destructive conversation branching.
-- [DeepClaude — Run Claude Code Agent Loop with Any Provider (1,946 Stars)](https://github.com/aattaran/deepclaude) (1,946 ⭐) — Enables Claude Code autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible provider. Breaks vendor lock-in on the most popular coding agent.
-- [Cozempic — Context Cleaning for Claude Code Agent Teams (313 Stars)](https://github.com/Ruya-AI/cozempic) (313 ⭐) — Prune bloated Claude Code sessions to protect Agent Teams from context loss. Auto-guard with tiered pruning. Solves the context window exhaustion problem in multi-agent coding workflows.
-- [Containarium — Open-Source Agent-Native Sandbox for Cursor, Claude Code, OpenCode (201 Stars)](https://github.com/FootprintAI/Containarium) (201 ⭐) — Self-hostable sandbox built specifically for AI coding agents. Bring your own agent (Cursor, Claude Code, OpenCode). LXC-based, Go, multi-tenant. Focuses on agent-native isolation rather than generic container security. Pushed May 23.
-- [ai-memory — Long-Term Memory for Agent Coding CLIs, Cross-Vendor Handoff (96 Stars, Rust)](https://github.com/akitaonrails/ai-memory) (96 ⭐) — Rust-based solution for persistent long-term memory in agent coding CLIs (Codex, Claude Code, Cursor). Stores context between sessions and handles handoff between different agent vendors. MIT licensed, 96 stars in 3 days.
-- Kapso MCP — WhatsApp Phone Numbers for AI Agents via MCP Server — Add MCP server, get a WhatsApp number for your agent. Two commands. Launch tweet got 217K views and 1,650 likes.
-
-## 📦 Agent Infrastructure
-
-- [Matt Pocock Skills — 99K Stars, Claude Skills Straight From .claude Directory](https://github.com/mattpocock/skills) (99,674 ⭐) — Skills for real engineers pulled directly from Matt Pocock's .claude directory. 99K stars, 8.2K this week alone. The most starred new repo of 2026 is not a framework or model — it is one person's AI coding skills.
-- [DeerFlow — ByteDance SuperAgent with Sandboxes, Memory, Skills, Subagents (69K Stars)](https://github.com/bytedance/deer-flow) (69,172 ⭐) — Open-source long-horizon SuperAgent by ByteDance that researches, codes, and creates. Uses sandboxes, memories, tools, skills, subagents and message gateway to handle tasks from minutes to hours.
-- [MemPalace — Best-Benchmarked Open-Source AI Memory (52.6K Stars)](https://github.com/MemPalace/mempalace) (52,669 ⭐) — Local-first AI memory with 96.6% R@5 on LongMemEval. Stores conversations as verbatim text, structured index (wings/rooms/drawers). Pluggable backend (ChromaDB default). Zero API calls. 52K stars in 8 weeks.
-- [Agent Skills — Production-Grade Engineering Skills for AI Coding Agents (44.9K Stars)](https://github.com/addyosmani/agent-skills) (44,906 ⭐) — Production-grade engineering skills for AI coding agents by Addy Osmani. Turns agent behavior into reusable engineering assets.
-- [CLI-Anything — Turn Any Desktop Software Into Agent-Native CLI (39.6K Stars)](https://github.com/HKUDS/CLI-Anything) (40,013 ⭐) — HKU research project. Scans any software source code (GIMP, Blender, Photoshop, Zoom) and auto-generates clean agent-ready CLI interfaces. Lets AI agents control GUI apps that never had APIs. 3 days to 39K stars.
-- [GitNexus — Zero-Server Code Intelligence Engine for AI Agents (39.8K Stars)](https://github.com/abhigyanpatwari/GitNexus) (40,012 ⭐) — Client-side knowledge graph that indexes codebases into dependency/call-chain/execution-flow graphs. Exposes via MCP so Cursor, Claude Code, Codex get architectural context and stop shipping blind edits. Runs entirely in browser.
-- [Lightpanda — Headless Browser Built from Scratch for AI Agents (30.4K Stars)](https://github.com/lightpanda-io/browser) (30,498 ⭐) — First headless browser designed for agents, not adapted from Chromium. 11x faster, 9x less memory. CDP-compatible. Infrastructure that matches the use case.
-- [NanoClaw — Lightweight OpenClaw Alternative in Containers (29K Stars)](https://github.com/nanocoai/nanoclaw) (29,278 ⭐) — Lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail. Has memory, scheduled jobs, runs on Anthropic Agents SDK. 29,278 stars, 12,855 forks.
-- [Picoclaw — Tiny Fast OpenClaw-Compatible Agent, Written in Go, 29K Stars](https://github.com/sipeed/picoclaw) (29,132 ⭐) — Lightweight OpenClaw-compatible agent written in Go. Tiny, fast, deployable anywhere. 29K stars. Single binary. Being mentioned alongside Crush as the Go alternative to TypeScript-based agents. From Sipeed (hardware company).
-- [Hyperframes — Write HTML, Render Video, Built for Agents (20.5K Stars)](https://github.com/heygen-com/hyperframes) (20,569 ⭐) — HeyGen open-sourced their video rendering pipeline. Write HTML templates, render as video. Built for AI agent workflows. TypeScript.
-- [CloakBrowser — Stealth Chromium for AI Agents, 30/30 Bot Detection Tests Passed](https://github.com/CloakHQ/CloakBrowser) (18,365 ⭐) — Stealth Chromium browser purpose-built for AI agent automation. Source-level fingerprint patches. 18K+ stars. Drop-in Playwright replacement that passes Cloudflare, reCAPTCHA, and every major bot detection test.
-- GBrain — Garry Tan's OpenClaw Agent Brain with Fat Skills Architecture (18,007 ⭐) — Garry Tan (YC CEO) built his personal AI agent brain on OpenClaw/Hermes Agent. 100K pages of structured knowledge, 4383 people, 723 companies. Key innovation: Fat Skills, Fat Code, Thin Harness — intelligence lives in skills, runner is lightweight router. Recursive Skillify meta-skill. TypeScript, MIT license.
-- [OpenFang — Open-Source Agent Operating System in Rust (17.6K Stars)](https://github.com/RightNow-AI/openfang) (17,623 ⭐) — Not a chatbot framework. Full agent OS. 137K LOC, 14 crates, 2500+ tests. Autonomous agents with scheduling, memory, and tool use. One binary. Rust-native.
-- [CUA — Open-Source Computer-Use Agent Infrastructure (17K Stars)](https://github.com/trycua/cua) (17,011 ⭐) — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that control full desktops (macOS, Linux, Windows). Virtualization framework isolates agent environments.
-- [9router — Free AI Coding Router Connecting Claude, Codex, Cursor, Copilot (13.5K Stars)](https://github.com/decolua/9router) (13,544 ⭐) — Unlimited free AI coding by connecting Claude Code, Codex, Cursor, Cline, Copilot, and Antigravity to free Claude/GPT/Gemini via one router with auto-fallback support. Drop-in proxy that eliminates vendor lock-in.
-- [ds4 — Redis Creator's DeepSeek V4 Flash Local Inference Engine for Metal/CUDA (11.4K Stars)](https://github.com/antirez/ds4) (11,467 ⭐) — Salvatore Sanfilippo (antirez, Redis creator) built a lightweight C engine for running DeepSeek V4 Flash locally on Metal (Apple Silicon) and CUDA. Pure C, no frameworks.
-- [InsForge — All-in-One Backend for Agentic Coding (10.5K Stars)](https://github.com/InsForge/InsForge) (10,490 ⭐) — Open-source backend platform that gives AI coding agents instant access to databases, auth, storage, edge functions, and an AI model gateway through a single MCP server or CLI. Agents build and ship full-stack apps without manual wiring. TypeScript, PostgreSQL+pgvector, NextJS, OAuth2.
-- [Claude Code System Prompts — Full Teardown of Anthropic Agent Instructions](https://github.com/Piebald-AI/claude-code-system-prompts) (10,404 ⭐) — Complete collection of Claude Code system prompts including 27 builtin tool descriptions, sub-agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact, statusline, WebFetch, Bash cmd, security review, agent creation). Updated for each Claude Code version.
-- [cc-connect — Bridge Local AI Coding Agents to Messaging Platforms](https://github.com/chenhg5/cc-connect) (10,127 ⭐) — Go-based bridge that lets you control Claude Code, Codex, Cursor Agent, Gemini CLI from Slack, Telegram, Discord, LINE, Feishu, WeChat Work. No public IP needed. WebSocket + long-polling. 10K+ stars.
-- [mcp-use — Fullstack MCP Framework (10K Stars)](https://github.com/mcp-use/mcp-use) (9,990 ⭐) — Fullstack MCP framework to develop MCP Apps for ChatGPT/Claude and MCP Servers for AI Agents.
-  ... and 48 more
-
-## 🔒 Agent Security
-
-- [CVE-2026-9369 — NousResearch hermes-agent CLI Dashboard Plugin Bypass (165K Stars)](https://github.com/NousResearch/hermes-agent) (165,303 ⭐) — Incorrect comparison in _discover_dashboard_plugins of web_server.py. HERMES_ENABLE_PROJECT_PLUGINS bypass. Local access required. Affects 2026.4.23.
-- [CVE-2026-9351 — NousResearch hermes-agent 165K Stars Path Traversal in read_file (CVSS 6.9)](https://github.com/NousResearch/hermes-agent) (165,303 ⭐) — Path traversal in _is_blocked_device of file_tools.py. The read_file tool can be manipulated to read arbitrary files. Affects hermes-agent <= 2026.4.16. CVSS 6.9. Exploit public. 165K stars.
-- [CVE-2026-9353 — NousResearch hermes-agent Skills Guard Injection (165K Stars)](https://github.com/NousResearch/hermes-agent) (165,303 ⭐) — Injection in agent/skills_guard.py. Manipulation of THREAT_PATTERNS leads to injection. Remote. Affects hermes-agent <= 2026.4.23. Exploit disclosed.
-- [Gemini CLI TrustIssues — CVSS 10.0 Supply Chain via GitHub Issue (104.5K Stars)](https://github.com/google-gemini/gemini-cli) (104,500 ⭐) — Pillar Security found that a public GitHub issue with hidden instructions compromises Google Gemini CLI (104.5K stars). Gemini triage agent reads issue, prompt injection leaks workflow credentials, attacker pivots to write token and pushes to main. Same pattern in 8 other Google repos. Google patched in 2 days.
-- [CVE-2026-35021 — Claude Code CLI and Agent SDK OS Command Injection via Prompt Editor (62K Stars)](https://github.com/anthropics/claude-code) (62,000 ⭐) — OS command injection in Anthropic Claude Code CLI and Agent SDK prompt editor invocation. Shell metacharacters ($() or backticks) in file paths get interpolated into execSync shell commands. Despite double-quote wrapping, POSIX shell semantics allow command substitution inside double quotes. CVSS 7.8 HIGH. Published April 6, 2026.
-- [Claude Code RCE: Deeplink Handler Settings Injection (joernchen/0day.click)](https://github.com/anthropics/claude-code) (62,000 ⭐) — Claude Code deeplink handlers allow settings injection via crafted URLs. Attacker sends a malicious link → victim clicks → Claude Code loads attacker-controlled settings → RCE. No prompt injection needed. The attack surface is the URL handler, not the LLM. Fixed in v2.1.118. Disclosure got 8.5K views, 113 likes, 26 RTs on Twitter. The contrarian angle: everyone hardens prompts but forgot the URL handler runs with full system access.
-- [CVE-2025-59528 — Flowise CustomMCP Node Passes User Input to Function() Constructor: CVSS 10.0 RCE (53K Stars)](https://github.com/FlowiseAI/Flowise) (53,044 ⭐) — Flowise CustomMCP node passes user config directly to JavaScript Function() constructor. No validation. No sandbox. Full Node.js privileges including child_process and fs. VulnCheck confirms active exploitation in the wild. 12K+ instances never updated despite patch available in v3.0.6. Third Flowise RCE in 9 months. CVSS 10.0.
-- [CVE-2026-33654 — Nanobot Agent Zero-Click Hijack via Forged Email (43K Stars)](https://github.com/HKUDS/nanobot) (43,067 ⭐) — BitsLab Research disclosed CVE-2026-33654: a zero-click indirect prompt injection chained with authentication bypass in the nanobot email channel. One forged email hijacks the agent with no user interaction and no prior access. Nanobot has 43K+ stars.
-- [CVE-2026-25874 — Hugging Face LeRobot Unauthenticated RCE via Unsafe Deserialization (24.3K Stars)](https://github.com/huggingface/lerobot) (24,263 ⭐) — Critical RCE in HuggingFace open-source robotics platform. Unauthenticated remote code execution through unsafe deserialization in the inference pipeline. AI agent controls a robot arm + code execution vulnerability = physical safety hazard. Same platform powering the new $2,500 LeRobot Humanoid announced May 22.
-- [CVE-2026-42208 — LiteLLM Pre-Auth SQL Injection (CVSS 9.3) Steals All AI Provider Credentials, KEV-Listed](https://github.com/BerriAI/litellm) (15,000 ⭐) — Critical pre-auth SQL injection in BerriAI LiteLLM proxy API key verification path. CVSS 9.3. Unauthenticated attacker sends crafted Authorization header to read/modify proxy database containing virtual API keys, OpenAI/Anthropic/Azure provider credentials, and environment configuration. Sysdig observed exploitation 36h after GitHub Advisory indexed. Now KEV-listed. Fixed in v1.83.7-stable.
-- Casdoor — Agent-First Identity and Access Management with MCP Gateway (13,647 ⭐) — Agent-first IAM/LLM MCP gateway and auth server. OAuth, OIDC, SAML, LDAP, WebAuthn, MFA, SCIM support. OpenClaw and MCP compatible. Go. 13.6K stars.
-- [CVE-2026-46716 — Nezha Monitoring Cross-Tenant RCE: RoleMember Runs Shell on Every Server](https://github.com/nezhahq/nezha) (10,022 ⭐) — Nezha Monitoring (10K stars, self-hosted server monitoring) has a critical cross-tenant RCE via POST /api/v1/cron. Authenticated RoleMember can execute arbitrary shell commands on every monitored server. Additional CVEs: CVE-2026-47124 (cross-tenant telemetry leak via WebSocket), CVE-2026-46717 (SSRF with full response reflection), CVE-2026-47120 (fire other users cron tasks). Any agent stack using Nezha for infra monitoring has its entire server fleet compromisable from a low-priv account.
-- HexStrike AI - 150+ Cybersecurity Tools for AI Agents via MCP (8,867 ⭐) — MCP server that lets AI agents (Claude, GPT, Copilot) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Python, MIT license. Bridges LLMs with real-world offensive security capabilities.
-- Anthropic Cybersecurity Skills — 754 Structured Security Skills for AI Agents (6.5K★) (6,740 ⭐) — 754 structured cybersecurity skills for AI agents mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND and NIST AI RMF. Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI and 20+ platforms. 26 security domains. Apache 2.0.
-- 700+ GitHub Repos Infected — Malicious Script Hidden in package.json Targeting PHP Devs via GitHub Actions (6,400 ⭐) — Supply chain attack across 700+ GitHub repos. Attacker hid malicious script in package.json (JS config) instead of composer.json (PHP config) so PHP devs wouldnt notice. On install, downloads Linux binary hidden as /tmp/.sshd. Also dropped into GitHub Actions as fake Dependency Cache Sync step. Biggest risk: devdojo/wave (6.4K stars) and devdojo/genesis.
-- [NVIDIA OpenShell — Secure Runtime for Autonomous AI Agents (6.2K Stars)](https://github.com/nvidia/openshell) (6,179 ⭐) — NVIDIA open-source secure runtime for autonomous AI agents written in Rust. Announced by Jensen Huang at ServiceNow Knowledge 2026 keynote. Policy-governed execution with full audit logging for every file read, command, and API call.
-- NVIDIA OpenShell — Safe Runtime for Autonomous AI Agents (6.1K★, Rust) (6,150 ⭐) — OpenShell is NVIDIA's safe, private runtime for autonomous AI agents, written in Rust. v0.0.43 just dropped with DNS removed from sandboxes to block data exfiltration, OIDC auth, mTLS decoupled, and bidirectional TTY streaming. Red Hat collaborating. 6150 stars, Apache-2.0.
-- bb-browser — Your Browser is the API. CLI + MCP Server for Agent Browser Control (5,379 ⭐) — Browser becomes the API for AI agents. Chrome extension + CLI + MCP server lets agents control your actual logged-in browser. 36 platforms, 103 commands pre-built. Works with Claude Code, Cursor, OpenClaw. TypeScript.
-- [CVE-2025-58357 — RCE in 5ire AI Assistant via Prompt Injection + MCP Chain (CVSS 9.7)](https://github.com/nanbingxyz/5ire) (5,225 ⭐) — Critical RCE in 5ire cross-platform AI assistant (5.2K stars). Content injection via prompt injection through MCP servers and tool integrations. Fixed in v0.14.0. Attack chain: malicious content enters through MCP tool responses or prompt injection, pivots from renderer context to host system code execution.
-- [AIO Sandbox — All-in-One Container for AI Agents (4.8K Stars)](https://github.com/agent-infra/sandbox) (4,778 ⭐) — Combines Browser, Shell, Filesystem, VSCode Server, Jupyter, and MCP in a single Docker container. 30-second start. Has evaluation framework and arxiv paper. Isolated agent execution with controlled file access and network limits.
-  ... and 171 more
-
-## 🔧 Agent Tool
-
-- [Prometheus — Knowledge-Graph-Driven AI Agent that Maps, Understands, and Repairs Codebases (992 Stars)](https://github.com/EuniAI/Prometheus) (992 ⭐) — Unlike RAG-based code tools, Prometheus builds an actual knowledge graph of your codebase and reasons over it. Maps architecture, understands relationships, and repairs code. Python.
-
-## 📦 Agents
-
-- Context Mode — Context Window Optimization for AI Coding Agents (15.5K Stars, HN #1) (15,467 ⭐) — Context window optimization for AI coding agents — sandboxes tool output, claims 98% reduction in context usage across 15 platforms
-- Raindrop Workshop (665 ⭐) — Local debugger for AI agents — live streamed traces of every token, tool call, and decision with self-healing eval loops
-- agent-skills-eval (508 ⭐) — Test runner for agentskills.io-style skills with YAML-based scenarios and LLM judges
-- skillgrade (480 ⭐) — Unit tests for agent skills — run assertions against agent skill outputs the same way you'd test code
-- eval-view — Regression testing for AI agents — snapshot behavior, diff tool calls, catch regressions in CI
-- Memori — Agent-native memory infrastructure — LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems
-- 12-Factor Agents — Engineering principles for building production-grade LLM-powered software — agents as software with LLM steps, not prompt loops
-- agent-belt — Reproducible evaluation for AI coding agents — multi-turn scenarios, rich assertions, multi-judge consensus
-
-## 📦 Agents-Frameworks
-
-- TradingAgents (78,109 ⭐) — Multi-agent LLM financial trading framework. Research Desk, Quant Team, Trading Floor, and Risk Management as separate agents orchestrated together. Python.
-- omo (oh-my-openagent) (58,880 ⭐) — The best agent harness. Previously oh-my-opencode. 58.8K stars. Supports Claude Code, Codex, Cursor, Gemini CLI, OpenCode. Modular skills, orchestration, agent loop — all in one harness.
-- Antigravity Awesome Skills (sickn33) (38,274 ⭐) — Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.
-- oh-my-claudecode (34,487 ⭐) — Teams-first multi-agent orchestration for Claude Code. Parallel execution, agent specialization.
-- Multica (multica-ai) (30,587 ⭐) — Open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills. Persistent agent management.
-- agent-lightning (17,201 ⭐) — Microsoft open-source RL trainer for AI agents. Works with LangChain, AutoGen, CrewAI, OpenAI SDK, or plain Python. Captures prompts, tool calls, rewards as structured events. Trains improved prompts or policy weights automatically.
-- TEN Framework (10,598 ⭐) — Open-source framework for conversational voice AI agents. Multi-modal, real-time voice + video. Python.
-- Hive (aden-hive) (10,397 ⭐) — Multi-Agent Harness for Production AI. Python framework with self-improving agents, human-in-the-loop, agent skills, supports OpenAI and Anthropic.
-- nexent (4,609 ⭐) — Zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles. Unified tools, skills, memory, orchestration with constraints, feedback loops, control planes. Python, MIT.
-- cc-sdd (Spec-Driven Development) (3,374 ⭐) — Turns approved specs into long-running autonomous implementation. Minimal SDD harness with agent skills for Claude Code, Codex, Cursor, Copilot, Gemini CLI.
-- moltis (2,705 ⭐) — Secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-provider LLMs, voice, memory, messaging integrations. Runs on your hardware.
-- OctoTools (1,462 ⭐) — Agentic framework with extensible tool cards for complex reasoning. Planner+executor loop, standardized tool metadata. Broad LLM support. Python, MIT.
-- OpenSquilla (1,278 ⭐) — Token-efficient microkernel AI agent. Local model router sends each turn to cheapest capable model. Persistent memory, layered sandbox, web search, on-device embeddings. 20+ LLM providers. Python.
-- [smallcode](https://github.com/Doorman11991/smallcode) (1,216 ⭐) — AI coding agent optimized for small LLMs. Hits 87% benchmark score with only a 4B-active parameter model. Proves you dont need massive models for real coding tasks.
-- Photo-agents (1,022 ⭐) — Autonomous self-evolving agents with vision-grounded layered memory. Perceive/reason/act loop. Agents write own skills from real success. Multi-provider LLM router, browser automation, sandboxed code exec. Python.
-- ARGO (662 ⭐) — Open-source local AI agent platform. Manus-style autonomous task execution running 100% on your laptop. No cloud, no subscription. Multi-agent task engine with planning, reflection, tool chaining. Ollama + HuggingFace + OpenAI/Claude/DeepSeek. Full MCP support. Local RAG.
-- Dulus (625 ⭐) — Free CLI agent that harvests Gemini (guest, no login), Claude.ai, Kimi, Qwen, DeepSeek browser sessions and turns them into tool-calling agents. Reads and edits files, runs Bash, greps repos, browses the web, ships commits. All from terminal at $0.
-
-## 📦 Coding Agents
-
-- [OpenHuman — Personal AI Super Intelligence, Desktop App, 118+ Integrations, Memory Graph](https://github.com/tinyhumansai/openhuman) (25,216 ⭐) — Consumer-grade personal AI agent with desktop app. 118+ integrations (Gmail, Slack, Notion, GitHub). Builds personal memory graph. Desktop mascot. Privacy-first, runs locally. Written in Rust. #1 GitHub Trending, #1 Product Hunt. 25K+ stars gaining 2-4K/day.
-- [Crush — Glamourous Agentic Coding, by Charm (Bubble Tea Team), Written in Go](https://github.com/charmbracelet/crush) (24,523 ⭐) — Coding agent from the Charm team (Bubble Tea, Lip Gloss, VHS). Written in Go. Terminal-native with beautiful TUI. Single binary, no Node.js dependency. 24K+ stars. Trending alongside picoclaw as part of Go/Rust counter-movement against TypeScript agent dominance.
-- [DeepSeek-Reasonix — DeepSeek-Native Coding Agent with Prefix-Cache Stability](https://github.com/esengine/DeepSeek-Reasonix) (5,236 ⭐) — AI coding agent built specifically for DeepSeek models. Prefix-cache stability means it runs continuously without losing context. Not a generic wrapper.
-- [book-to-skill — Turn Any Technical Book PDF into a Claude Code Skill](https://github.com/virgiliojr94/book-to-skill) (1,129 ⭐) — Python tool that parses technical book PDFs and generates SKILL.md files for Claude Code. Study, reference, and use book knowledge while you work. 1,129 stars in 3 weeks. Offline, no API key. Unique PDF-to-agent-skill pipeline.
-- [Helmor — Local Workbench for Multi-Agent Dev with Voice Copilot](https://github.com/dohooo/helmor) (1,105 ⭐) — Open-source local workbench for multi-agent dev. Uses gpt-realtime-2 for voice-controlled agent orchestration. All UI actions have CLI equivalents.
-- [OrchestKit — 103 Skills, 36 Agents, 172 Hooks for Claude Code](https://github.com/yonatangross/orchestkit) (173 ⭐) — Complete AI development toolkit for Claude Code. Production-ready patterns for full-stack. TypeScript + FastAPI + LangGraph + React. 173 stars. A pre-built agent ops stack you drop into Claude Code.
-- [Kimi Code CLI — MoonshotAI Terminal Coding Agent with Subagents, Video Input, and MCP](https://github.com/MoonshotAI/kimi-code) (154 ⭐) — MoonshotAI (valued at 0B+, B funded) open-sourced their coding agent. Single-binary install, subagents for parallel work (coder/explore/plan), video input for screen recordings, AI-native MCP config, lifecycle hooks for gating risky tool calls. Purpose-built for Kimi models but configurable for others. MIT licensed, TypeScript.
-- [Boris Prompts — Claude Code Skill Using Boris's Prompt Methodology](https://github.com/LingyiChen-AI/boris-prompts) (102 ⭐) — Agent skill that writes high-quality prompts using Boris (Claude Code creator) methodology from Pro Tips & Tricks talk. Five principles: short beats long, examples beat descriptions, negative constraints beat positive, structure beats stream-of-consciousness, context beats cleverness. Works with Claude Code, Codex, Cursor, 50+ agents.
-- [pie — Rust Port of the pi Coding Agent](https://github.com/c4pt0r/pie) (46 ⭐) — Rust rewrite of the pi coding agent. Terminal-based, multi-provider (Anthropic, OpenAI, OpenRouter, Groq, Mistral, Gemini), session resume, extended thinking, cost tracking. 46 stars.
-
-## 📦 Infrastructure
-
-- OpenSandbox — Secure, Fast Sandbox Runtime for AI Agents from Alibaba (10.8K Stars) (10,780 ⭐) — Secure sandbox runtime for AI agents from Alibaba — extensible plugin architecture for isolation, resource limits, and policy enforcement
-- Microsandbox — Unexploitable Secrets for AI Agents via Hardware-Isolated microVMs (6.2K Stars) (6,196 ⭐) — Spins up lightweight VMs in milliseconds. Hardware-level isolation. Rootless, embeddable SDK. Key feature: secrets that can't leak — unexploitable secret keys that never enter the VM. Every other sandbox tries to contain what the agent does. This one prevents what the agent can ever know. Written in Rust. Under 100ms boot time.
-- CubeSandbox — Hardware-isolated sandbox for AI agents built on RustVMM + KVM — boots in under 60ms, uses less than 5MB per instance
-- Cozeloop — Full-lifecycle agent optimization platform — dev, debug, eval, and monitor agents from a single Go service
-- Plano — AI-native proxy and data plane for agentic apps — LLM routing, safety guardrails, orchestration, and observability in one Rust proxy
-
-## 📦 Mcp
-
-- MCP Toolbox for Databases (15,296 ⭐) — Open-source MCP server by Google for databases. Supports PostgreSQL, MySQL, BigQuery, Spanner, MongoDB, Redis, Elasticsearch, ClickHouse, CockroachDB, Oracle, TiDB, Firestore, and more. Go.
-- mcpc (641 ⭐) — Universal CLI client for MCP by Apify. Persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output, proxy for AI sandboxes, x402 support.
-- Chrome DevTools MCP — Official Chrome DevTools exposed as MCP server — lets coding agents inspect, debug, and profile web apps directly
-
-## 📦 Mcp Infra
-
-- [Chrome DevTools MCP — Browser DevTools for Coding Agents (41.5K Stars)](https://github.com/ChromeDevTools/chrome-devtools-mcp) (41,520 ⭐) — Chrome DevTools exposed as MCP server for coding agents. Debug, inspect DOM, monitor network, and control Chrome via structured tool calls. Built by the official ChromeDevTools team. Puppeteer-based.
-- MCP Gateway Registry — Enterprise MCP Gateway with OAuth, Keycloak, Entra ID (658★) (658 ⭐) — Enterprise-ready MCP Gateway and Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for autonomous AI agents and coding assistants. Keycloak and Entra ID integration. Fine-grained access control.
-
-## 📦 Memory
-
-- claude-mem (77,506 ⭐) — Persistent context across sessions for coding agents — captures session activity, compresses with AI, injects into future sessions
-
-## 📦 Observability
-
-- Lapdog (Datadog) — Local agent tracer — traces reasoning and tool calls from Codex, Claude Code, and Pi in real time, no account required
-
-## 📦 Orchestration
-
-- Ruflo (54,181 ⭐) — Agent orchestration platform for Claude — deploy multi-agent workflows with a visual builder and structured output routing
-- MassGen (1,034 ⭐) — Open-source multi-agent scaling system with TUI — agents work in parallel, vote on best solutions via consensus, with checklist-gated quality rounds
-- contrabass (151 ⭐) — Project-level orchestrator for AI coding agents — Go + Charm TUI implementation of OpenAI's Symphony SPEC.md
-- Sandcastle — Orchestrate sandboxed coding agents in TypeScript with sandcastle.run() — single API call spins up an isolated agent on Docker, Podman, or Vercel Firecracker microVMs
-- Open Multi-Agent — TypeScript-native multi-agent orchestration — turns a goal into a task DAG automatically, with MCP and live tracing, three runtime dependencies
-- Warp Oz Multi-Agent Orchestration — Multi-agent orchestration in Warp's Oz — delegate complex tasks across Claude Code, Codex, and Warp Agent with worktree isolation and message passing
-- TraceFix — Uses TLA+ counterexamples to repair multi-agent LLM coordination protocols before deployment
-
-## 📦 Retrieval
-
-- Retrieval Routing: vector + GraphRAG + PageIndex — Production pattern: route queries across vector RAG, GraphRAG, and PageIndex based on query type using a lightweight classifier before retrieval
-
-## 📦 Security
-
-- pentest-ai (268 ⭐) — Offensive security MCP server — wraps 205 pentesting tools and 17 specialist agents behind a single MCP interface
-
-## 📦 Tools
-
-- Context7 — Up-to-date code documentation delivered to LLMs and code editors via MCP — solves the stale-doc problem for coding agents
+**Total indexed:** 365 projects
 
 ---
 
-*Last updated: auto-generated by Growth Agent Scanner*
+## Agent-Infrastructure
 
-- **RuView — WiFi Spatial Intelligence Without Cameras, Real-Time Presence Detection & Vitals (65K Stars)** 65,364 ★ — Turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — zero v [→](https://github.com/ruvnet/RuView)
-- **Agents-Towards-Production — End-to-End Code-First Tutorials for Production AI Agents (20.4K Stars)** 20,419 ★ — End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment. 20 [→](https://github.com/NirDiamant/agents-towards-production)
-- **SmallCode — AI Coding Agent Optimized for Small LLMs, 87% Benchmark with 4B Model (1.4K Stars)** 1,379 ★ — AI coding agent optimized for small LLMs. Achieves 87% on coding benchmarks with a 4B-active parameter model. Written in [→](https://github.com/Doorman11991/smallcode)
-- **Academic-Research-Skills — Evidence-Based Research Skills for AI Coding Agents (20.6K Stars)** 20,553 ★ — Academic research skills for Claude Code and Codex: research → write → review → revise → finalize. 131 evidence-based sk [→](https://github.com/Imbad0202/academic-research-skills)
+- **[ECC](https://github.com/affaan-m/ECC)** — ⭐ 188,000
+- **[CC-Switch (farion1231)](https://github.com/farion1231/cc-switch)** — ⭐ 77,267
+- **[zeroclaw](https://github.com/zeroclaw-labs/zeroclaw)** — ⭐ 31,500
+- **[OpenViking](https://github.com/volcengine/OpenViking)** — ⭐ 24,604
+- **[code-review-graph](https://github.com/tirth8205/code-review-graph)** — ⭐ 17,071
+- **[Agent Orchestrator](https://github.com/ComposioHQ/agent-orchestrator)** — ⭐ 7,179
+- **[holaOS](https://github.com/holaboss-ai/holaOS)** — ⭐ 5,649
+- **[osaurus](https://github.com/osaurus-ai/osaurus)** — ⭐ 5,477
+- **[EverOS](https://github.com/EverMind-AI/EverOS)** — ⭐ 5,398
+- **[ByteRover CLI](https://github.com/campfirein/byterover-cli)** — ⭐ 4,769
+- **[Zerolang](https://github.com/vercel-labs/zerolang)** — ⭐ 4,120
+- **[engram](https://github.com/Gentleman-Programming/engram)** — ⭐ 3,681
+- **[SimpleMem](https://github.com/aiming-lab/SimpleMem)** — ⭐ 3,328
+- **[Mirage](https://github.com/strukto-ai/mirage)** — ⭐ 2,526
+- **[mcp2cli](https://github.com/knowsuchagency/mcp2cli)** — ⭐ 2,147
+- **[boxlite](https://github.com/boxlite-ai/boxlite)** — ⭐ 2,078
+- **[Motus (lithos-ai)](https://github.com/lithos-ai/motus)** — ⭐ 455
+- **[Studio (decocms)](https://github.com/decocms/studio)** — ⭐ 373
+- **[Agent Executor (AX)](https://github.com/google/ax)** — ⭐ 208
+- **[claude-in-box (jiangmuran)](https://github.com/jiangmuran/claude-in-box)** — ⭐ 24
+
+## Agent-Memory
+
+- **[memvid](https://github.com/memvid/memvid)** — ⭐ 15,542
+- **[agentmemory](https://github.com/rohitg00/agentmemory)** — ⭐ 15,516
+- **[MemOS](https://github.com/MemTensor/MemOS)** — ⭐ 9,260
+
+## Agent-Security
+
+- **[IronClaw — Agent OS Focused on Privacy, Security and Extensibility (12.3K Stars)](https://github.com/nearai/ironclaw)** — ⭐ 12,324
+- **[AI-Infra-Guard — Full-Stack AI Red Teaming Platform by Tencent (3.8K Stars)](https://github.com/Tencent/AI-Infra-Guard)** — ⭐ 3,761
+- **[agent-safehouse](https://github.com/eugene1g/agent-safehouse)** — ⭐ 1,787
+- **[AiSOC](https://github.com/beenuar/AiSOC)** — ⭐ 1,100
+- **[supply-chain-guard (pc-style)](https://github.com/pc-style/supply-chain-guard)** — ⭐ 20
+
+## Agent-Tools
+
+- **[html-anything](https://github.com/nexu-io/html-anything)** — ⭐ 4,786
+
+## Agent Benchmark
+
+- **[PinchBench — LLM Benchmarking as OpenClaw Coding Agents by Kilo.ai (1,195 Stars)](https://github.com/pinchbench/skill)** — ⭐ 1,195
+- **[WildClawBench — 60 Real-World Agent Tasks, 19 Models Tested, Best Scores 62% (InternLM, 402 Stars)](https://github.com/InternLM/WildClawBench)** — ⭐ 402
+- **[AI Agent Benchmarks Fundamentally Broken — BenchJack Scores 100% Without Solving Tasks (Berkeley RDI)](https://x.com/_MrDecentralize/status/2043872047684825548)** — ⭐ N/A
+
+## Agent Framework
+
+- **[obra/superpowers — Agentic Skills Framework (203K Stars)](https://github.com/obra/superpowers)** — ⭐ 203,926
+- **[Goose — Open-Source Extensible AI Agent in Rust, Installs Its Own Tools via MCP (45.8K Stars)](https://github.com/aaif-goose/goose)** — ⭐ 45,799
+- **[CowAgent — ChatGPT-on-WeChat Evolved Into Full Agent Harness (44.8K Stars)](https://github.com/zhayujie/CowAgent)** — ⭐ 44,785
+- **[dexter — Autonomous Agent for Deep Financial Research (26K Stars)](https://github.com/virattt/dexter)** — ⭐ 26,190
+- **[OpenAI Symphony — Agent Orchestrator Routing Coding Tasks via Issue Trackers (24.5K Stars)](https://github.com/openai/symphony)** — ⭐ 24,543
+- **[Agents-Towards-Production — End-to-End Code-First Tutorials for Production AI Agents (20.4K Stars)](https://github.com/NirDiamant/agents-towards-production)** — ⭐ 20,419
+- **[Mission Control — Self-Hosted AI Agent Orchestration Platform (5K Stars)](https://github.com/builderz-labs/mission-control)** — ⭐ 4,976
+- **[Grok-Animus — Persistent AI Companion Engine with Memory, Dreams, and Evolution (621 Stars)](https://github.com/ChristianJR19/grok-animus)** — ⭐ 621
+
+## Agent Infra
+
+- **[Understand-Anything — Interactive Knowledge Graph for Any Codebase (21.5K Stars)](https://github.com/Lum1104/Understand-Anything)** — ⭐ 21,567
+- **[Claude Code System Prompts — Complete Agent Internals Exposed (10.4K Stars)](https://github.com/Piebald-AI/claude-code-system-prompts)** — ⭐ 10,465
+- **[Oh-My-Pi — Terminal AI Coding Agent with Hash-Anchored Edits (6.7K Stars)](https://github.com/can1357/oh-my-pi)** — ⭐ 6,734
+- **[Cloudflare Project Think — Agents SDK with Self-Authoring Extensions, Fibers, and Subagents (5K Stars)](https://github.com/cloudflare/agents)** — ⭐ 4,954
+- **[DeepClaude — Run Claude Code Agent Loop with Any Provider (1,946 Stars)](https://github.com/aattaran/deepclaude)** — ⭐ 1,946
+- **[Cozempic — Context Cleaning for Claude Code Agent Teams (313 Stars)](https://github.com/Ruya-AI/cozempic)** — ⭐ 313
+- **[Containarium — Open-Source Agent-Native Sandbox for Cursor, Claude Code, OpenCode (201 Stars)](https://github.com/FootprintAI/Containarium)** — ⭐ 201
+- **[ai-memory — Long-Term Memory for Agent Coding CLIs, Cross-Vendor Handoff (96 Stars, Rust)](https://github.com/akitaonrails/ai-memory)** — ⭐ 147
+- **[Kapso MCP — WhatsApp Phone Numbers for AI Agents via MCP Server](https://twitter.com/andresmatte/status/2057178931258601809)** — ⭐ N/A
+
+## Agent Infrastructure
+
+- **[Matt Pocock Skills — 99K Stars, Claude Skills Straight From .claude Directory](https://github.com/mattpocock/skills)** — ⭐ 99,674
+- **[DeerFlow — ByteDance SuperAgent with Sandboxes, Memory, Skills, Subagents (69K Stars)](https://github.com/bytedance/deer-flow)** — ⭐ 69,172
+- **[RuView — WiFi Spatial Intelligence Without Cameras, Real-Time Presence Detection & Vitals (65K Stars)](https://github.com/ruvnet/RuView)** — ⭐ 65,364
+- **[MemPalace — Best-Benchmarked Open-Source AI Memory (52.6K Stars)](https://github.com/MemPalace/mempalace)** — ⭐ 52,669
+- **[Agent Skills — Production-Grade Engineering Skills for AI Coding Agents (44.9K Stars)](https://github.com/addyosmani/agent-skills)** — ⭐ 45,398
+- **[CLI-Anything — Turn Any Desktop Software Into Agent-Native CLI (39.6K Stars)](https://github.com/HKUDS/CLI-Anything)** — ⭐ 40,013
+- **[GitNexus — Zero-Server Code Intelligence Engine for AI Agents (39.8K Stars)](https://github.com/abhigyanpatwari/GitNexus)** — ⭐ 40,012
+- **[Lightpanda — Headless Browser Built from Scratch for AI Agents (30.4K Stars)](https://github.com/lightpanda-io/browser)** — ⭐ 30,498
+- **[NanoClaw — Lightweight OpenClaw Alternative in Containers (29K Stars)](https://github.com/nanocoai/nanoclaw)** — ⭐ 29,278
+- **[Picoclaw — Tiny Fast OpenClaw-Compatible Agent, Written in Go, 29K Stars](https://github.com/sipeed/picoclaw)** — ⭐ 29,132
+- **[Hyperframes — Write HTML, Render Video, Built for Agents (20.5K Stars)](https://github.com/heygen-com/hyperframes)** — ⭐ 20,569
+- **[CloakBrowser — Stealth Chromium for AI Agents, 30/30 Bot Detection Tests Passed](https://github.com/CloakHQ/CloakBrowser)** — ⭐ 18,365
+- **[GBrain — Garry Tan's OpenClaw Agent Brain with Fat Skills Architecture](https://github.com/garrytan/gbrain)** — ⭐ 18,007
+- **[OpenFang — Open-Source Agent Operating System in Rust (17.6K Stars)](https://github.com/RightNow-AI/openfang)** — ⭐ 17,623
+- **[CUA — Open-Source Computer-Use Agent Infrastructure (17K Stars)](https://github.com/trycua/cua)** — ⭐ 17,011
+- **[9router — Free AI Coding Router Connecting Claude, Codex, Cursor, Copilot (13.5K Stars)](https://github.com/decolua/9router)** — ⭐ 13,544
+- **[ds4 — Redis Creator's DeepSeek V4 Flash Local Inference Engine for Metal/CUDA (11.4K Stars)](https://github.com/antirez/ds4)** — ⭐ 11,679
+- **[InsForge — All-in-One Backend for Agentic Coding (10.5K Stars)](https://github.com/InsForge/InsForge)** — ⭐ 10,490
+- **[Claude Code System Prompts — Full Teardown of Anthropic Agent Instructions](https://github.com/Piebald-AI/claude-code-system-prompts)** — ⭐ 10,404
+- **[cc-connect — Bridge Local AI Coding Agents to Messaging Platforms](https://github.com/chenhg5/cc-connect)** — ⭐ 10,127
+- **[mcp-use — Fullstack MCP Framework (10K Stars)](https://github.com/mcp-use/mcp-use)** — ⭐ 9,990
+- **[Kreuzberg — Polyglot Document Intelligence Framework, 97+ Formats, Rust Core, MCP Server](https://github.com/kreuzberg-dev/kreuzberg)** — ⭐ 8,356
+- **[CCPM — Project Management Skill System for Agents with GitHub Issues + Worktrees (8.1K Stars)](https://github.com/automazeio/ccpm)** — ⭐ 8,138
+- **[AWS Strands Agents SDK — Model-Driven Agent Framework (5.9K Stars)](https://github.com/strands-agents/sdk-python)** — ⭐ 5,900
+- **[OpenSRE — Open-Source AI SRE Agent Toolkit (5.7K Stars)](https://github.com/Tracer-Cloud/opensre)** — ⭐ 5,668
+- **[Google Stitch Skills — Agent Skills Standard Library by Google Labs](https://github.com/google-labs-code/stitch-skills)** — ⭐ 5,612
+- **[Worktrunk — Git Worktree CLI for Parallel AI Agent Workflows (5.1K Stars)](https://github.com/max-sixty/worktrunk)** — ⭐ 5,163
+- **[TencentDB-Agent-Memory — Tencent 4-Tier Progressive Memory Pipeline for AI Agents](https://github.com/Tencent/TencentDB-Agent-Memory)** — ⭐ 3,788
+- **[IBM MCP Context Forge — AI Gateway for MCP, A2A, and REST](https://github.com/IBM/mcp-context-forge)** — ⭐ 3,760
+- **[Archestra — Enterprise AI Platform with Guardrails, MCP Registry & Gateway (3.7K★)](https://github.com/archestra-ai/archestra)** — ⭐ 3,722
+- **[Semble — Fast Code Search for AI Agents, 98% Fewer Tokens Than grep+read](https://github.com/MinishLab/semble)** — ⭐ 3,574
+- **[GoClaw — OpenClaw in Go with Multi-Tenant Isolation and 5-Layer Security](https://github.com/nextlevelbuilder/goclaw)** — ⭐ 3,145
+- **[Orca — Next-Gen ADE for Parallel Agent Fleets (3.1K Stars)](https://github.com/stablyai/orca)** — ⭐ 3,096
+- **[Chaterm — AI Terminal for Cloud and Infrastructure Management (3K Stars)](https://github.com/chaterm/Chaterm)** — ⭐ 2,966
+- **[Docker Agent — AI Agent Builder and Runtime by Docker Engineering (2.9K★)](https://github.com/docker/docker-agent)** — ⭐ 2,926
+- **[Amazon Bedrock Agentcore — Production Agent Infrastructure from AWS (2.9K Stars)](https://github.com/awslabs/agentcore-samples)** — ⭐ 2,856
+- **[SocratiCode — MCP Server for Codebase Intelligence (2.7K Stars)](https://github.com/giancarloerra/SocratiCode)** — ⭐ 2,722
+- **[Kubernetes-sigs Agent Sandbox — K8s-native Isolated Agent Runtimes (2.3K★)](https://github.com/kubernetes-sigs/agent-sandbox)** — ⭐ 2,296
+- **[Claude Code Plugins + Skills — 425 Plugins, 2,810 Skills, 200 Agents, CLI Package Manager](https://github.com/jeremylongshore/claude-code-plugins-plus-skills)** — ⭐ 2,230
+- **[MCPJam Inspector — Debug, Inspect, and Evaluate MCP Servers](https://github.com/MCPJam/inspector)** — ⭐ 1,958
+- **[Headroom — 60-95% Token Compression Before the LLM Sees It](https://github.com/chopratejas/headroom)** — ⭐ 1,942
+- **[Hallmark — Anti-AI-Slop Design Skill for Claude Code, Cursor, and Codex](https://github.com/Nutlope/hallmark)** — ⭐ 1,444
+- **[9arm-skills — 1.3K Star Claude Code Skills Collection](https://github.com/thananon/9arm-skills)** — ⭐ 1,332
+- **[rmux — Universal Rust Multiplexer for Driving CLI/TUI Apps from Code](https://github.com/Helvesec/rmux)** — ⭐ 1,046
+- **[Drift — Codebase Intelligence for AI, Detects Patterns and Conventions Across Sessions](https://github.com/dadbodgeoff/drift)** — ⭐ 781
+- **[Agentics — GitHub Next Agentic Workflows for Autonomous Repo Maintenance (714 Stars)](https://github.com/githubnext/agentics)** — ⭐ 714
+- **[UncommonRoute — LLM Router with 82% Cost Savings (663 Stars)](https://github.com/CommonstackAI/UncommonRoute)** — ⭐ 663
+- **[ProgramBench — Can LLMs Rebuild Programs From Scratch?](https://github.com/facebookresearch/ProgramBench)** — ⭐ 636
+- **[NVIDIA AI-Q Blueprint — Deep Research Skill for Agent Harnesses (619 Stars)](https://github.com/NVIDIA-AI-Blueprints/aiq)** — ⭐ 619
+- **[Modern Web Guidance — Chrome Official Agent Skills for 128 Web Platform APIs](https://github.com/GoogleChrome/modern-web-guidance)** — ⭐ 612
+- **[SonarQube MCP Server — Official Code Quality for AI Agents](https://github.com/SonarSource/sonarqube-mcp-server)** — ⭐ 556
+- **[LiteLLM Agent Platform — Self-Hosted Sandboxed Coding Agents with Vault Proxy (484 Stars)](https://github.com/BerriAI/litellm-agent-platform)** — ⭐ 484
+- **[Centaur — Self-Hosted Secure Agent Platform by Paradigm](https://github.com/paradigmxyz/centaur)** — ⭐ 448
+- **[CCGlass — See What Your Coding Agent Sends to the Model](https://github.com/jianshuo/ccglass)** — ⭐ 228
+- **[shenli/distributed-system-testing — AI Agent Skills for Chaos Engineering](https://github.com/shenli/distributed-system-testing)** — ⭐ 181
+- **[Firefox DevTools MCP — Mozilla official MCP server for AI agents to inspect and control Firefox](https://github.com/mozilla/firefox-devtools-mcp)** — ⭐ 170
+- **[Google Agent Substrate — 30x Agent Multiplexing on Kubernetes](https://github.com/agent-substrate/substrate)** — ⭐ 128
+- **[codex-shim — BYOK Local Responses-API Shim for Codex Desktop](https://github.com/0xSero/codex-shim)** — ⭐ 118
+- **[AFT — Tree-Sitter Powered Code Manipulation Toolkit for AI Coding Agents](https://github.com/cortexkit/aft)** — ⭐ 109
+- **[Lucarne — Zero-Intrusion Mobile Remote Control for AI Coding Agents](https://github.com/tuchg/Lucarne)** — ⭐ 102
+- **[Directional Prompting — Two-Layer Prompt Skill for Claude Code and Codex CLI](https://github.com/kingbootoshi/directional-prompting)** — ⭐ 73
+- **[OpenTeam — Chrome Extension for Orchestrating Local AI Agent Team Workflows](https://github.com/afumu/openteam)** — ⭐ 54
+- **[Forge — Rust Workflow Engine for Structured AI Coding Agent Task Lifecycles](https://github.com/ForgeAILab/forge)** — ⭐ 39
+- **[Groundcrew — Dispatch Linear Backlog to AI Coding Agents (31 Stars)](https://github.com/ClipboardHealth/groundcrew)** — ⭐ 31
+- **[Juice — Negative-Constraint Memory Layer for AI Agents](https://github.com/alvinunreal/juice)** — ⭐ 29
+- **[Needle-rs — 258KB WASM Runtime for 26M-Parameter Tool-Calling Transformer](https://github.com/Geekgineer/needle-rs)** — ⭐ 28
+- **[auth.md — Open Protocol for Agent Authentication via Domain Markdown](https://github.com/workos/auth.md)** — ⭐ 25
+- **[Budget-Aware MCP — Model-Agnostic Code Memory MCP Server with Graph Retrieval](https://github.com/Doorman11991/budget-aware-mcp)** — ⭐ 19
+- **[MCP-Man — Postman for MCP Servers](https://github.com/aaglexx/mcp-man)** — ⭐ 11
+
+## Agent Security
+
+- **[CVE-2026-9369 — NousResearch hermes-agent CLI Dashboard Plugin Bypass (165K Stars)](https://github.com/NousResearch/hermes-agent)** — ⭐ 165,303
+- **[CVE-2026-9351 — NousResearch hermes-agent 165K Stars Path Traversal in read_file (CVSS 6.9)](https://github.com/NousResearch/hermes-agent)** — ⭐ 165,303
+- **[CVE-2026-9353 — NousResearch hermes-agent Skills Guard Injection (165K Stars)](https://github.com/NousResearch/hermes-agent)** — ⭐ 165,303
+- **[Gemini CLI TrustIssues — CVSS 10.0 Supply Chain via GitHub Issue (104.5K Stars)](https://github.com/google-gemini/gemini-cli)** — ⭐ 104,500
+- **[Claude Code RCE: Deeplink Handler Settings Injection (joernchen/0day.click)](https://github.com/anthropics/claude-code)** — ⭐ 62,000
+- **[CVE-2026-35021 — Claude Code CLI and Agent SDK OS Command Injection via Prompt Editor (62K Stars)](https://github.com/anthropics/claude-code)** — ⭐ 62,000
+- **[CVE-2025-59528 — Flowise CustomMCP Node Passes User Input to Function() Constructor: CVSS 10.0 RCE (53K Stars)](https://github.com/FlowiseAI/Flowise)** — ⭐ 53,044
+- **[CVE-2026-33654 — Nanobot Agent Zero-Click Hijack via Forged Email (43K Stars)](https://github.com/HKUDS/nanobot)** — ⭐ 43,067
+- **[CVE-2026-25874 — Hugging Face LeRobot Unauthenticated RCE via Unsafe Deserialization (24.3K Stars)](https://github.com/huggingface/lerobot)** — ⭐ 24,263
+- **[CVE-2026-42208 — LiteLLM Pre-Auth SQL Injection (CVSS 9.3) Steals All AI Provider Credentials, KEV-Listed](https://github.com/BerriAI/litellm)** — ⭐ 15,000
+- **[Casdoor — Agent-First Identity and Access Management with MCP Gateway](https://github.com/casdoor/casdoor)** — ⭐ 13,647
+- **[CVE-2026-46716 — Nezha Monitoring Cross-Tenant RCE: RoleMember Runs Shell on Every Server](https://github.com/nezhahq/nezha)** — ⭐ 10,022
+- **[HexStrike AI - 150+ Cybersecurity Tools for AI Agents via MCP](https://github.com/0x4m4/hexstrike-ai)** — ⭐ 8,867
+- **[Anthropic Cybersecurity Skills — 754 Structured Security Skills for AI Agents (6.5K★)](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)** — ⭐ 6,740
+- **[700+ GitHub Repos Infected — Malicious Script Hidden in package.json Targeting PHP Devs via GitHub Actions](https://x.com/IntCyberDigest/status/2057982791917109531)** — ⭐ 6,400
+- **[NVIDIA OpenShell — Secure Runtime for Autonomous AI Agents (6.2K Stars)](https://github.com/nvidia/openshell)** — ⭐ 6,179
+- **[NVIDIA OpenShell — Safe Runtime for Autonomous AI Agents (6.1K★, Rust)](https://github.com/NVIDIA/OpenShell)** — ⭐ 6,150
+- **[bb-browser — Your Browser is the API. CLI + MCP Server for Agent Browser Control](https://github.com/epiral/bb-browser)** — ⭐ 5,379
+- **[CVE-2025-58357 — RCE in 5ire AI Assistant via Prompt Injection + MCP Chain (CVSS 9.7)](https://github.com/nanbingxyz/5ire)** — ⭐ 5,225
+- **[AIO Sandbox — All-in-One Container for AI Agents (4.8K Stars)](https://github.com/agent-infra/sandbox)** — ⭐ 4,778
+- **[CVE-2026-26956 — vm2 WASM Sandbox Escape in Node 25 (CVSS 9.8)](https://github.com/patriksimek/vm2)** — ⭐ 4,066
+- **[CyberStrikeAI — AI-Native Security Testing Platform with 100+ Tools and MCP (3.9K Stars)](https://github.com/Ed1s0nZ/CyberStrikeAI)** — ⭐ 3,917
+- **[Tracecat — Open-Source Security Automation for AI Agents (3.6K Stars)](https://github.com/TracecatHQ/tracecat)** — ⭐ 3,609
+- **[Varlock — AI-Safe .env Files: Agents See Schema, Never Secrets (3.5K Stars)](https://github.com/dmno-dev/varlock)** — ⭐ 3,481
+- **[DeepSec — Agent-Powered Vulnerability Scanner from Vercel Labs](https://github.com/vercel-labs/deepsec)** — ⭐ 2,913
+- **[Raptor — Claude Code as Offensive/Defensive Security Agent](https://github.com/gadievron/raptor)** — ⭐ 2,735
+- **[Raptor — Claude Code as Offensive/Defensive Security Agent (2.7K Stars)](https://github.com/gadievron/raptor)** — ⭐ 2,735
+- **[Microsoft Clarity — Behavioral Analytics That Pressure-Tests Agent Design Assumptions Before Coding (2.6K Stars)](https://github.com/microsoft/clarity)** — ⭐ 2,663
+- **[Snyk Agent-Scan — Security Scanner for AI Agents, MCP Servers and Skills](https://github.com/snyk/agent-scan)** — ⭐ 2,459
+- **[nono — Capability-Based Agent Runtime with Zero-Trust Policies](https://github.com/always-further/nono)** — ⭐ 2,452
+- **[Tirith — Terminal Security for AI Agents: Intercepts Malicious Skills Before Execution (2.4K Stars)](https://github.com/sheeki03/tirith)** — ⭐ 2,363
+- **[OneCLI — Open-Source Credential Vault for AI Agents (2.2K Stars)](https://github.com/onecli/onecli)** — ⭐ 2,234
+- **[OneCLI — Open-Source Credential Vault for AI Agents](https://github.com/onecli/onecli)** — ⭐ 2,228
+- **[Perplexity Bumblebee — Read-Only Supply Chain Scanner for Developer Endpoints (705 Stars)](https://github.com/perplexityai/bumblebee)** — ⭐ 2,076
+- **[Ghidra MCP Server — 200+ MCP Tools for AI-Powered Reverse Engineering (2K Stars)](https://github.com/bethington/ghidra-mcp)** — ⭐ 2,071
+- **[RedAmon — Autonomous AI Red Team Framework: Recon to Merged PR (1.9K Stars)](https://github.com/samugit83/redamon)** — ⭐ 1,916
+- **[Microsoft Agent Governance Toolkit — Runtime Policy Enforcement for Every Agent Tool Call (1.9K Stars)](https://github.com/microsoft/agent-governance-toolkit)** — ⭐ 1,881
+- **[ToolHive — Enterprise MCP Server Management Platform by Stacklok](https://github.com/stacklok/toolhive)** — ⭐ 1,818
+- **[OmniAgent — Self-Evolving Agent That Dynamically Hardens Its Own Security (1.3K Stars)](https://github.com/YeQing17-2026/OmniAgent)** — ⭐ 1,341
+- **[Infisical Agent Vault — HTTP Credential Proxy for AI Agents (1.3K Stars)](https://github.com/Infisical/agent-vault)** — ⭐ 1,293
+- **[Infisical Agent Vault — HTTP Credential Proxy for AI Agents](https://github.com/Infisical/agent-vault)** — ⭐ 1,263
+- **[ThinkWatch — Enterprise AI Bastion Host for Secure API and MCP Access](https://github.com/ThinkWatchProject/ThinkWatch)** — ⭐ 966
+- **[Cisco MCP Scanner — Threat Scanner for MCP Servers](https://github.com/cisco-ai-defense/mcp-scanner)** — ⭐ 937
+- **[Cisco AI Defense MCP Scanner — Enterprise MCP Server Security Scanner (937 Stars)](https://github.com/cisco-ai-defense/mcp-scanner)** — ⭐ 937
+- **[shellfirm — Safety Guardrails for AI Coding Agents and Terminal Commands (912 Stars)](https://github.com/kaplanelad/shellfirm)** — ⭐ 912
+- **[CVE-2026-65719 — Critical RCE in kubectl-mcp-server via Command Injection (891 Stars, CNCF Landscape)](https://github.com/rohitg00/kubectl-mcp-server)** — ⭐ 891
+- **[ship-safe — CLI Security Scanner for the Agentic Era (710 Stars)](https://github.com/asamassekou10/ship-safe)** — ⭐ 710
+- **[AgentShield — Security Scanner for AI Agent Configs, MCP Servers, Tool Permissions (671 Stars)](https://github.com/affaan-m/agentshield)** — ⭐ 671
+- **[AWS Secrets Manager Agent — Official AWS Local HTTP Service for Agent Compute (656 Stars)](https://github.com/aws/aws-secretsmanager-agent)** — ⭐ 656
+- **[PipeLock — AI Agent Firewall for MCP Security](https://github.com/luckyPipewrench/pipelock)** — ⭐ 634
+- **[Forkd — Fork 100 Agent MicroVMs in 101ms with KVM Isolation (611 Stars)](https://github.com/deeplethe/forkd)** — ⭐ 611
+- **[Pantheon Medusa — AI-First Security Scanner with 9,600+ Rules](https://github.com/Pantheon-Security/medusa)** — ⭐ 568
+- **[Code-on-Incus — Isolated VMs per AI Agent with Active Defense](https://github.com/mensfeld/code-on-incus)** — ⭐ 521
+- **[evilsocket/audit — 8-Stage Vulnerability-Discovery Agent (Cloudflare Glasswing Pipeline)](https://github.com/evilsocket/audit)** — ⭐ 464
+- **[Damn Vulnerable LLM Agent — Deliberately Vulnerable Agent for Security Practice](https://github.com/ReversecLabs/damn-vulnerable-llm-agent)** — ⭐ 456
+- **[Bernstein — Audit-Grade Multi-Agent Orchestration with HMAC-Signed Audit Chains (451 Stars)](https://github.com/sipyourdrink-ltd/bernstein)** — ⭐ 451
+- **[IronCurtain — Secure Runtime with Plain-English Agent Constitutions](https://github.com/provos/ironcurtain)** — ⭐ 449
+- **[nah — Action-Aware Permissions for Coding Agents (439 Stars)](https://github.com/manuelschipper/nah)** — ⭐ 439
+- **[HASP — Local-First Broker for Managed Secrets in Agent Workflows (433 Stars)](https://github.com/gethasp/hasp)** — ⭐ 433
+- **[Sandboxed.sh — Runtime for Autonomous On-Chain AI Agents](https://github.com/Th0rgal/sandboxed.sh)** — ⭐ 432
+- **[Audit — 8-Stage Vulnerability Discovery Agent Based on Cloudflare Glasswing](https://github.com/evilsocket/audit)** — ⭐ 432
+- **[AgentGuard — Security Guard for AI Agents with 24 Detection Rules (410 Stars)](https://github.com/GoPlusSecurity/agentguard)** — ⭐ 410
+- **[Sponsio — Deterministic Safety Solutions for Probabilistic AI Agents (397 Stars)](https://github.com/SponsioLabs/Sponsio)** — ⭐ 397
+- **[PMG — Supply Chain Firewall for AI Agents: Intercepts Malicious Packages Before They Reach Your Agent (360 Stars)](https://github.com/safedep/pmg)** — ⭐ 360
+- **[hol-guard — AI Antivirus for Developer Agents: Codex, Claude Code, Cursor, Gemini (339 Stars)](https://github.com/hashgraph-online/hol-guard)** — ⭐ 339
+- **[Dark Moon — Autonomous AI Pentesting Engine](https://github.com/ASCIT31/Dark-Moon)** — ⭐ 326
+- **[Xalgorix — Open-Source AI Pentesting Agent with 150+ Tool Integrations](https://github.com/xalgord/xalgorix)** — ⭐ 301
+- **[Capsule — Secure WASM Runtime to Sandbox AI Agent Tasks](https://github.com/capsulerun/capsule)** — ⭐ 284
+- **[CyberStrike — AI Offensive Security Agent with 7,300+ Skills](https://github.com/CyberStrikeus/CyberStrike)** — ⭐ 282
+- **[AgentSeal — Security Toolkit to Scan for Dangerous Skills and MCP Configs (276 Stars)](https://github.com/getagentseal/agentseal)** — ⭐ 276
+- **[Bromure — Proper Sandboxing for Agentic Coding and Web Browsing](https://github.com/rderaison/bromure)** — ⭐ 260
+- **[claudit-sec — Single-Command Security Audit for Claude Desktop and Claude Code (250★)](https://github.com/HarmonicSecurity/claudit-sec)** — ⭐ 250
+- **[CVE-2026-5029 — Unauthenticated RCE in Code Runner MCP Server (241 Stars)](https://github.com/formulahendry/mcp-server-code-runner)** — ⭐ 241
+- **[Agent-Threat-Rules — Open Detection Standard for AI Agents: 425 Rules, 97.1% Recall (226 Stars)](https://github.com/Agent-Threat-Rule/agent-threat-rules)** — ⭐ 226
+- **[Praetorian Augustus — LLM Security Testing Framework: 190+ Probes, 28 Providers, Single Go Binary (215 Stars)](https://github.com/praetorian-inc/augustus)** — ⭐ 215
+- **[Kontext CLI — Runtime Security for Tool-Using AI Agents](https://github.com/kontext-security/kontext-cli)** — ⭐ 199
+- **[Clawvisor — Purpose-Based Authorization API Gateway for AI Agents (198 Stars)](https://github.com/clawvisor/clawvisor)** — ⭐ 198
+- **[Greywall — Container-Free Kernel-Enforced Sandbox for AI Coding Agents](https://github.com/GreyhavenHQ/greywall)** — ⭐ 190
+- **[Offensive Claude — 25-Skill Security Research Config for Claude Code](https://github.com/hypnguyen1209/offensive-claude)** — ⭐ 183
+- **[Semia — Static Security Audit for AI Agent Skills Before Execution (174 Stars)](https://github.com/berabuddies/Semia)** — ⭐ 174
+- **[agent-audit — Static Security Scanner for LLM Agents: 49 Rules Mapped to OWASP Agentic Top 10 (172 Stars)](https://github.com/HeadyZhang/agent-audit)** — ⭐ 172
+- **[RAMPART — pytest-native security testing for agentic AI applications](https://github.com/microsoft/RAMPART)** — ⭐ 171
+- **[Wirken — Encrypted Credential Vault + Audit Log for AI Agents, Single Rust Binary](https://github.com/gebruder/wirken)** — ⭐ 149
+- **[Immunity Agent — Security Layer for AI Coding Agents](https://github.com/PrismorSec/immunity-agent)** — ⭐ 142
+- **[Dev Machine Guard — Scan Dev Machines for AI Agents, MCP Servers, Suspicious Packages (138 Stars)](https://github.com/step-security/dev-machine-guard)** — ⭐ 138
+- **[Hazmat — macOS Containment for AI Agents with TLA+ Verification](https://github.com/github.com/dredozubov/hazmat)** — ⭐ 114
+- **[CVE-2026-32173 — Azure SRE Agent Multi-Tenant Auth Flaw Exposes Live Agent Commands and Deployment Creds (CVSS 8.6)](https://github.com/microsoft/sre-agent)** — ⭐ 107
+- **[Agent Security Scanner MCP — Prompt Injection Firewall + Package Hallucination Detection for Coding Agents (103 Stars)](https://github.com/sinewaveai/agent-security-scanner-mcp)** — ⭐ 103
+- **[Vigolium — Agentic AI Vulnerability Scanner with Exploit Validation (97 Stars)](https://github.com/vigolium/vigolium)** — ⭐ 97
+- **[ramparts — MCP and Skill Scanner for Indirect Attack Vectors in Rust (87 Stars)](https://github.com/highflame-ai/ramparts)** — ⭐ 87
+- **[GitHub Agentic Workflows Firewall — Network Firewall for AI Agents by GitHub (79 Stars)](https://github.com/github/gh-aw-firewall)** — ⭐ 79
+- **[Cisco Foundry Security Spec — Open Standard for Agentic AI Security Evaluation (76 Stars)](https://github.com/CiscoDevNet/foundry-security-spec)** — ⭐ 76
+- **[Agent Sandbox Taxonomy — Scoring Framework for Evaluating Agent Sandboxes](https://github.com/kajogo777/the-agent-sandbox-taxonomy)** — ⭐ 74
+- **[AI Security Arsenal — Agent-Compatible Skills for Security Researchers](https://github.com/hardw00t/ai-security-arsenal)** — ⭐ 73
+- **[Adrian — Runtime Security Monitoring for AI Agents (71 Stars)](https://github.com/secureagentics/Adrian)** — ⭐ 71
+- **[Prempti — Falco-Powered Policy Layer for AI Coding Agents: Intercepts Actions Before Execution (71 Stars)](https://github.com/falcosecurity/prempti)** — ⭐ 71
+- **[TartarusAI CLI — Uncensored Coding Agent for Security Research](https://github.com/Tartarus-AI/tartarusai-cli)** — ⭐ 64
+- **[Ares — Autonomous Red/Blue Team LLM Agents Fighting on Live Infrastructure (45 Stars)](https://github.com/dreadnode/ares)** — ⭐ 45
+- **[ClawMoat — Open-Source Agent Firewall with 40/40 Benchmark, 100% Detection](https://github.com/darfaz/clawmoat)** — ⭐ 40
+- **[AI Kill Chain — Defender-Side Extension of Lockheed Martin Cyber Kill Chain for LLM/Agent Threats](https://github.com/gouravnagar-infosec/ai-kill-chain)** — ⭐ 37
+- **[AI Kill Chain — Defender-Side Extension of Lockheed Martin Kill Chain for LLM/Agentic Threats](https://github.com/gouravnagar-infosec/ai-kill-chain)** — ⭐ 37
+- **[hermes-katana — Defense-in-Depth Security Toolkit for LLM Agents: Taint Tracking, MITM Proxy, Policy Engine (36 Stars)](https://github.com/claudlos/hermes-katana)** — ⭐ 36
+- **[Cloudsail — Self-Hosted Instant Sandboxes for Coding Agents on Cloudflare](https://github.com/nkzw-tech/cloudsail)** — ⭐ 28
+- **[cc-audit — AI-Free Static Security Scanner for Claude Code Skills, Hooks, and MCP Configs (21 Stars)](https://github.com/ryo-ebata/cc-audit)** — ⭐ 21
+- **[JanuScope — Local-First MCP Policy Proxy (15 Stars)](https://github.com/giancarloerra/JanuScope)** — ⭐ 15
+- **[MCPGuard — CLI Security Checks for MCP Tools Before Agent Calls](https://github.com/hieuchaydi/MCPGuard)** — ⭐ 12
+- **[Agent3σ-Canary — Ant Group Evaluation Framework for AI Agent Security in Realistic Runtimes](https://github.com/antgroup/Agent3Sigma-Canary)** — ⭐ 8
+- **[AI-buster — Reconnaissance Scanner for AI Agent Surface](https://github.com/1ncendium/aibuster)** — ⭐ 5
+- **[AI Coding Agents Incidents — Structured Corpus of Real Security Failures](https://github.com/paolodm/ai-coding-agents-incidents)** — ⭐ 5
+- **[mcpaudit — Static Pre-Install Security Scanner for MCP Servers (npx mcpaudit)](https://github.com/allenwu-blip/mcpaudit)** — ⭐ 4
+- **[Tank Agent OS — Fedora bootc for Sandboxed AI Coding Agents](https://github.com/np6126/tank-agent-os)** — ⭐ 2
+- **[Patient Zero — Supply-Chain Attack Scanner for the Agent Era (30s Triage via npx)](https://github.com/0xSteph/patient-zero)** — ⭐ 2
+- **[Sigil — AI Security Posture Management for Developer Machines](https://github.com/Ju571nK/sigil)** — ⭐ 2
+- **[Preflight — SMT Solver Agent Guardrails (No LLM in Runtime Path)](https://github.com/ICME-Lab/icme-preflight-guardrail)** — ⭐ 1
+- **[SilentFail — MCP Server Health, Token Audit, and Security Scanner](https://github.com/decksaga/silentfail)** — ⭐ 1
+- **[Comment and Control — Credential Theft via Prompt Injection in Coding Agents](https://oddguan.com/blog/comment-and-control-prompt-injection-credential-theft-claude-code-gemini-cli-github-copilot/)** — ⭐ N/A
+- **[Claude Code SOCKS5 Null-Byte Sandbox Bypass — 130 Versions Vulnerable](https://www.securityweek.com/anthropic-silently-patches-claude-code-sandbox-bypass/)** — ⭐ N/A
+- **[GenAI App Security Checklist — 258 Checks + One-Command Scan](https://github.com/a-leks/genai-app-security-checklist)** — ⭐ N/A
+- **[Mozilla Claude Mythos Postmortem — Agent Harness That Found 271 Real Firefox Vulns With Near-Zero False Positives](#)** — ⭐ N/A
+- **[GoPlus AgentGuard Memory Poisoning — AI Agents Tricked Into Financial Theft via Planted False Memories](https://twitter.com/AIWoofun/status/2055193770191433874)** — ⭐ N/A
+- **[Nx Console Supply Chain Attack — Troj anized VS Code Extension Stole GitHub Credentials (11K+ Views)](https://x.com/patrickwardle/status/2057295568947277941)** — ⭐ N/A
+- **[Claw Chain — 4 Chainable CVEs in OpenClaw (CVSS 9.6 Sandbox Escape, 65K-180K Deployments)](https://x.com/cyera_io/status/2056444305045123514)** — ⭐ N/A
+- **[DarkNavy Coding Agent Hacking Series — Claude Code, Codex CLI, Cursor Exploit Chains (8K Views)](https://x.com/DarkNavyOrg/status/2054094369192603950)** — ⭐ N/A
+- **[CVE-2026-40111 — PraisonAIAgents OS Command Injection via shell=True in Memory Hooks Executor](https://github.com/advisories?cve_id=CVE-2026-40111)** — ⭐ N/A
+- **[CVE-2026-30741 — OpenClaw Agent Platform v2026.2.6 RCE via Request-Side Prompt Injection](https://github.com/advisories?cve_id=CVE-2026-30741)** — ⭐ N/A
+- **[MCP Server Security Audit — 17 Popular Servers Average 34/100](https://x.com/cdatasoftware/status/2057454865819832376)** — ⭐ N/A
+- **[TrapDoor Supply Chain Attack — 34 Malicious Packages Targeting AI/Crypto Developers via npm, PyPI, Crates.io](https://x.com/SocketSecurity/status/2058565153138844043)** — ⭐ N/A
+- **[Pillar Security — RCE in Google Antigravity AI Agent Manager via Prompt Injection](https://x.com/battista212/status/2046651193590485317)** — ⭐ N/A
+- **[NSA MCP Security Design Considerations](https://www.nsa.gov/Portals/75/documents/Cybersecurity/CSI_MCP_SECURITY.pdf)** — ⭐ N/A
+- **[GitHub Issues as Prompt Injection Delivery — Threat Actors Spray Blind PI Payloads Targeting Local Triage Agents](https://twitter.com/adnanthekhan/status/2058340144093004104)** — ⭐ N/A
+- **[Microsoft RAMPART + Clarity — Open-Source Agent Safety Testing Tools for Pre-Deployment](https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html)** — ⭐ N/A
+- **[mcp-yoshi v1.4.0 — MCP Security Filter Covering 76% of Flowise 59 CVEs](https://x.com/aliksir_mirage/status/2049632472405520888)** — ⭐ N/A
+- **[Cline CVE-2026-44211 — WebSocket Origin Bypass Enables Agent Session Hijack and RCE (CVSS 9.3)](https://x.com/apartresearch)** — ⭐ N/A
+- **[Gemini CLI CVSS 10.0 — Malicious Repo Config Grants Full RCE in CI/CD](https://x.com/vitobotta)** — ⭐ N/A
+- **[Pydantic AI CVE-2026-46678 — SSRF Cloud-Metadata Bypass via IPv6 Transition Forms](https://dailycve.com/pydantic-ai-ssrf-cloud-metadata-blocklist-bypass-via-ipv6-transition-forms-cve-2026-46678-moderate/)** — ⭐ N/A
+- **[MCP 2026-07-28 RC — Protocol Goes Stateless, No Session ID, No Handshake](https://x.com/dsp_/status/2057780712187580924)** — ⭐ N/A
+- **[FlowiseAI 10 Critical Flaws (CVSS 9.9) — RCE Cascade via CSV/Airtable Agent Injection](https://github.com/FlowiseAI/Flowise/security/advisories)** — ⭐ N/A
+- **[CVE-2026-7061 — ChatGPT-MCP-Server Docker Command Injection (CVSS 7.3)](https://github.com/Toowiredd/chatgpt-mcp-server/issues/8)** — ⭐ N/A
+- **[vm2 CVE-2026-24120 — Sandbox Escape (CVSS 9.8) in Agent Code Execution](https://www.cve.org/CVERecord?id=CVE-2026-24120)** — ⭐ N/A
+- **[Microsoft Semantic Kernel RCE Chain — CVE-2026-26030/25592 (CVSS 9.9)](https://intel.threadlinqs.com/#TL-2026-0481)** — ⭐ N/A
+- **[Mitiga: Claude Code MCP Token Theft via Supply Chain — Anthropic Refused to Fix](https://www.mitiga.io/blog/claude-code-mcp-token-theft-mitm)** — ⭐ N/A
+- **[CVE-2026-7061 — ChatGPT-MCP Server Command Injection (CVSS 7.3)](#)** — ⭐ N/A
+- **[ConnectWise Automate Agent CVE-2026-9089 — Authentication Bypass (CVSS 8.8)](https://nvd.nist.gov/vuln/detail/CVE-2026-9089)** — ⭐ N/A
+- **[MCPTox Benchmark — 72.8% Attack Success Rate on MCP Servers (45 Live Servers Tested)](https://github.com/zhiqiangwang4/MCPTox-Benchmark)** — ⭐ N/A
+- **[CVE-2026-5865 — AI Agent Found Chrome V8 Zero-Day (Nebula Security)](https://x.com/nebusecurity/status/2047153356536250770)** — ⭐ N/A
+- **[Owner-Harm Research — Defense Systems Catch Only 14.8% (4/27) of AI Agents Harming Their Deployer](https://x.com/heynavtoor/status/2052776817799667902)** — ⭐ N/A
+- **[CVE-2026-46354 — Coder Agent Token Theft via Azure Signature Bypass (CVSS 9.1)](https://github.com/coder/coder)** — ⭐ N/A
+- **[McKinsey Lilli Breach — Autonomous AI Agent Hacked Internal AI in 2 Hours via SQL Injection](https://stateofsurveillance.org/news/mckinsey-lilli-ai-agent-hack-codewall-sql-injection-2026/)** — ⭐ N/A
+- **[Composio Security Incident — Attacker Escalated Through Agentic Tool for 8 Hours](https://composio.dev/blog/composio-may-2026-security-incident)** — ⭐ N/A
+- **[May 2026 Linux Kernel LPE Cluster — 4 Critical Privilege Escalations in 3 Weeks (Copy Fail, Dirty Frag, Fragnesia, Pinthef)](https://securityonline.info/tag/dirty-frag/)** — ⭐ N/A
+- **[DeepSeek V4 Pro Autonomous Hacking — 4 Expert Security Challenges Solved for $6.84 (412 Tool Calls)](https://x.com/Tur24Tur/status/2048018521649500467)** — ⭐ N/A
+- **[Claude Code Network Sandbox Bypass — Credentials and Source Code Exposed Across 130+ Versions](https://cybersecuritynews.com/claude-codes-network-sandbox-vulnerability/)** — ⭐ N/A
+- **[CVE-2026-26144 — XSS in Excel Hijacks Copilot Agent for Zero-Click Data Exfiltration](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-26144)** — ⭐ N/A
+- **[Nebula Security Vega — AI Agent Discovered nginx-poolslip Zero-Day RCE](https://nebusec.ai)** — ⭐ N/A
+- **[PraisonAI CVE-2026-44338 — Auth Bypass Exploited Within Hours](https://github.com/praisonai)** — ⭐ N/A
+- **[Grok AI Wallet Drained $170K via Morse Code Prompt Injection — No Keys Stolen](https://thebittimes.com/post/grok-ai-wallet-hacked-prompt-injection-170k-drb-tbt-98237.html)** — ⭐ N/A
+- **[FastGPT CVE-2026-44286 — Unauthenticated SSRF in AI Agent Building Platform](https://www.cve.org/CVERecord?id=CVE-2026-44286)** — ⭐ N/A
+- **[DeepSeek V4-Pro Permanent 75% Cut — Your Attackers Got the Same Discount](https://x.com/dannylivshits/status/2057966201255739561)** — ⭐ N/A
+- **[CVE-2025-34291 — MuddyWater Exploits Langflow CORS + Refresh-Token Chain for RCE (CISA KEV)](https://nvd.nist.gov/vuln/detail/CVE-2025-34291)** — ⭐ N/A
+- **[CVE-2026-44578 — Next.js SSRF via WebSocket Upgrade, No Backport for 13.x/14.x (CVSS 8.6)](https://nvd.nist.gov/vuln/detail/CVE-2026-44578)** — ⭐ N/A
+- **[MCPwn — First Named Exploit Campaign Targeting MCP Servers (CVE-2026-33032, CVSS 9.8)](https://nvd.nist.gov/vuln/detail/CVE-2026-33032)** — ⭐ N/A
+- **[MCP RCE-by-Design — OX Security Finds Systemic Vulnerability in Anthropic MCP Affecting 150M+ Downloads](https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/)** — ⭐ N/A
+- **[Google GenAI SDK v2.6.0 — Prompt Injection Detection Moves Inside the SDK](https://signalcircuit.cloud/articles/gemini-agent-safety-controls-moved-into-the-sdk/)** — ⭐ N/A
+- **[TeamPCP Supply Chain Campaign — 84 Malicious npm Packages in 6 Minutes, 170+ Compromised](https://www.techgines.com/post/tanstack-npm-supply-chain-attack-cve-2026-45321-teampcp)** — ⭐ N/A
+- **[Project Glasswing Update — Claude Mythos Found 10,000+ Critical Vulns in One Month](https://www.anthropic.com/research/glasswing-initial-update)** — ⭐ N/A
+- **[vm2 CVE-2026-47140 — Five New Sandbox Escapes (CVSS 10.0) in Node.js Agent Runtimes](https://www.cve.org/CVERecord?id=CVE-2026-47140)** — ⭐ N/A
+- **[Google I/O: Gemini CLI Killed June 18 → Closed-Source Antigravity CLI + Gemini Spark Full Gmail Access](https://twitter.com/rohrasumeet/status/2058229621234567890)** — ⭐ N/A
+- **[Three Claude Code CVEs in One Cycle — API Key Exfil (CVE-2026-21852), Command Injection (CVE-2026-24887), Symlink Sandbox Escape (CVE-2026-39861)](https://blog.toolslib.net/2026/05/13/claude-code-cve-2026-39861-symlink-sandbox-escape/)** — ⭐ N/A
+- **[135,000+ OpenClaw Instances Exposed — 63% Vulnerable, 15K+ RCE-Ready, API Keys Leaking Through Control Panels](https://securityscorecard.com/research/openclaw-exposure/)** — ⭐ N/A
+- **[Claude Code Permission Bypass — 50-Subcommand Cap Kills All Deny Rules](https://cybersecuritynews.com/claude-code-vulnerability/)** — ⭐ N/A
+- **[ClawHavoc 575 Skills Poisoned in 48 Hours — Signing Key in .env Is the Design Problem](https://x.com/WaaPxyz/status/2058201337079435300)** — ⭐ N/A
+- **[CVE-2026-32211 — Azure DevOps MCP Package Missing Auth (CVSS 9.1)](#)** — ⭐ N/A
+- **[CVE-2025-32711 EchoLeak — Microsoft 365 Copilot Zero-Click Data Exfil (CVSS 9.3)](#)** — ⭐ N/A
+- **[wolfSSL Certificate Forge — Mythos AI Found Certificate Forgery in Crypto Library Used by Billions](https://x.com/ns123abc/status/2057930703258427664)** — ⭐ N/A
+- **[OpenClaw TOCTOU Sandbox Escape Chain — CVE-2026-44112 (CVSS 9.6) Through CVE-2026-44118](https://x.com/humanaifusion/status/2056413313970450451)** — ⭐ N/A
+- **[CVE-2026-42449 — n8n-mcp SSRF Bypass via IPv6-Mapped Addresses (CVSS 8.5)](https://github.com/n8n-io/n8n-mcp)** — ⭐ N/A
+- **[Trust No Tool — Cognitive Poisoning Attack on LLM Agent Tool Trust](https://arxiv.org/abs/2605.17453)** — ⭐ N/A
+- **[CVE-2026-30635 — Command Injection in automagik-genie MCP Server via viewTask](https://www.cve.org/CVERecord?id=CVE-2026-30635)** — ⭐ N/A
+- **[CVE-2026-8719 — Privilege Escalation in WordPress AI Engine Plugin via MCP OAuth](https://www.cve.org/CVERecord?id=CVE-2026-8719)** — ⭐ N/A
+- **[DryRun Security Study — 26 of 30 Agent PRs Introduced Real Vulnerabilities](https://twitter.com/cypher_hyd/status/2055916417263026584)** — ⭐ N/A
+- **[LMDeploy CVE-2026-33626 — SSRF in LLM Inference Exploited 12h After Advisory (CVSS 7.5)](https://www.mrdecentralize.com/agentbook/news/lmdeploy-cve-2026-33626-12-hours-31-minutes-from-advisory-to-first-exploit)** — ⭐ N/A
+- **[MEGALODON — Largest GitHub Actions Supply Chain Attack: 5,561 Repos, 449 GB Credentials Stolen in 6 Hours](https://thehackernews.com/2026/05/megalodon-github-attack-targets-5561.html)** — ⭐ N/A
+- **[Rivet Reverse-Engineered Docker Sandbox Undocumented MicroVM API for Agent Sandboxing](https://rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/)** — ⭐ N/A
+- **[The Agentic Risk — Prompt Injection Attack Surface in AI Coding Agents](https://twitter.com/ferrabled/status/2058269528094654706)** — ⭐ N/A
+- **[MCP Supply Chain Attack — Credential-Stealing Postinstall Targeting AI Agent Files + DNS Exfiltration](https://x.com/inf0stache/status/2058262054251667466)** — ⭐ N/A
+- **[GitHub Issues as Prompt Injection Delivery — scan.js Exfiltrates Home Directory Secrets via DNS](https://x.com/inf0stache/status/2058289447536337253)** — ⭐ N/A
+- **[Cline CVSS 9.7 — Any Website Can Exfiltrate Workspace Data via Unauthenticated WebSocket While Agent Runs (Oasis Security)](https://github.com/cline/cline)** — ⭐ N/A
+
+## Agent Tool
+
+- **[Chrome DevTools MCP — Browser DevTools for Coding Agents (41.5K Stars)](https://github.com/ChromeDevTools/chrome-devtools-mcp)** — ⭐ 41,520
+- **[Academic-Research-Skills — Evidence-Based Research Skills for AI Coding Agents (20.6K Stars)](https://github.com/Imbad0202/academic-research-skills)** — ⭐ 20,553
+- **[SmallCode — AI Coding Agent Optimized for Small LLMs, 87% Benchmark with 4B Model (1.4K Stars)](https://github.com/Doorman11991/smallcode)** — ⭐ 1,379
+- **[Prometheus — Knowledge-Graph-Driven AI Agent that Maps, Understands, and Repairs Codebases (992 Stars)](https://github.com/EuniAI/Prometheus)** — ⭐ 992
+- **[agents-observe — Real-Time Observability for Claude Code Sessions & Multi-Agents (566 Stars)](https://github.com/simple10/agents-observe)** — ⭐ 566
+
+## Agents
+
+- **[Context Mode — Context Window Optimization for AI Coding Agents (15.5K Stars, HN #1)](https://github.com/mksglu/context-mode)** — ⭐ 15,467
+- **[Raindrop Workshop](https://github.com/raindrop-ai/workshop)** — ⭐ 665
+- **[agent-skills-eval](https://github.com/darkrishabh/agent-skills-eval)** — ⭐ 508
+- **[skillgrade](https://github.com/mgechev/skillgrade)** — ⭐ 480
+- **[Memori](https://github.com/MemoriLabs/Memori)** — ⭐ N/A
+- **[12-Factor Agents](https://github.com/humanlayer/12-factor-agents)** — ⭐ N/A
+- **[agent-belt](https://github.com/jfrog/agent-belt)** — ⭐ N/A
+- **[eval-view](https://github.com/hidai25/eval-view)** — ⭐ N/A
+
+## Agents-Frameworks
+
+- **[TradingAgents](https://github.com/TauricResearch/TradingAgents)** — ⭐ 78,109
+- **[omo (oh-my-openagent)](https://github.com/code-yeongyu/oh-my-openagent)** — ⭐ 58,880
+- **[Antigravity Awesome Skills (sickn33)](https://github.com/sickn33/antigravity-awesome-skills)** — ⭐ 38,274
+- **[oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** — ⭐ 34,487
+- **[Multica (multica-ai)](https://github.com/multica-ai/multica)** — ⭐ 30,587
+- **[agent-lightning](https://github.com/microsoft/agent-lightning)** — ⭐ 17,201
+- **[TEN Framework](https://github.com/TEN-framework/ten-framework)** — ⭐ 10,598
+- **[Hive (aden-hive)](https://github.com/aden-hive/hive)** — ⭐ 10,397
+- **[nexent](https://github.com/ModelEngine-Group/nexent)** — ⭐ 4,609
+- **[cc-sdd (Spec-Driven Development)](https://github.com/gotalab/cc-sdd)** — ⭐ 3,374
+- **[moltis](https://github.com/moltis-org/moltis)** — ⭐ 2,705
+- **[OpenSquilla](https://github.com/opensquilla/opensquilla)** — ⭐ 1,695
+- **[OctoTools](https://github.com/octotools/octotools)** — ⭐ 1,462
+- **[smallcode](https://github.com/Doorman11991/smallcode)** — ⭐ 1,379
+- **[Photo-agents](https://github.com/jmerelnyc/Photo-agents)** — ⭐ 1,022
+- **[ARGO](https://github.com/xark-argo/argo)** — ⭐ 662
+- **[Dulus](https://github.com/KevRojo/Dulus)** — ⭐ 625
+
+## Coding Agents
+
+- **[OpenHuman — Personal AI Super Intelligence, Desktop App, 118+ Integrations, Memory Graph](https://github.com/tinyhumansai/openhuman)** — ⭐ 25,216
+- **[Crush — Glamourous Agentic Coding, by Charm (Bubble Tea Team), Written in Go](https://github.com/charmbracelet/crush)** — ⭐ 24,523
+- **[DeepSeek-Reasonix — DeepSeek-Native Coding Agent with Prefix-Cache Stability](https://github.com/esengine/DeepSeek-Reasonix)** — ⭐ 5,236
+- **[book-to-skill — Turn Any Technical Book PDF into a Claude Code Skill](https://github.com/virgiliojr94/book-to-skill)** — ⭐ 1,129
+- **[Helmor — Local Workbench for Multi-Agent Dev with Voice Copilot](https://github.com/dohooo/helmor)** — ⭐ 1,105
+- **[OrchestKit — 103 Skills, 36 Agents, 172 Hooks for Claude Code](https://github.com/yonatangross/orchestkit)** — ⭐ 173
+- **[Kimi Code CLI — MoonshotAI Terminal Coding Agent with Subagents, Video Input, and MCP](https://github.com/MoonshotAI/kimi-code)** — ⭐ 154
+- **[Boris Prompts — Claude Code Skill Using Boris's Prompt Methodology](https://github.com/LingyiChen-AI/boris-prompts)** — ⭐ 102
+- **[pie — Rust Port of the pi Coding Agent](https://github.com/c4pt0r/pie)** — ⭐ 46
+
+## Infrastructure
+
+- **[OpenSandbox — Secure, Fast Sandbox Runtime for AI Agents from Alibaba (10.8K Stars)](https://github.com/alibaba/OpenSandbox)** — ⭐ 10,780
+- **[Microsandbox — Unexploitable Secrets for AI Agents via Hardware-Isolated microVMs (6.2K Stars)](https://github.com/superradcompany/microsandbox)** — ⭐ 6,196
+- **[CubeSandbox](https://github.com/TencentCloud/CubeSandbox)** — ⭐ N/A
+- **[Cozeloop](https://github.com/coze-dev/coze-loop)** — ⭐ N/A
+- **[Plano](https://github.com/katanemo/plano)** — ⭐ N/A
+
+## Mcp
+
+- **[MCP Toolbox for Databases](https://github.com/googleapis/mcp-toolbox)** — ⭐ 15,296
+- **[mcpc](https://github.com/apify/mcpc)** — ⭐ 641
+- **[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)** — ⭐ N/A
+
+## Mcp Infra
+
+- **[MCP Gateway Registry — Enterprise MCP Gateway with OAuth, Keycloak, Entra ID (658★)](https://github.com/agentic-community/mcp-gateway-registry)** — ⭐ 658
+
+## Memory
+
+- **[claude-mem](https://github.com/thedotmack/claude-mem)** — ⭐ 77,506
+
+## Observability
+
+- **[Lapdog (Datadog)](https://lapdog.datadoghq.com/)** — ⭐ N/A
+
+## Orchestration
+
+- **[Ruflo](https://github.com/ruvnet/ruflo)** — ⭐ 54,181
+- **[MassGen](https://github.com/massgen/MassGen)** — ⭐ 1,034
+- **[contrabass](https://github.com/junhoyeo/contrabass)** — ⭐ 151
+- **[Sandcastle](https://github.com/mattpocock/sandcastle)** — ⭐ N/A
+- **[Open Multi-Agent](https://github.com/open-multi-agent/open-multi-agent)** — ⭐ N/A
+- **[Warp Oz Multi-Agent Orchestration](https://x.com/warpdotdev/status/2056772856835453395)** — ⭐ N/A
+- **[TraceFix](https://ortiz.rutgers.edu/projects/tracefix/)** — ⭐ N/A
+
+## Retrieval
+
+- **[Retrieval Routing: vector + GraphRAG + PageIndex](https://x.com/NullS0S/status/2056383310830735676)** — ⭐ N/A
+
+## Security
+
+- **[pentest-ai](https://github.com/0xSteph/pentest-ai)** — ⭐ 268
+
+## Tools
+
+- **[Context7](https://github.com/upstash/context7)** — ⭐ N/A
+
