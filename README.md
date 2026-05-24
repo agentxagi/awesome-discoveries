@@ -7,6 +7,7 @@ A curated collection of AI agent tools, security findings, and infrastructure pr
 - **obra/superpowers — Agentic Skills Framework (203K Stars)** (203926 ★) [agent_framework] — 2026-05-23 → https://github.com/obra/superpowers
 - **ECC** (188000 ★) [agent-infrastructure] — 2026-05-21
 - **Gemini CLI TrustIssues — CVSS 10.0 Supply Chain via GitHub Issue (104.5K Stars)** (104500 ★) [agent_security] — 2026-05-23 → https://github.com/google-gemini/gemini-cli
+- **CVE-2026-32173 — Azure SRE Agent Multi-Tenant Auth Flaw Exposes Live Agent Commands and Deployment Creds (CVSS 8.6)** (107 ★) [agent_security] — 2026-05-24 → https://www.csoonline.com/article/4161389/azure-sre-agent-flaw-let-outsiders-silently-eavesdrop-on-enterprise-cloud-operations.html
 - **Matt Pocock Skills — 99K Stars, Claude Skills Straight From .claude Directory** (99674 ★) [agent_infrastructure] — 2026-05-22 → https://github.com/mattpocock/skills
 - **TradingAgents** (78109 ★) [agents-frameworks] — 2026-05-21
 - **claude-mem** (77506 ★) [memory] — 2026-05-19
