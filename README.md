@@ -463,3 +463,10 @@ Curated discoveries about AI agents, tools, frameworks, and security.
 ## Memory (1)
 
 - [claude-mem](https://github.com/thedotmack/claude-mem) (77,506★)
+
+## New Discoveries (May 25)
+
+
+| 555 | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | agent_framework | 22,999★ | Curated collection of 1,000+ agent skills for Claude Code, Codex, Gemini CLI, Cursor |
+| 556 | [KanBots](https://github.com/leodavinci1/kanbots) | orchestration | 292★ | Kanban board that dispatches parallel agent swarms, each in its own git worktree |
+| 557 | [free-claude-code](https://github.com/Andrewkeith83/free-claude-code) | coding_agents | 102★ | Run Claude Code CLI free via NVIDIA NIM API proxy |
