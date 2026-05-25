@@ -2,7 +2,7 @@
 
 Curated collection of AI agent tools, frameworks, and security findings.
 
-**Total indexed:** 455 discoveries discoveries
+**Total indexed:** 477 discoveries discoveries
 
 ## Agent Security (228)
 
@@ -52,6 +52,7 @@ Curated collection of AI agent tools, frameworks, and security findings.
 - [OneCLI — Open-Source Credential Vault for AI Agents (2.2K Stars)](https://github.com/onecli/onecli) (2234★) — Give AI agents access to services without exposing keys. OAuth2 and API key vault that brokers credentials to agents at 
 - OneCLI — Open-Source Credential Vault for AI Agents (2228★) — Open-source credential vault that gives AI agents access to services without exposing keys. TypeScript + Rust. Apache-2.
 - [Perplexity Bumblebee — Read-Only Supply Chain Scanner for Developer Endpoints (705 Stars)](https://github.com/perplexityai/bumblebee) (2076★) — Perplexity open-sourced Bumblebee: a read-only endpoint scanner that inventories packages, browser extensions, and devel
+- [Claude-Tap — Intercept and Inspect Coding Agent API Traffic in Local Trace Viewer (822 Stars)](https://github.com/liaohch3/claude-tap) (822★) — First tool to tap into coding agent API traffic for inspection. Security angle: see exactly what your agent sends/receives. Works with Claude Code, Codex, Gemini, Cursor, OpenCode, Hermes.
 - [Microsoft Agent Governance Toolkit — Runtime Policy Enforcement for Every Agent Tool Call (1.9K Stars)](https://github.com/microsoft/agent-governance-toolkit) (2073★) — Microsoft toolkit that intercepts every tool call, resource access, and inter-agent message BEFORE execution. Determinis
 - [Ghidra MCP Server — 200+ MCP Tools for AI-Powered Reverse Engineering (2K Stars)](https://github.com/bethington/ghidra-mcp) (2071★) — MCP server providing 200+ tools for AI-powered reverse engineering via Ghidra. GUI plugin + headless server, lazy tool l
 - [RedAmon — Autonomous AI Red Team Framework: Recon to Merged PR (1.9K Stars)](https://github.com/samugit83/redamon) (1916★) — Autonomous AI framework that chains reconnaissance, exploitation, and post-exploitation into a single pipeline, then tri
