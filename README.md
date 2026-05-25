@@ -437,3 +437,11 @@ A curated collection of AI agent tools, frameworks, and security findings.
 
 - **[Context7](https://github.com/upstash/context7)** — ⭐ N/A
 
+
+### Google DeepMind "AI Agent Traps" — 86% Exploit Rate, Web Is the Attack Surface
+- **Category:** Agent Security | **Type:** Research Paper
+- Systematic framework for agent vulnerabilities. Six trap categories: Content Injection, Semantic Manipulation, Cognitive State Poisoning, Behavioral Control, Systemic Failures, Human-in-the-Loop exploitation. Prompt injections in web content hijack agents at 86%. Sites detect AI visitors and serve weaponized pages. Memory poisoning: 80% success changing <0.1% data. Fake notifications trick agents at 93%.
+
+### Mistral AI PyPI v2.4.6 Compromised — Mini Shai-Hulud Supply Chain Attack
+- **Category:** Agent Security | **Type:** Supply Chain Attack
+- Microsoft confirmed investigating Mistral AI PyPI package v2.4.6 compromise as part of the "Mini Shai-Hulud" campaign. Compromised Mistral AI and TanStack packages exposed GitHub/cloud/CI-CD credentials. Axios npm hijacked with cross-platform RAT. LiteLLM also hit. Supply chain attacks on AI developer tools are accelerating.
