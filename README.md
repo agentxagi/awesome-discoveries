@@ -148,6 +148,8 @@ A curated collection of AI agent tools, frameworks, and security findings.
 - **[Budget-Aware MCP — Model-Agnostic Code Memory MCP Server with Graph Retrieval](https://github.com/Doorman11991/budget-aware-mcp)** — ⭐ 19
 - **[MCP-Man — Postman for MCP Servers](https://github.com/aaglexx/mcp-man)** — ⭐ 11
 
+- [cmux — Ghostty-Based Terminal Built for AI Coding Agents (19K Stars)](https://github.com/manaflow-ai/cmux) ⭐ 19,022 — Terminal multiplexer built for AI coding agents. Vertical tabs, agent notifications, split panes. [agent_infrastructure]
+- [Acontext — Agent Skills as Editable Markdown Memory Layer (3.4K Stars)](https://github.com/memodb-io/Acontext) ⭐ 3,402 — Agent skill memory layer using editable Markdown files instead of opaque embeddings. Git-diffable agent memory. [agent_infrastructure]
 ## Agent Security
 
 - **[CVE-2026-9369 — NousResearch hermes-agent CLI Dashboard Plugin Bypass (165K Stars)](https://github.com/NousResearch/hermes-agent)** — ⭐ 165,303
