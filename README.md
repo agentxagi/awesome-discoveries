@@ -447,6 +447,8 @@ Curated discoveries about AI agents, tools, frameworks, and security.
 ## Security (1)
 
 - [pentest-ai](https://github.com/0xSteph/pentest-ai) (268★)
+- [OpenMythos](https://github.com/kyegomez/OpenMythos) — Open-source reconstruction of Claude Mythos architecture. 13.4K stars. Anthropic refused to release it, community rebuilt it. ★13378
+- [Agentic Radar](https://github.com/splx-ai/agentic-radar) — Security scanner for LLM agentic workflows. Maps attack surfaces in agent architectures. ★973
 
 ## Retrieval (1)
 
