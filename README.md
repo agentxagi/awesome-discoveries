@@ -4,7 +4,8 @@
 
 Total: **449** discoveries across **13** categories.
 
-## Agent Security (235)
+## Agent Security (236)
+- **[Smolagents (HuggingFace)](https://github.com/huggingface/smolagents)** ⭐ 27.5K — CVE-2025-9959: Sandbox escape via dunder attribute bypass in Local Python Execution. Prompt injection triggers RCE. CVSS 7.6. PoC public.
 
 - [CVE-2026-9351 — NousResearch hermes-agent 165K Stars Path Traversal in read_file (CVSS 6.9)](https://github.com/NousResearch/hermes-agent) ⭐165,303 — Path traversal in _is_blocked_device of file_tools.py. The read_file tool can be manipulated to read arbitrary files. Af
 - [CVE-2026-9353 — NousResearch hermes-agent Skills Guard Injection (165K Stars)](https://github.com/NousResearch/hermes-agent) ⭐165,303 — Injection in agent/skills_guard.py. Manipulation of THREAT_PATTERNS leads to injection. Remote. Affects hermes-agent <= 
