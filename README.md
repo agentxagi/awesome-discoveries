@@ -2,7 +2,7 @@
 
 Curated collection of AI agent tools, frameworks, and security findings.
 
-**Total indexed:** 448 discoveries
+**Total indexed:** 455 discoveries discoveries
 
 ## Agent Security (228)
 
