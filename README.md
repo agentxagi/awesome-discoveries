@@ -445,3 +445,30 @@ A curated collection of AI agent tools, frameworks, and security findings.
 ### Mistral AI PyPI v2.4.6 Compromised — Mini Shai-Hulud Supply Chain Attack
 - **Category:** Agent Security | **Type:** Supply Chain Attack
 - Microsoft confirmed investigating Mistral AI PyPI package v2.4.6 compromise as part of the "Mini Shai-Hulud" campaign. Compromised Mistral AI and TanStack packages exposed GitHub/cloud/CI-CD credentials. Axios npm hijacked with cross-platform RAT. LiteLLM also hit. Supply chain attacks on AI developer tools are accelerating.
+### [x402 Protocol — HTTP 402 Micropayments for AI Agents Finally Implemented After 29 Years (5.4K Stars, Linux Foundation)](https://github.com/coinbase/x402)
+**Category:** agent_infrastructure (5,400 Stars)
+Coinbase built x402, implementing the HTTP 402 status code that was reserved since 1997. AI Agents can now pay for API access with USDC via HTTP headers. $0.001 transaction cost, 1-3 second settlement. Joined Linux Foundation with 22+ backers (Google, Visa, Stripe, AWS, Microsoft). 5400+ GitHub stars, 100M+ cumulative transactions.
+
+**Why interesting:** HTTP 402 waited 29 years. Reality check: $28K daily volume, only 372 sellers, 92% volume decline from peak. Contrarian angle: the protocol is elegant but the AI Agent economy isn't at scale yet. Infrastructure ahead of demand.
+
+
+### [Axios npm Compromise — Shai-Hulud Worm Hijacks Maintainer Account, Plants Cross-Platform RAT via Phantom Dependency](https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/)
+**Category:** agent_security
+On March 31 2026, the Axios npm package (billions of weekly downloads) was compromised via maintainer account takeover. Attackers added phantom dependency plain-crypto-js@4.2.1 with a postinstall script that dropped a cross-platform RAT (macOS, Windows, Linux). The malicious version lived for ~3 hours before npm takedown. Credential harvesting targeted npm tokens and GitHub PATs for self-propagation.
+
+**Why interesting:** Maintainer account takeover (not code vulnerability). Phantom dependency invisible in axios source. Self-replicating via stolen npm publish tokens. 3-hour window = millions of installs affected. Same Shai-Hulud worm pattern as Mistral PyPI attack.
+
+
+### [CursorJack — CVE-2025-54133 (CVSS 9.6): Cursor IDE MCP Deeplinks Weaponized for Reverse Shell Installation](https://www.proofpoint.com/us/blog/threat-insight/cursorjack-weaponizing-deeplinks-exploit-cursor-ide)
+**Category:** agent_security
+Proofpoint discovered that Cursor IDE's cursor:// deeplink protocol can be weaponized to install malicious MCP servers and execute arbitrary commands. CVE-2025-54133 (CVSS 9.6) and CVE-2025-54136 (CVSS 8.8). A single click + accept prompt = Meterpreter reverse shell. The malicious MCP config persists across IDE restarts. No visible distinction between legitimate and malicious deeplinks in the UI.
+
+**Why interesting:** First documented MCP deeplink weaponization against a coding IDE. Persists after restart. Phishing email → malicious landing page → MCP deeplink → reverse shell. Obfuscation via encoded commands invisible in approval dialog. 43% of tested MCP servers vulnerable to command injection.
+
+
+### [MIT CSAIL Live Demo: Prompt Injection Attack Against Anthropic Opus 4.6 — Agent Security Still Unsolved](https://twitter.com/anishathalye/status/2056395987133018263)
+**Category:** agent_security
+Anish Athalye demonstrated a successful prompt injection attack against Anthropic's Opus 4.6 model during a guest lecture at MIT CSAIL. The attack was demonstrated live in front of an audience. 4019 views, 52 likes, 37 bookmarks. Athalye stated "Agent security is still an unsolved problem!"
+
+**Why interesting:** Live academic demo against latest Anthropic model at MIT CSAIL. High engagement (52 likes, 37 bookmarks). Confirms that even frontier models remain vulnerable to prompt injection. Contrarian angle: every model update claims better safety, injection still works.
+
