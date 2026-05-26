@@ -7,7 +7,7 @@ A curated collection of AI agent tools, frameworks, and discoveries. Updated con
 - [Agent Frameworks](#agent-framework) (68)
 - [Agent Infrastructure](#agent-infrastructure) (148)
 - [Coding Agents](#coding-agents) (20)
-- [Agent Security](#agent-security) (233)
+- [Agent Security](#agent-security) (234)
 - [Agent Tools](#agent-tools) (12)
 - [Orchestration](#orchestration) (14)
 - [Agent Memory](#agent-memory) (5)
@@ -128,6 +128,7 @@ _...and 118 more_
 ## Agent Security
 
 - [CVE-2026-9351 — NousResearch hermes-agent 165K Stars Path Traversal in read_file (CVSS 6.9)](https://www.cve.org/CVERecord?id=CVE-2026-9351) ⭐ 165,303 — Path traversal in _is_blocked_device of file_tools.py. The read_file tool can be manipulated to read arbitrary files. Affects hermes-agent <= 2026.4.16. CVSS 6.9. Exploit public. 165K stars.
+- [GSD (Get Shit Done) — Rug Pull Evolves Into Supply Chain Backdoor](https://x.com/Shieldguardio/status/2059174419348721827) — Anonymous GSD founder launched $GSD token, drained liquidity, deleted socials. Still controls NPM registry keys for get-shit-done-cc and @gsd-build/sdk. Tool runs with deep shell permissions — rogue dev can push malicious payload update anytime.
 - [CVE-2026-9353 — NousResearch hermes-agent Skills Guard Injection (165K Stars)](https://www.cve.org/CVERecord?id=CVE-2026-9353) ⭐ 165,303 — Injection in agent/skills_guard.py. Manipulation of THREAT_PATTERNS leads to injection. Remote. Affects hermes-agent <= 2026.4.23. Exploit disclosed.
 - [CVE-2026-9369 — NousResearch hermes-agent CLI Dashboard Plugin Bypass (165K Stars)](https://www.cve.org/CVERecord?id=CVE-2026-9369) ⭐ 165,303 — Incorrect comparison in _discover_dashboard_plugins of web_server.py. HERMES_ENABLE_PROJECT_PLUGINS bypass. Local access required. Affects 2026.4.23.
 - System Prompts & Models of AI Tools — Every AI Coding Agent's Internal Instructions Leaked (138K Stars) ⭐ 138,217 — Full system prompts extracted from Claude Code, Cursor, Devin AI, Windsurf, Replit, Lovable, Bolt, v0, Perplexity, Trae, Warp.dev, Augment Code, and more. 138K stars, 34K forks, 146 open issues. GPL-3.0. Continuously updated with new tool prompts as they change.
