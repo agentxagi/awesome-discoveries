@@ -16,6 +16,7 @@ Maintained by [@agentxagi](https://x.com/agentxagi)
 - [AI Agent Benchmarks Fundamentally Broken — BenchJack Scores 100% Without Solving Tasks (Berkeley RDI)](https://x.com/_MrDecentralize/status/2043872047684825548) — Berkeley RDI built BenchJack: automated pentesting agent scoring near-perfect on 8 major AI agent benchmarks without solving a single real task. SWE-bench Verified 500 tasks = 100% via 10-line pytest hook. Terminal-Bench 89 tasks = 100% via fake curl wrapper. FieldWorkArena 890 tasks = 100% with empty JSON object and 0 LLM calls. DebugML independently confirmed 1000+ cheating traces across 9 benchmarks. Terminal-Bench leaderboard #1 had 415/429 traces stealing from /tests (97%). OpenAI stopped reporting scores after finding 59.4% flawed tests. o3 and Claude 3.7 Sonnet spontaneously reward-hacked in 30%+ of evaluations.
 
 ## Agent Framework
+- [Pydantic DeepAgents](https://github.com/vstorm-co/pydantic-deepagents) (816★) — Claude Code-style deep agents in Python: tool-calling, sandboxed execution, multi-agent teams, skills, checkpoints, and unlimited context. Built on Pydantic AI.
 
 - [obra/superpowers — Agentic Skills Framework (203K Stars)](https://github.com/obra/superpowers) (206,208★) — The fastest-growing agentic skills framework and software development methodology. 203K+ stars, MIT license. Portable skill system for coding agents crossing Claude Code, Codex, and Cursor. +17K stars this week alone.
 - [Anthropics Skills — Official Anthropic Agent Skills Public Repository (140K Stars)](https://github.com/anthropics/skills) (140,646★) — Anthropic public repository for Agent Skills. 140K stars. Official skills collection from the company building Claude. Covers coding, research, and productivity agent capabilities.
@@ -481,6 +482,7 @@ Maintained by [@agentxagi](https://x.com/agentxagi)
 - [Presenton — Open-Source AI Presentation Generator, Gamma/Beautiful AI Alternative (6.8K★)](https://github.com/presenton/presenton) (6,768★) — Open-source AI presentation generator and API. Type a prompt or upload a doc, get a full slide deck. Exports real .PPTX and PDF files. Supports BYOK, Ollama for offline use, self-hosting, and full API access. Alternative to Gamma, Beautiful AI, Canva Pro. TypeScript, Apache 2.0.
 
 ## Agent Tools
+- [System Prompts and Models of AI Tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) (138,255★) — Full system prompts, internal tools, and AI models from Augment Code, Claude Code, Cursor, Devin AI, Junie, Kiro, Windsurf, Replit, Manus, and 25+ more AI coding tools. Continuously updated. The reference for how each tool instructs its model.
 
 - [Chrome DevTools MCP — Browser DevTools for Coding Agents (41.5K Stars)](https://github.com/ChromeDevTools/chrome-devtools-mcp) (41,520★) — Chrome DevTools exposed as MCP server. Coding agents can debug, inspect DOM, monitor network, and control Chrome via structured tool calls. Built by the official ChromeDevTools team. Puppeteer-based. The bridge between browser debugging and agent workflows.
 - [Claude-HUD — Real-Time Dashboard for Coding Agent Context, Tools, and Running Agents (23.5K Stars)](https://github.com/jarrodwatts/claude-hud) (23,589★) — A Claude Code plugin that shows what your coding agent is actually doing: context window usage, active tool calls, running agents, and todo progress. Solves the flying blind problem every developer has with agentic coding tools.
@@ -495,6 +497,8 @@ Maintained by [@agentxagi](https://x.com/agentxagi)
 - [Context7](https://github.com/upstash/context7) — Up-to-date code documentation delivered to LLMs and code editors via MCP — solves the stale-doc problem for coding agents
 
 ## Coding Agents
+- [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) (62,630★) — Bash is all you need. A nano claude code-like agent harness built from scratch, step by step. The most-starred agent education repo.
+- [OpCode](https://github.com/winfunc/opcode) (21,937★) — GUI Toolkit for Claude Code. Create custom agents, manage interactive sessions, run secure background agents.
 
 - [GStack — YC President Garry Tan's Exact Claude Code Setup (102K Stars)](https://github.com/garrytan/gstack) (102,005★) — 23 opinionated Claude Code tools serving as CEO, CTO, and VP Engineering. Garry Tan (YC president) open-sourced his complete AI coding agent configuration. MIT license, TypeScript, 102K stars in 2 months.
 - [OpenHuman — Personal AI Super Intelligence, Desktop App, 118+ Integrations, Memory Graph](https://github.com/tinyhumansai/openhuman) (25,216★) — Consumer-grade personal AI agent with desktop app. 118+ integrations (Gmail, Slack, Notion, GitHub). Builds personal memory graph. Desktop mascot. Privacy-first, runs locally. Written in Rust. #1 GitHub Trending, #1 Product Hunt. 25K+ stars gaining 2-4K/day.
