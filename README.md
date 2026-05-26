@@ -21,6 +21,8 @@ A curated collection of AI agent tools, frameworks, and discoveries. Updated con
 ## Agent Frameworks
 
 - [obra/superpowers — Agentic Skills Framework (203K Stars)](https://github.com/obra/superpowers) ⭐ 206,208 — The fastest-growing agentic skills framework and software development methodology. 203K+ stars, MIT license. Portable skill system for coding agents crossing Claude Code, Codex, and Cursor. +17K stars this week alone.
+- [AgentScope 2.0 — Alibaba Multi-Agent Framework with Built-in Security (25.6K Stars)](https://github.com/agentscope-ai/agentscope) ⭐ 25,601 — Alibaba Tongyi Lab multi-agent framework with permission system, shell command interception, Docker/E2B sandbox support, TypeScript+Java bindings. Production robustness focus.
+
 - [Anthropics Skills — Official Anthropic Agent Skills Public Repository (140K Stars)](https://github.com/anthropics/skills) ⭐ 140,646 — Anthropic public repository for Agent Skills. 140K stars. Official skills collection from the company building Claude. Covers coding, research, and productivity agent capabilities.
 - [Karpathy Autoresearch — AI Agents Running Research on Single-GPU (83K Stars)](https://github.com/karpathy/autoresearch) ⭐ 83,307 — Andrej Karpathy research automation. AI agents running research experiments on single-GPU nanochat training. 83K stars. Research agents on ONE consumer GPU.
 - [TradingAgents](https://github.com/TauricResearch/TradingAgents) ⭐ 78,109 — Multi-agent LLM financial trading framework. Research Desk, Quant Team, Trading Floor, and Risk Management as separate agents orchestrated together. Python.
@@ -52,6 +54,8 @@ A curated collection of AI agent tools, frameworks, and discoveries. Updated con
 - [ViMax — Agentic Video Generation: 4 Agents (Director, Writer, Producer, Generator) in One (7.5K Stars)](https://github.com/HKUDS/ViMax) ⭐ 7,497 — Four specialized agents collaborate to produce videos end-to-end. Each agent has distinct role: Director orchestrates, Screenwriter writes, Producer manages resources, Video Generator renders. By HKUDS.
 
 _...and 38 more_
+
+- [html-anything — Agentic HTML Editor with 75 Skills x 9 Surfaces (5K Stars)](https://github.com/nexu-io/html-anything) ⭐ 4,995 — Local AI agent writes HTML, you ship it. 75 skills x 9 output surfaces (magazine, deck, poster, tweet, prototype). Vibe-coding era tool.
 
 ## Agent Infrastructure
 
@@ -87,6 +91,16 @@ _...and 38 more_
 - [CUA — Open-Source Computer-Use Agent Infrastructure (17K Stars)](https://github.com/trycua/cua) ⭐ 17,011 — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that control full desktops (macOS, Linux, Windows). Virtualization framework isolates agent environments.
 
 _...and 118 more_
+
+- [ECC — Agent Harness Performance Optimization System (193K Stars)](https://github.com/affaan-m/ECC) ⭐ 192,950 — Skills, instincts, memory, security, and research-first development for Claude Code, Codex, OpenCode, Cursor. The most-starred agent harness optimization tool.
+
+- [cc-switch — Cross-Platform Desktop for All AI Coding Agents (81K Stars)](https://github.com/farion1231/cc-switch) ⭐ 81,074 — All-in-one desktop assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Rust/Tauri.
+
+- [LLM Wiki Desktop — Turn Documents Into Cross-Linked Knowledge Base (9.3K Stars)](https://github.com/nashsu/llm_wiki) ⭐ 9,319 — Cross-platform desktop app inspired by Karpathy LLM Wiki. Drops in PDFs, papers, notes, URLs. Builds cross-linked markdown pages, flags contradictions.
+
+- [Mirage — Unified Virtual Filesystem for AI Agents (2.6K Stars)](https://github.com/strukto-ai/mirage) ⭐ 2,623 — Unified VFS abstraction for AI agents using FUSE. Consistent file interface across backends.
+
+- [LLM Wiki Compiler — Raw Sources In, Interlinked Wiki Out (1.3K Stars)](https://github.com/atomicstrata/llm-wiki-compiler) ⭐ 1,304 — Knowledge compiler inspired by Karpathy LLM Wiki pattern. Raw sources in, interlinked wiki out.
 
 ## Coding Agents
 
