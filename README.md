@@ -539,3 +539,24 @@
 ---
 
 *This list is automatically maintained. Last scan: 2026-05-26*
+
+### [Coral](https://github.com/withcoral/coral) ⭐ 4,822
+One SQL interface over APIs, files, and live sources — built for agents. Rust-based. Agents query REST APIs, local files, databases, and streaming sources through standard SQL. No custom integrations per source.
+
+### [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) ⭐ 4,514
+The 100-line AI agent that solves GitHub issues from the command line. >74% on SWE-bench verified with radical simplicity — no configs, no monorepo.
+
+### [gh-aw](https://github.com/github/gh-aw) ⭐ 4,522
+GitHub's official agentic workflows CLI extension. Run Claude Code, Codex, Copilot, and other agents as GitHub Actions. First-party agent CI/CD.
+
+### [Emdash](https://github.com/generalaction/emdash) ⭐ 4,626
+Open-source agentic development environment for running multiple coding agents in parallel. Docker containerization, git worktrees, Linear/Jira integration. YC W26.
+
+### [Solace Agent Mesh](https://github.com/SolaceLabs/solace-agent-mesh) ⭐ 4,617
+Event-driven multi-agent orchestration framework. Supports A2A protocol, MCP, RAG, and enterprise integration. Connects agents to real-world data sources and systems.
+
+### [Kiln](https://github.com/Kiln-AI/Kiln) ⭐ 4,848
+All-in-one platform for AI system development: evals, RAG, agents, fine-tuning, synthetic data generation, dataset management, and MCP support. Desktop app for macOS/Windows.
+
+### [Claude Code 2.1.147](https://github.com/anthropics/claude-code)
+Workflow tool for deterministic multi-agent orchestration. /code-review now flags correctness bugs and posts inline GitHub PR comments. 35 CLI changes.
