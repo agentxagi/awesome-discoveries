@@ -573,3 +573,4 @@
 {"id": 3, "title": "eval-view", "category": "agent_framework", "stars": null, "url": "https://github.com/hidai25/eval-view", "date": "2026-05-19T00:00:00+00:00"}
 {"id": 2, "title": "agent-skills-eval", "category": "agent_framework", "stars": 508, "url": "https://github.com/darkrishabh/agent-skills-eval", "date": "2026-05-19T00:00:00+00:00"}
 {"id": 1, "title": "skillgrade", "category": "agent_framework", "stars": 493, "url": "https://github.com/mgechev/skillgrade", "date": "2026-05-19T00:00:00+00:00"}
+{"id":746,"title":"NoScope AI Agent Autonomously Found CVE-2026-27771 in Gitea — 30K+ Deployments Exposed for 4 Years (Zero Auth Container Pull)","category":"agent_security","url":"https://www.noscope.com/blog/gitea-instances-exposing-private-container","added_at":"2026-05-27T15:30:00Z"}
