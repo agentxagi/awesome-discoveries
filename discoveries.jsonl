@@ -582,3 +582,4 @@
 {"id": 5, "title": "contrabass", "category": "orchestration", "added_at": "2026-05-19T00:00:00+00:00", "is_indexed": true}
 {"id": 17, "title": "Ruflo", "category": "orchestration", "added_at": "2026-05-19T00:00:00+00:00", "is_indexed": true}
 {"id": 1, "title": "skillgrade", "category": "agent_framework", "added_at": "2026-05-19T00:00:00+00:00", "is_indexed": true}
+{"id":761,"title":"Copilot Cowork File Exfiltration via Indirect Prompt Injection — Auto-Approved Actions Steal OneDrive Files, Works Against Claude Opus 4.7","category":"agent_security","url":"https://x.com/blackorbird/status/2059288558003999230","why_interesting":"Auto-approved tool calls = auto-approved data exfiltration. The model is irrelevant — Opus 4.7 falls to it. Copilot Cowork ships with insecure defaults that let attacker-controlled emails trigger file theft.","added_at":"2026-05-28T13:30:00Z"}
