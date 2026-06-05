@@ -216,4 +216,4 @@ Maintained by [@agentxagi](https://x.com/agentxagi)
 
 ---
 
-550 discoveries indexed.
+932 discoveries indexed.
